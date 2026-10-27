@@ -1,0 +1,14 @@
+{
+  "model": "Logística contextual, C=1, sem novos indicadores educacionais",
+  "artifact_relative": "../modelos-enriquecidos/logistica_contexto.joblib",
+  "artifact_sha256": "e35fdf1cc3d78b103df0aa68c4df3f2112a6b241344f7c295a219a9137153d56",
+  "role": "Referência de simplicidade para o projeto acadêmico; não implantado",
+  "threshold_selected": null,
+  "capacity_selected": null,
+  "status": "referencia_academica_avaliada_sem_limiar_operacional",
+  "test_evaluated": true,
+  "decision": "Mantido por simplicidade; novos modelos não demonstraram ganho claro na validação. Não equivale a seleção independente por teste.",
+  "capacity_required": false,
+  "user_preference": "Não escolher capacidade real; cenários exclusivamente hipotéticos",
+  "test_result_relative": "../avaliacao-final/resultados_teste.json"
+}

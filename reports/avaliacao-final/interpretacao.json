@@ -1,0 +1,364 @@
+{
+  "logistica": {
+    "method": "SHAP interventional, saída raw/log-odds, background efetivo de 200 municípios de treino e amostra de 500 municípios de validação; random_state=42 na amostragem.",
+    "feature_dependence": "Independência interventional; não estima efeitos causais ou partilha condicional entre atributos correlacionados",
+    "grouping": "SHAP das categorias UF somados por linha antes da média absoluta; igual peso municipal",
+    "additivity_verified": true,
+    "summary": [
+      {
+        "feature": "UF (conjunto das categorias)",
+        "mean_abs_shap_log_odds": 0.4448499853477297
+      },
+      {
+        "feature": "participacao_agropecuaria_2021",
+        "mean_abs_shap_log_odds": 0.11515627739044279
+      },
+      {
+        "feature": "participacao_servicos_2021",
+        "mean_abs_shap_log_odds": 0.08727865323191628
+      },
+      {
+        "feature": "log1p_populacao_2022",
+        "mean_abs_shap_log_odds": 0.0615975368991396
+      },
+      {
+        "feature": "participacao_industria_2021",
+        "mean_abs_shap_log_odds": 0.04969201697795748
+      },
+      {
+        "feature": "log1p_pib_por_habitante_reais_2021",
+        "mean_abs_shap_log_odds": 0.04339860299873662
+      },
+      {
+        "feature": "log1p_densidade_hab_km2_2022",
+        "mean_abs_shap_log_odds": 0.03898793665356972
+      }
+    ],
+    "coefficients": [
+      {
+        "feature": "num__log1p_populacao_2022",
+        "coefficient_log_odds": 0.0759842924310722,
+        "odds_ratio": 1.0789456264113841
+      },
+      {
+        "feature": "num__log1p_densidade_hab_km2_2022",
+        "coefficient_log_odds": 0.05143786976749596,
+        "odds_ratio": 1.0527837745594415
+      },
+      {
+        "feature": "num__log1p_pib_por_habitante_reais_2021",
+        "coefficient_log_odds": -0.052127043478489475,
+        "odds_ratio": 0.9492082684621965
+      },
+      {
+        "feature": "num__participacao_agropecuaria_2021",
+        "coefficient_log_odds": -0.13423750306027196,
+        "odds_ratio": 0.8743823714513632
+      },
+      {
+        "feature": "num__participacao_industria_2021",
+        "coefficient_log_odds": -0.0763724190069092,
+        "odds_ratio": 0.9264711068529816
+      },
+      {
+        "feature": "num__participacao_servicos_2021",
+        "coefficient_log_odds": -0.10813025125241639,
+        "odds_ratio": 0.8975106869257663
+      },
+      {
+        "feature": "cat__sigla_uf_AC",
+        "coefficient_log_odds": 0.38030942500391635,
+        "odds_ratio": 1.4627371268586236
+      },
+      {
+        "feature": "cat__sigla_uf_AL",
+        "coefficient_log_odds": 0.2861422000742717,
+        "odds_ratio": 1.3312817501568468
+      },
+      {
+        "feature": "cat__sigla_uf_AM",
+        "coefficient_log_odds": 0.183548462587638,
+        "odds_ratio": 1.201473190500601
+      },
+      {
+        "feature": "cat__sigla_uf_AP",
+        "coefficient_log_odds": 0.14478279039357841,
+        "odds_ratio": 1.1557884946369625
+      },
+      {
+        "feature": "cat__sigla_uf_BA",
+        "coefficient_log_odds": 0.8542128668965386,
+        "odds_ratio": 2.3495242642007668
+      },
+      {
+        "feature": "cat__sigla_uf_CE",
+        "coefficient_log_odds": -1.592095233102688,
+        "odds_ratio": 0.20349878734646176
+      },
+      {
+        "feature": "cat__sigla_uf_ES",
+        "coefficient_log_odds": -0.615925745382169,
+        "odds_ratio": 0.5401406310914444
+      },
+      {
+        "feature": "cat__sigla_uf_GO",
+        "coefficient_log_odds": -0.6492972288299963,
+        "odds_ratio": 0.5224127844284447
+      },
+      {
+        "feature": "cat__sigla_uf_MA",
+        "coefficient_log_odds": -0.19314395629807002,
+        "odds_ratio": 0.8243632933089171
+      },
+      {
+        "feature": "cat__sigla_uf_MG",
+        "coefficient_log_odds": -0.614529616809369,
+        "odds_ratio": 0.5408952635192127
+      },
+      {
+        "feature": "cat__sigla_uf_MS",
+        "coefficient_log_odds": 0.14080635794830715,
+        "odds_ratio": 1.151201705339771
+      },
+      {
+        "feature": "cat__sigla_uf_MT",
+        "coefficient_log_odds": 0.06941058402779474,
+        "odds_ratio": 1.071876214065938
+      },
+      {
+        "feature": "cat__sigla_uf_PA",
+        "coefficient_log_odds": 0.36912440901363747,
+        "odds_ratio": 1.4464675460819456
+      },
+      {
+        "feature": "cat__sigla_uf_PB",
+        "coefficient_log_odds": -0.08846440547631775,
+        "odds_ratio": 0.9153356910940869
+      },
+      {
+        "feature": "cat__sigla_uf_PE",
+        "coefficient_log_odds": -0.2839876391373778,
+        "odds_ratio": 0.7527759496087862
+      },
+      {
+        "feature": "cat__sigla_uf_PI",
+        "coefficient_log_odds": -0.18074851519392862,
+        "odds_ratio": 0.8346452328991308
+      },
+      {
+        "feature": "cat__sigla_uf_PR",
+        "coefficient_log_odds": -0.5209073126097956,
+        "odds_ratio": 0.5939813766157106
+      },
+      {
+        "feature": "cat__sigla_uf_RJ",
+        "coefficient_log_odds": -0.20875310997932967,
+        "odds_ratio": 0.8115955857611159
+      },
+      {
+        "feature": "cat__sigla_uf_RN",
+        "coefficient_log_odds": 0.6717005012047667,
+        "odds_ratio": 1.9575633306946503
+      },
+      {
+        "feature": "cat__sigla_uf_RO",
+        "coefficient_log_odds": -0.13339234406548017,
+        "odds_ratio": 0.8751216759483987
+      },
+      {
+        "feature": "cat__sigla_uf_RS",
+        "coefficient_log_odds": 0.5705378704669944,
+        "odds_ratio": 1.7692184058882572
+      },
+      {
+        "feature": "cat__sigla_uf_SC",
+        "coefficient_log_odds": -0.1785892897082787,
+        "odds_ratio": 0.8364493672229442
+      },
+      {
+        "feature": "cat__sigla_uf_SE",
+        "coefficient_log_odds": 0.7188803023333389,
+        "odds_ratio": 2.0521341539360325
+      },
+      {
+        "feature": "cat__sigla_uf_SP",
+        "coefficient_log_odds": 0.04517800807441539,
+        "odds_ratio": 1.0462140778875044
+      },
+      {
+        "feature": "cat__sigla_uf_TO",
+        "coefficient_log_odds": 0.3936087622299368,
+        "odds_ratio": 1.4823204954476286
+      }
+    ],
+    "shap_version": "0.54.1",
+    "local_example": {
+      "selection": "Maior score entre os 500 municípios amostrados; sem nome, ID ou rótulo",
+      "score": 0.6611104626231165,
+      "base_log_odds": -0.4708714306273769,
+      "contributions": [
+        {
+          "feature": "UF (conjunto das categorias)",
+          "shap_log_odds": 0.8993622180867431
+        },
+        {
+          "feature": "participacao_agropecuaria_2021",
+          "shap_log_odds": 0.11082119793106202
+        },
+        {
+          "feature": "log1p_pib_por_habitante_reais_2021",
+          "shap_log_odds": 0.0723039452702811
+        },
+        {
+          "feature": "participacao_industria_2021",
+          "shap_log_odds": 0.031301175191771335
+        },
+        {
+          "feature": "log1p_densidade_hab_km2_2022",
+          "shap_log_odds": 0.021924745299221508
+        },
+        {
+          "feature": "participacao_servicos_2021",
+          "shap_log_odds": 0.02111613708699973
+        },
+        {
+          "feature": "log1p_populacao_2022",
+          "shap_log_odds": -0.01771125377647607
+        }
+      ]
+    },
+    "background_requested": 200,
+    "background_effective": 200
+  },
+  "boosting": {
+    "method": "SHAP interventional, saída raw/log-odds, background efetivo de 100 municípios de treino e amostra de 500 municípios de validação; random_state=42 na amostragem.",
+    "feature_dependence": "Independência interventional; não estima efeitos causais ou partilha condicional entre atributos correlacionados",
+    "grouping": "SHAP das categorias UF somados por linha antes da média absoluta; igual peso municipal",
+    "additivity_verified": true,
+    "summary": [
+      {
+        "feature": "UF (conjunto das categorias)",
+        "mean_abs_shap_log_odds": 0.33746218283458607
+      },
+      {
+        "feature": "media_escolar_docentes_superior_AI_2022",
+        "mean_abs_shap_log_odds": 0.07116365465533454
+      },
+      {
+        "feature": "log1p_populacao_2022",
+        "mean_abs_shap_log_odds": 0.058253415659545574
+      },
+      {
+        "feature": "log1p_pib_por_habitante_reais_2021",
+        "mean_abs_shap_log_odds": 0.04182266540574027
+      },
+      {
+        "feature": "participacao_agropecuaria_2021",
+        "mean_abs_shap_log_odds": 0.030516462768455967
+      },
+      {
+        "feature": "percentual_escolas_rurais_2022",
+        "mean_abs_shap_log_odds": 0.02706579800218693
+      },
+      {
+        "feature": "participacao_servicos_2021",
+        "mean_abs_shap_log_odds": 0.016420904857281128
+      },
+      {
+        "feature": "media_escolar_alunos_turma_AI_2022",
+        "mean_abs_shap_log_odds": 0.01440287624752731
+      },
+      {
+        "feature": "log1p_densidade_hab_km2_2022",
+        "mean_abs_shap_log_odds": 0.01367749533663853
+      },
+      {
+        "feature": "participacao_industria_2021",
+        "mean_abs_shap_log_odds": 0.009324624069163111
+      },
+      {
+        "feature": "media_escolar_alunos_turma_2ano_2022",
+        "mean_abs_shap_log_odds": 0.0028466447924717798
+      },
+      {
+        "feature": "missingindicator_media_escolar_alunos_turma_AI_2022",
+        "mean_abs_shap_log_odds": 0.0
+      },
+      {
+        "feature": "missingindicator_media_escolar_alunos_turma_2ano_2022",
+        "mean_abs_shap_log_odds": 0.0
+      },
+      {
+        "feature": "missingindicator_media_escolar_docentes_superior_AI_2022",
+        "mean_abs_shap_log_odds": 0.0
+      }
+    ],
+    "coefficients": [],
+    "shap_version": "0.54.1",
+    "local_example": {
+      "selection": "Maior score entre os 500 municípios amostrados; sem nome, ID ou rótulo",
+      "score": 0.6677681144216796,
+      "base_log_odds": -0.4622774421416139,
+      "contributions": [
+        {
+          "feature": "UF (conjunto das categorias)",
+          "shap_log_odds": 0.7869145971885884
+        },
+        {
+          "feature": "participacao_agropecuaria_2021",
+          "shap_log_odds": 0.13803141288575715
+        },
+        {
+          "feature": "media_escolar_docentes_superior_AI_2022",
+          "shap_log_odds": 0.12871621096535818
+        },
+        {
+          "feature": "log1p_populacao_2022",
+          "shap_log_odds": 0.08490158264292404
+        },
+        {
+          "feature": "log1p_pib_por_habitante_reais_2021",
+          "shap_log_odds": 0.03610246676209499
+        },
+        {
+          "feature": "log1p_densidade_hab_km2_2022",
+          "shap_log_odds": 0.015840638286899775
+        },
+        {
+          "feature": "participacao_servicos_2021",
+          "shap_log_odds": -0.015022274705115706
+        },
+        {
+          "feature": "media_escolar_alunos_turma_AI_2022",
+          "shap_log_odds": -0.013130206777132116
+        },
+        {
+          "feature": "percentual_escolas_rurais_2022",
+          "shap_log_odds": -0.0033717580197844656
+        },
+        {
+          "feature": "participacao_industria_2021",
+          "shap_log_odds": 0.001053697089664638
+        },
+        {
+          "feature": "media_escolar_alunos_turma_2ano_2022",
+          "shap_log_odds": 0.00034888258727733046
+        },
+        {
+          "feature": "missingindicator_media_escolar_alunos_turma_AI_2022",
+          "shap_log_odds": 0.0
+        },
+        {
+          "feature": "missingindicator_media_escolar_alunos_turma_2ano_2022",
+          "shap_log_odds": 0.0
+        },
+        {
+          "feature": "missingindicator_media_escolar_docentes_superior_AI_2022",
+          "shap_log_odds": 0.0
+        }
+      ]
+    },
+    "background_requested": 200,
+    "background_effective": 100
+  }
+}

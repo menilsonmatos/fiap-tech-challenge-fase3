@@ -1,0 +1,619 @@
+{
+  "resumo": {
+    "n": 1610754,
+    "positivos": 956343,
+    "negativos": 654411,
+    "taxa": 59.37238088497685,
+    "taxa_ponderada": 58.823571326543764,
+    "municipios": 5450,
+    "ufs": 25,
+    "taxa_municipal_media": 62.88566279057514,
+    "taxa_municipal_mediana": 64.16666666666667,
+    "taxa_municipal_p10": 36.402255639097746,
+    "taxa_municipal_p90": 87.80699893955463,
+    "municipios_taxa_zero": 2,
+    "municipios_taxa_cem": 58,
+    "municipios_menos_30": 617,
+    "maior_municipio_share_pct": 2.6906653654127197
+  },
+  "por_uf": [
+    {
+      "sigla_uf": "AC",
+      "n": 5748,
+      "positivos": 2806,
+      "municipios": 22,
+      "soma_pesos": 7098.8,
+      "positivos_ponderados": 3418.7,
+      "taxa": 48.816979819067505,
+      "taxa_ponderada": 48.158843748239136
+    },
+    {
+      "sigla_uf": "AL",
+      "n": 30216,
+      "positivos": 14907,
+      "municipios": 102,
+      "soma_pesos": 32155.870000000003,
+      "positivos_ponderados": 15771.71,
+      "taxa": 49.33478951548848,
+      "taxa_ponderada": 49.047685539218804
+    },
+    {
+      "sigla_uf": "AM",
+      "n": 35527,
+      "positivos": 16720,
+      "municipios": 62,
+      "soma_pesos": 45121.37,
+      "positivos_ponderados": 20969.28,
+      "taxa": 47.062797309088864,
+      "taxa_ponderada": 46.4730570015937
+    },
+    {
+      "sigla_uf": "AP",
+      "n": 8287,
+      "positivos": 4128,
+      "municipios": 16,
+      "soma_pesos": 9143.050000000001,
+      "positivos_ponderados": 4505.41,
+      "taxa": 49.81296005792205,
+      "taxa_ponderada": 49.27688244076101
+    },
+    {
+      "sigla_uf": "BA",
+      "n": 103802,
+      "positivos": 37332,
+      "municipios": 407,
+      "soma_pesos": 103802.0,
+      "positivos_ponderados": 37332.0,
+      "taxa": 35.964624959056664,
+      "taxa_ponderada": 35.964624959056664
+    },
+    {
+      "sigla_uf": "CE",
+      "n": 87689,
+      "positivos": 74855,
+      "municipios": 184,
+      "soma_pesos": 89366.21,
+      "positivos_ponderados": 76273.19,
+      "taxa": 85.36418478942626,
+      "taxa_ponderada": 85.34902621471807
+    },
+    {
+      "sigla_uf": "ES",
+      "n": 40525,
+      "positivos": 28891,
+      "municipios": 78,
+      "soma_pesos": 45102.36,
+      "positivos_ponderados": 31984.79,
+      "taxa": 71.29179518815546,
+      "taxa_ponderada": 70.9160008478492
+    },
+    {
+      "sigla_uf": "GO",
+      "n": 70749,
+      "positivos": 51656,
+      "municipios": 245,
+      "soma_pesos": 77134.1,
+      "positivos_ponderados": 56105.52,
+      "taxa": 73.01304612079322,
+      "taxa_ponderada": 72.73763484632607
+    },
+    {
+      "sigla_uf": "MA",
+      "n": 62847,
+      "positivos": 37790,
+      "municipios": 217,
+      "soma_pesos": 69168.14,
+      "positivos_ponderados": 41232.65,
+      "taxa": 60.13015736630229,
+      "taxa_ponderada": 59.6122000678347
+    },
+    {
+      "sigla_uf": "MG",
+      "n": 142430,
+      "positivos": 102498,
+      "municipios": 830,
+      "soma_pesos": 161519.15,
+      "positivos_ponderados": 115409.66,
+      "taxa": 71.96377167731518,
+      "taxa_ponderada": 71.45261722835961
+    },
+    {
+      "sigla_uf": "MS",
+      "n": 36514,
+      "positivos": 20688,
+      "municipios": 79,
+      "soma_pesos": 40500.94,
+      "positivos_ponderados": 22691.45,
+      "taxa": 56.65772032645013,
+      "taxa_ponderada": 56.026971225853025
+    },
+    {
+      "sigla_uf": "MT",
+      "n": 43701,
+      "positivos": 26829,
+      "municipios": 140,
+      "soma_pesos": 49397.94,
+      "positivos_ponderados": 30149.07,
+      "taxa": 61.39218782178897,
+      "taxa_ponderada": 61.03305117581826
+    },
+    {
+      "sigla_uf": "PA",
+      "n": 77334,
+      "positivos": 37225,
+      "municipios": 144,
+      "soma_pesos": 93393.82,
+      "positivos_ponderados": 44439.64,
+      "taxa": 48.13536090206119,
+      "taxa_ponderada": 47.5830627765306
+    },
+    {
+      "sigla_uf": "PB",
+      "n": 29824,
+      "positivos": 16900,
+      "municipios": 221,
+      "soma_pesos": 33630.19,
+      "positivos_ponderados": 18824.96,
+      "taxa": 56.66577253218884,
+      "taxa_ponderada": 55.97637123073048
+    },
+    {
+      "sigla_uf": "PE",
+      "n": 75803,
+      "positivos": 46277,
+      "municipios": 184,
+      "soma_pesos": 80217.74,
+      "positivos_ponderados": 48744.33,
+      "taxa": 61.04903499861483,
+      "taxa_ponderada": 60.76502529241038
+    },
+    {
+      "sigla_uf": "PI",
+      "n": 30973,
+      "positivos": 18648,
+      "municipios": 224,
+      "soma_pesos": 32658.62,
+      "positivos_ponderados": 19518.98,
+      "taxa": 60.207277306040744,
+      "taxa_ponderada": 59.76670171611661
+    },
+    {
+      "sigla_uf": "PR",
+      "n": 119630,
+      "positivos": 84709,
+      "municipios": 399,
+      "soma_pesos": 138750.63,
+      "positivos_ponderados": 97728.2,
+      "taxa": 70.8091615815431,
+      "taxa_ponderada": 70.43441892840414
+    },
+    {
+      "sigla_uf": "RJ",
+      "n": 125536,
+      "positivos": 70131,
+      "municipios": 92,
+      "soma_pesos": 151013.38,
+      "positivos_ponderados": 83392.2,
+      "taxa": 55.86524980881978,
+      "taxa_ponderada": 55.22172935934551
+    },
+    {
+      "sigla_uf": "RN",
+      "n": 19312,
+      "positivos": 7502,
+      "municipios": 167,
+      "soma_pesos": 24767.87,
+      "positivos_ponderados": 9451.52,
+      "taxa": 38.84631317315659,
+      "taxa_ponderada": 38.16040701118021
+    },
+    {
+      "sigla_uf": "RO",
+      "n": 18618,
+      "positivos": 11724,
+      "municipios": 52,
+      "soma_pesos": 21102.7,
+      "positivos_ponderados": 13203.85,
+      "taxa": 62.97131807927812,
+      "taxa_ponderada": 62.56948163031271
+    },
+    {
+      "sigla_uf": "RS",
+      "n": 61053,
+      "positivos": 27644,
+      "municipios": 456,
+      "soma_pesos": 73970.6808818,
+      "positivos_ponderados": 32776.8925023,
+      "taxa": 45.27869228375346,
+      "taxa_ponderada": 44.31065404775061
+    },
+    {
+      "sigla_uf": "SC",
+      "n": 53262,
+      "positivos": 34403,
+      "municipios": 289,
+      "soma_pesos": 75054.25,
+      "positivos_ponderados": 47189.63,
+      "taxa": 64.5920168225001,
+      "taxa_ponderada": 62.874027786567716
+    },
+    {
+      "sigla_uf": "SE",
+      "n": 15671,
+      "positivos": 5989,
+      "municipios": 75,
+      "soma_pesos": 17107.87,
+      "positivos_ponderados": 6508.97,
+      "taxa": 38.21708889030694,
+      "taxa_ponderada": 38.04664169180617
+    },
+    {
+      "sigla_uf": "SP",
+      "n": 298904,
+      "positivos": 167671,
+      "municipios": 626,
+      "soma_pesos": 337766.791291,
+      "positivos_ponderados": 188194.0911462,
+      "taxa": 56.09526804592779,
+      "taxa_ponderada": 55.71716817597473
+    },
+    {
+      "sigla_uf": "TO",
+      "n": 16799,
+      "positivos": 8420,
+      "municipios": 139,
+      "soma_pesos": 19737.55,
+      "positivos_ponderados": 9879.38,
+      "taxa": 50.12203107327817,
+      "taxa_ponderada": 50.05373007288138
+    }
+  ],
+  "relacoes": [
+    {
+      "feature": "log1p_populacao_2022",
+      "pearson_municipal": -0.16730507987404042,
+      "spearman_municipal": -0.1877333494640504,
+      "pearson_aluno_contexto": -0.05867417210697562,
+      "pearson_residuos_dentro_uf": -0.21655019778202886,
+      "pearson_sem_anomalia": -0.16725261078270032
+    },
+    {
+      "feature": "log1p_densidade_hab_km2_2022",
+      "pearson_municipal": -0.03347926712199566,
+      "spearman_municipal": -0.02078286807351295,
+      "pearson_aluno_contexto": -0.03549832331690614,
+      "pearson_residuos_dentro_uf": -0.10611286589773726,
+      "pearson_sem_anomalia": -0.03341440254815315
+    },
+    {
+      "feature": "log1p_pib_por_habitante_reais_2021",
+      "pearson_municipal": 0.10857035684026303,
+      "spearman_municipal": 0.11547744849972674,
+      "pearson_aluno_contexto": 0.022334144111942206,
+      "pearson_residuos_dentro_uf": 0.029290103711592838,
+      "pearson_sem_anomalia": 0.10880866832088625
+    },
+    {
+      "feature": "participacao_agropecuaria_2021",
+      "pearson_municipal": 0.09598272973114468,
+      "spearman_municipal": 0.13354084750302173,
+      "pearson_aluno_contexto": 0.04234599632186217,
+      "pearson_residuos_dentro_uf": 0.1166176099218783,
+      "pearson_sem_anomalia": 0.09664664409957925
+    },
+    {
+      "feature": "participacao_industria_2021",
+      "pearson_municipal": 0.016942745938071123,
+      "spearman_municipal": 0.01092395039030681,
+      "pearson_aluno_contexto": 0.017015747241183432,
+      "pearson_residuos_dentro_uf": -0.031049920940351597,
+      "pearson_sem_anomalia": 0.015200768353432495
+    },
+    {
+      "feature": "participacao_servicos_2021",
+      "pearson_municipal": 0.02571027665776735,
+      "spearman_municipal": 0.04657481929251141,
+      "pearson_aluno_contexto": -0.02887100529882725,
+      "pearson_residuos_dentro_uf": -0.11285080118543862,
+      "pearson_sem_anomalia": 0.026642995665107968
+    },
+    {
+      "feature": "participacao_administracao_publica_2021",
+      "pearson_municipal": -0.14066462291169826,
+      "spearman_municipal": -0.1258366800164979,
+      "pearson_aluno_contexto": -0.028756441383687006,
+      "pearson_residuos_dentro_uf": -0.0037195444142855394,
+      "pearson_sem_anomalia": -0.14029953038856965
+    }
+  ],
+  "extremos": [
+    {
+      "feature": "n",
+      "min": 6,
+      "p01": 12.0,
+      "median": 103.0,
+      "p99": 3182.6700000000037,
+      "max": 43340,
+      "iqr_flag_count": 585,
+      "min_municipio": "Verdelândia - MG",
+      "max_municipio": "Rio de Janeiro - RJ"
+    },
+    {
+      "feature": "taxa",
+      "min": 0.0,
+      "p01": 20.382102272727273,
+      "median": 64.16666666666667,
+      "p99": 100.0,
+      "max": 100.0,
+      "iqr_flag_count": 3,
+      "min_municipio": "São Pedro - RN",
+      "max_municipio": "Bacurituba - MA"
+    },
+    {
+      "feature": "populacao_2022",
+      "min": 833.0,
+      "p01": 1752.41,
+      "median": 11173.0,
+      "p99": 418437.9700000001,
+      "max": 11451999.0,
+      "iqr_flag_count": 596,
+      "min_municipio": "Serra da Saudade - MG",
+      "max_municipio": "São Paulo - SP"
+    },
+    {
+      "feature": "area_km2_2022",
+      "min": 3.565,
+      "p01": 42.42066,
+      "median": 420.49,
+      "p99": 18028.015700000054,
+      "max": 159533.306,
+      "iqr_flag_count": 647,
+      "min_municipio": "Santa Cruz de Minas - MG",
+      "max_municipio": "Altamira - PA"
+    },
+    {
+      "feature": "densidade_hab_km2_2022",
+      "min": 0.15,
+      "p01": 0.9098,
+      "median": 24.645,
+      "p99": 2226.7963,
+      "max": 13416.81,
+      "iqr_flag_count": 641,
+      "min_municipio": "Barcelos - AM",
+      "max_municipio": "Taboão da Serra - SP"
+    },
+    {
+      "feature": "pib_por_habitante_reais_2021",
+      "min": 5406.4506713368355,
+      "p01": 7174.370012200541,
+      "median": 23220.228886841476,
+      "p99": 201537.72251455332,
+      "max": 920828.362305581,
+      "iqr_flag_count": 310,
+      "min_municipio": "Santana do Maranhão - MA",
+      "max_municipio": "Catas Altas - MG"
+    },
+    {
+      "feature": "participacao_agropecuaria_2021",
+      "min": -41.9,
+      "p01": 0.07,
+      "median": 18.74,
+      "p99": 73.79530000000001,
+      "max": 93.5,
+      "iqr_flag_count": 28,
+      "min_municipio": "Cachoeira Dourada - GO",
+      "max_municipio": "Sucupira - TO"
+    },
+    {
+      "feature": "participacao_industria_2021",
+      "min": 0.48,
+      "p01": 2.0198,
+      "median": 7.2,
+      "p99": 71.23770000000006,
+      "max": 209.6,
+      "iqr_flag_count": 418,
+      "min_municipio": "Sucupira - TO",
+      "max_municipio": "Cachoeira Dourada - GO"
+    },
+    {
+      "feature": "participacao_servicos_2021",
+      "min": -42.01,
+      "p01": 9.0741,
+      "median": 29.3,
+      "p99": 68.44770000000005,
+      "max": 87.67,
+      "iqr_flag_count": 72,
+      "min_municipio": "Cachoeira Dourada - GO",
+      "max_municipio": "Osasco - SP"
+    },
+    {
+      "feature": "participacao_administracao_publica_2021",
+      "min": -25.7,
+      "p01": 4.4994000000000005,
+      "median": 26.74,
+      "p99": 68.41100000000002,
+      "max": 76.29,
+      "iqr_flag_count": 0,
+      "min_municipio": "Cachoeira Dourada - GO",
+      "max_municipio": "Santo Antônio dos Milagres - PI"
+    }
+  ],
+  "cobertura_gold": [
+    {
+      "municipio_na_gold_fase2": 0,
+      "n": 42157,
+      "positivos": 19613,
+      "municipios": 218,
+      "taxa": 46.52370899257537
+    },
+    {
+      "municipio_na_gold_fase2": 1,
+      "n": 1568597,
+      "positivos": 936730,
+      "municipios": 5232,
+      "taxa": 59.71769676978854
+    }
+  ],
+  "tamanho_municipal": [
+    {
+      "n": "<30",
+      "municipios": 617,
+      "alunos": 12587,
+      "taxa_media_municipal": 64.68339240604362
+    },
+    {
+      "n": "30–99",
+      "municipios": 2052,
+      "alunos": 124628,
+      "taxa_media_municipal": 64.92597092088509
+    },
+    {
+      "n": "100–499",
+      "municipios": 2191,
+      "alunos": 478039,
+      "taxa_media_municipal": 61.509862432534256
+    },
+    {
+      "n": "500–999",
+      "municipios": 309,
+      "alunos": 213404,
+      "taxa_media_municipal": 60.415357072008426
+    },
+    {
+      "n": "≥1000",
+      "municipios": 281,
+      "alunos": 782096,
+      "taxa_media_municipal": 57.48278590575178
+    }
+  ],
+  "pearson_indicadores": {
+    "log1p_populacao_2022": {
+      "log1p_populacao_2022": 1.0,
+      "log1p_densidade_hab_km2_2022": 0.5677677048031505,
+      "log1p_pib_por_habitante_reais_2021": 0.05508469010020925,
+      "participacao_agropecuaria_2021": -0.4616619808442721,
+      "participacao_industria_2021": 0.28276950690914915,
+      "participacao_servicos_2021": 0.5683847437425602,
+      "participacao_administracao_publica_2021": -0.19973072146079768
+    },
+    "log1p_densidade_hab_km2_2022": {
+      "log1p_populacao_2022": 0.5677677048031505,
+      "log1p_densidade_hab_km2_2022": 1.0,
+      "log1p_pib_por_habitante_reais_2021": 0.03816552764371038,
+      "participacao_agropecuaria_2021": -0.5598115931983263,
+      "participacao_industria_2021": 0.28914556017633425,
+      "participacao_servicos_2021": 0.6046049614569975,
+      "participacao_administracao_publica_2021": -0.12666586810781
+    },
+    "log1p_pib_por_habitante_reais_2021": {
+      "log1p_populacao_2022": 0.05508469010020925,
+      "log1p_densidade_hab_km2_2022": 0.03816552764371038,
+      "log1p_pib_por_habitante_reais_2021": 1.0,
+      "participacao_agropecuaria_2021": 0.29725411033550764,
+      "participacao_industria_2021": 0.523614050834842,
+      "participacao_servicos_2021": 0.1101168824415688,
+      "participacao_administracao_publica_2021": -0.8884100740229419
+    },
+    "participacao_agropecuaria_2021": {
+      "log1p_populacao_2022": -0.4616619808442721,
+      "log1p_densidade_hab_km2_2022": -0.5598115931983263,
+      "log1p_pib_por_habitante_reais_2021": 0.29725411033550764,
+      "participacao_agropecuaria_2021": 1.0,
+      "participacao_industria_2021": -0.4163246241456328,
+      "participacao_servicos_2021": -0.5277498014501693,
+      "participacao_administracao_publica_2021": -0.299694914694129
+    },
+    "participacao_industria_2021": {
+      "log1p_populacao_2022": 0.28276950690914915,
+      "log1p_densidade_hab_km2_2022": 0.28914556017633425,
+      "log1p_pib_por_habitante_reais_2021": 0.523614050834842,
+      "participacao_agropecuaria_2021": -0.4163246241456328,
+      "participacao_industria_2021": 1.0,
+      "participacao_servicos_2021": 0.0650516532530232,
+      "participacao_administracao_publica_2021": -0.5057577260404141
+    },
+    "participacao_servicos_2021": {
+      "log1p_populacao_2022": 0.5683847437425602,
+      "log1p_densidade_hab_km2_2022": 0.6046049614569975,
+      "log1p_pib_por_habitante_reais_2021": 0.1101168824415688,
+      "participacao_agropecuaria_2021": -0.5277498014501693,
+      "participacao_industria_2021": 0.0650516532530232,
+      "participacao_servicos_2021": 1.0,
+      "participacao_administracao_publica_2021": -0.2691053322841021
+    },
+    "participacao_administracao_publica_2021": {
+      "log1p_populacao_2022": -0.19973072146079768,
+      "log1p_densidade_hab_km2_2022": -0.12666586810781,
+      "log1p_pib_por_habitante_reais_2021": -0.8884100740229419,
+      "participacao_agropecuaria_2021": -0.299694914694129,
+      "participacao_industria_2021": -0.5057577260404141,
+      "participacao_servicos_2021": -0.2691053322841021,
+      "participacao_administracao_publica_2021": 1.0
+    }
+  },
+  "spearman_indicadores": {
+    "log1p_populacao_2022": {
+      "log1p_populacao_2022": 1.0,
+      "log1p_densidade_hab_km2_2022": 0.46360629300225037,
+      "log1p_pib_por_habitante_reais_2021": 0.006507732734011848,
+      "participacao_agropecuaria_2021": -0.47850909697853133,
+      "participacao_industria_2021": 0.3855695561140759,
+      "participacao_servicos_2021": 0.5098494040797942,
+      "participacao_administracao_publica_2021": -0.1652321567632095
+    },
+    "log1p_densidade_hab_km2_2022": {
+      "log1p_populacao_2022": 0.46360629300225037,
+      "log1p_densidade_hab_km2_2022": 1.0,
+      "log1p_pib_por_habitante_reais_2021": 0.024000260820917538,
+      "participacao_agropecuaria_2021": -0.5870837358404675,
+      "participacao_industria_2021": 0.39655780480047087,
+      "participacao_servicos_2021": 0.5654800921825563,
+      "participacao_administracao_publica_2021": -0.09731202860317728
+    },
+    "log1p_pib_por_habitante_reais_2021": {
+      "log1p_populacao_2022": 0.006507732734011848,
+      "log1p_densidade_hab_km2_2022": 0.024000260820917538,
+      "log1p_pib_por_habitante_reais_2021": 1.0,
+      "participacao_agropecuaria_2021": 0.21026571493965507,
+      "participacao_industria_2021": 0.47353064547639623,
+      "participacao_servicos_2021": 0.12201358336232423,
+      "participacao_administracao_publica_2021": -0.9448855539463226
+    },
+    "participacao_agropecuaria_2021": {
+      "log1p_populacao_2022": -0.47850909697853133,
+      "log1p_densidade_hab_km2_2022": -0.5870837358404675,
+      "log1p_pib_por_habitante_reais_2021": 0.21026571493965507,
+      "participacao_agropecuaria_2021": 1.0,
+      "participacao_industria_2021": -0.46455042550621267,
+      "participacao_servicos_2021": -0.5182662156438083,
+      "participacao_administracao_publica_2021": -0.17806039410652116
+    },
+    "participacao_industria_2021": {
+      "log1p_populacao_2022": 0.3855695561140759,
+      "log1p_densidade_hab_km2_2022": 0.39655780480047087,
+      "log1p_pib_por_habitante_reais_2021": 0.47353064547639623,
+      "participacao_agropecuaria_2021": -0.46455042550621267,
+      "participacao_industria_2021": 1.0,
+      "participacao_servicos_2021": 0.3714914863593026,
+      "participacao_administracao_publica_2021": -0.5242499891941457
+    },
+    "participacao_servicos_2021": {
+      "log1p_populacao_2022": 0.5098494040797942,
+      "log1p_densidade_hab_km2_2022": 0.5654800921825563,
+      "log1p_pib_por_habitante_reais_2021": 0.12201358336232423,
+      "participacao_agropecuaria_2021": -0.5182662156438083,
+      "participacao_industria_2021": 0.3714914863593026,
+      "participacao_servicos_2021": 1.0,
+      "participacao_administracao_publica_2021": -0.22167945100706613
+    },
+    "participacao_administracao_publica_2021": {
+      "log1p_populacao_2022": -0.1652321567632095,
+      "log1p_densidade_hab_km2_2022": -0.09731202860317728,
+      "log1p_pib_por_habitante_reais_2021": -0.9448855539463226,
+      "participacao_agropecuaria_2021": -0.17806039410652116,
+      "participacao_industria_2021": -0.5242499891941457,
+      "participacao_servicos_2021": -0.22167945100706613,
+      "participacao_administracao_publica_2021": 1.0
+    }
+  }
+}

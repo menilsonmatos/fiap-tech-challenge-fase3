@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-10-27T05:03:24.516315+00:00",
+  "model": "logistica_contexto",
+  "model_sha256": "e35fdf1cc3d78b103df0aa68c4df3f2112a6b241344f7c295a219a9137153d56",
+  "fit": "Artefato já treinado exclusivamente no treino; nenhum reajuste",
+  "threshold": 0.5,
+  "threshold_role": "Convenção comparativa, sem capacidade real ou uso operacional",
+  "positive_class": "não alfabetizado",
+  "primary_metric": "AP",
+  "other_metrics": [
+    "ROC AUC",
+    "precision",
+    "recall",
+    "F1",
+    "Brier",
+    "confusion_matrix"
+  ],
+  "baselines": [
+    "prevalência global no treino",
+    "prevalência por UF no treino"
+  ],
+  "test_once": true,
+  "post_test_tuning": false,
+  "reason_for_model": "Simplicidade e ausência de ganho claro dos modelos enriquecidos na validação; decisão tomada antes de abrir o teste"
+}

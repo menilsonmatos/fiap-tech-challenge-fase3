@@ -1,0 +1,123 @@
+{
+  "method": "KMeans numérico, k selecionado por silhouette apenas no treino; imputação, escala e PCA ajustados somente no treino",
+  "features": [
+    "log1p_populacao_2022",
+    "log1p_densidade_hab_km2_2022",
+    "log1p_pib_por_habitante_reais_2021",
+    "participacao_agropecuaria_2021",
+    "participacao_industria_2021",
+    "participacao_servicos_2021",
+    "media_escolar_alunos_turma_AI_2022",
+    "media_escolar_alunos_turma_2ano_2022",
+    "media_escolar_docentes_superior_AI_2022",
+    "percentual_escolas_rurais_2022"
+  ],
+  "target_used": false,
+  "test_used": false,
+  "candidates": [
+    {
+      "k": 3,
+      "silhouette_train_sample": 0.2114377364802687,
+      "municipios_por_cluster": [
+        1096,
+        937,
+        1234
+      ]
+    },
+    {
+      "k": 4,
+      "silhouette_train_sample": 0.210579028050303,
+      "municipios_por_cluster": [
+        709,
+        1199,
+        339,
+        1020
+      ]
+    },
+    {
+      "k": 5,
+      "silhouette_train_sample": 0.17734891436217715,
+      "municipios_por_cluster": [
+        690,
+        387,
+        978,
+        319,
+        893
+      ]
+    }
+  ],
+  "selected_k": 3,
+  "pca_explained_variance_ratio": [
+    0.35149844287027315,
+    0.19808309565611373
+  ],
+  "profiles": [
+    {
+      "conjunto": "treino",
+      "cluster": 0,
+      "municipios": 1096,
+      "alunos": 84956,
+      "populacao_mediana": 5095.0,
+      "pib_habitante_mediano": 34651.94122888908,
+      "turma_AI_media_escolas_mediana": 16.6,
+      "docentes_superior_media_escolas_mediana": 98.33095238095237,
+      "percentual_rural_mediano": 22.22222222222222
+    },
+    {
+      "conjunto": "treino",
+      "cluster": 1,
+      "municipios": 937,
+      "alunos": 705765,
+      "populacao_mediana": 31236.0,
+      "pib_habitante_mediano": 34273.110785033015,
+      "turma_AI_media_escolas_mediana": 20.788888888888888,
+      "docentes_superior_media_escolas_mediana": 96.9,
+      "percentual_rural_mediano": 12.5
+    },
+    {
+      "conjunto": "treino",
+      "cluster": 2,
+      "municipios": 1234,
+      "alunos": 178218,
+      "populacao_mediana": 12310.0,
+      "pib_habitante_mediano": 11423.373168189366,
+      "turma_AI_media_escolas_mediana": 16.571982758620692,
+      "docentes_superior_media_escolas_mediana": 80.45071428571427,
+      "percentual_rural_mediano": 66.66666666666667
+    },
+    {
+      "conjunto": "validacao",
+      "cluster": 0,
+      "municipios": 388,
+      "alunos": 30192,
+      "populacao_mediana": 5186.5,
+      "pib_habitante_mediano": 35302.97949186702,
+      "turma_AI_media_escolas_mediana": 16.4,
+      "docentes_superior_media_escolas_mediana": 96.4375,
+      "percentual_rural_mediano": 18.333333333333336
+    },
+    {
+      "conjunto": "validacao",
+      "cluster": 1,
+      "municipios": 314,
+      "alunos": 227773,
+      "populacao_mediana": 38858.5,
+      "pib_habitante_mediano": 34135.98478230399,
+      "turma_AI_media_escolas_mediana": 21.13148148148148,
+      "docentes_superior_media_escolas_mediana": 96.57714285714286,
+      "percentual_rural_mediano": 14.285714285714286
+    },
+    {
+      "conjunto": "validacao",
+      "cluster": 2,
+      "municipios": 394,
+      "alunos": 62674,
+      "populacao_mediana": 11332.0,
+      "pib_habitante_mediano": 11559.985775572157,
+      "turma_AI_media_escolas_mediana": 16.365000000000002,
+      "docentes_superior_media_escolas_mediana": 81.9175,
+      "percentual_rural_mediano": 66.66666666666667
+    }
+  ],
+  "limitations": "Agrupamento exploratório sensível à escala e extremos; sem validação de estabilidade por reamostragem; clusters não são categorias de risco nem efeitos causais."
+}

@@ -1,0 +1,32 @@
+{
+  "verify": {
+    "exit_code": 0,
+    "stdout": "                n  alfabetizados  nao_alfabetizados\nconjunto                                           \nteste      321176         190408             130768\ntreino     968939         575863             393076\nvalidacao  320639         190072             130567\n",
+    "stderr": ""
+  },
+  "cross-validate": {
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"candidate\": \"logistica_contexto\",\n    \"fold_AP\": [\n      0.5104395152368002,\n      0.513034372321043,\n      0.5362360095740568\n    ],\n    \"mean_AP\": 0.5199032990439667\n  },\n  {\n    \"candidate\": \"logistica_educacional\",\n    \"fold_AP\": [\n      0.515115005657765,\n      0.5193045362738754,\n      0.5332380012467324\n    ],\n    \"mean_AP\": 0.5225525143927909\n  },\n  {\n    \"candidate\": \"rf_prof8\",\n    \"fold_AP\": [\n      0.522823723800953,\n      0.5171187653955176,\n      0.5301735476692899\n    ],\n    \"mean_AP\": 0.5233720122885869\n  },\n  {\n    \"candidate\": \"rf_prof12\",\n    \"fold_AP\": [\n      0.5194779518305639,\n      0.5208238880081884,\n      0.5329501969628505\n    ],\n    \"mean_AP\": 0.5244173456005342\n  },\n  {\n    \"candidate\": \"gb_prof2\",\n    \"fold_AP\": [\n      0.5242844254995179,\n      0.5236671665090636,\n      0.5319392381468646\n    ],\n    \"mean_AP\": 0.5266302767184821\n  },\n  {\n    \"candidate\": \"gb_prof3\",\n    \"fold_AP\": [\n      0.5257863595215384,\n      0.523182170273232,\n      0.5385198365163864\n    ],\n    \"mean_AP\": 0.5291627887703856\n  }\n]\n",
+    "stderr": ""
+  },
+  "explain": {
+    "exit_code": 0,
+    "stdout": "C:\\Users\\menil\\Documents\\Codex\\2026-10-26\\on\\outputs\\tech-challenge-fase3-v1\\work\\shap_reproduzido.json\n",
+    "stderr": "Background dataset has 200 samples but max_samples=100. Subsampling to 100 samples for SHAP value computation. To use all samples, set max_samples=200 when initializing the masker.\n"
+  },
+  "profiles": {
+    "exit_code": 0,
+    "stdout": "{\n  \"candidates\": [\n    {\n      \"k\": 3,\n      \"silhouette\": 0.2114377364802687,\n      \"counts\": [\n        1096,\n        937,\n        1234\n      ]\n    },\n    {\n      \"k\": 4,\n      \"silhouette\": 0.210579028050303,\n      \"counts\": [\n        709,\n        1199,\n        339,\n        1020\n      ]\n    },\n    {\n      \"k\": 5,\n      \"silhouette\": 0.17734891436217715,\n      \"counts\": [\n        690,\n        387,\n        978,\n        319,\n        893\n      ]\n    }\n  ],\n  \"selected_k\": 3,\n  \"pca_explained_variance_ratio\": [\n    0.35149844287027304,\n    0.19808309565611382\n  ],\n  \"target_used\": false,\n  \"test_used\": false\n}\n",
+    "stderr": ""
+  },
+  "plot-pr": {
+    "exit_code": 0,
+    "stdout": "C:\\Users\\menil\\Documents\\Codex\\2026-10-26\\on\\outputs\\tech-challenge-fase3-v1\\work\\validacao_pr.png\n",
+    "stderr": ""
+  },
+  "tests": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_inconsistent_or_duplicate_context_is_rejected (test_contracts.DataContracts.test_inconsistent_or_duplicate_context_is_rejected) ... ok\ntest_no_target_or_identifiers_in_predictors (test_contracts.DataContracts.test_no_target_or_identifiers_in_predictors) ... ok\ntest_positive_class_is_not_literate (test_contracts.DataContracts.test_positive_class_is_not_literate) ... ok\ntest_final_protocol_is_frozen_without_scoring_test (test_reproduction.Reproduction.test_final_protocol_is_frozen_without_scoring_test) ... ok\ntest_split_and_frozen_validation_metrics (test_reproduction.Reproduction.test_split_and_frozen_validation_metrics) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.251s\n\nOK\n"
+  }
+}

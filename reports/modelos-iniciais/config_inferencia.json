@@ -1,0 +1,19 @@
+{
+  "models": [
+    "logistica.joblib",
+    "arvore.joblib"
+  ],
+  "positive_class": 1,
+  "mapping": "y_risco = 1 - alfabetizado",
+  "features": [
+    "log1p_populacao_2022",
+    "log1p_densidade_hab_km2_2022",
+    "log1p_pib_por_habitante_reais_2021",
+    "participacao_agropecuaria_2021",
+    "participacao_industria_2021",
+    "participacao_servicos_2021",
+    "sigla_uf"
+  ],
+  "threshold": 0.5,
+  "test_reserved": true
+}
