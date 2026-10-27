@@ -1,0 +1,26 @@
+[
+  {
+    "conjunto": "teste",
+    "escolas": 7485,
+    "alunos": 321176,
+    "alunos_sem_correspondencia": 321176,
+    "alunos_sem_atu": 321176,
+    "alunos_sem_dsu": 321176
+  },
+  {
+    "conjunto": "treino",
+    "escolas": 21821,
+    "alunos": 968939,
+    "alunos_sem_correspondencia": 968939,
+    "alunos_sem_atu": 968939,
+    "alunos_sem_dsu": 968939
+  },
+  {
+    "conjunto": "validacao",
+    "escolas": 7614,
+    "alunos": 320639,
+    "alunos_sem_correspondencia": 320639,
+    "alunos_sem_atu": 320639,
+    "alunos_sem_dsu": 320639
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "conjunto": "teste",
+    "alunos": 321176,
+    "municipios": 1087,
+    "sem_ATU_AI_alunos": 0,
+    "sem_ATU_2ano_alunos": 0,
+    "sem_DSU_AI_alunos": 0,
+    "sem_contexto_alunos": 0
+  },
+  {
+    "conjunto": "treino",
+    "alunos": 968939,
+    "municipios": 3267,
+    "sem_ATU_AI_alunos": 109,
+    "sem_ATU_2ano_alunos": 226,
+    "sem_DSU_AI_alunos": 88,
+    "sem_contexto_alunos": 0
+  },
+  {
+    "conjunto": "validacao",
+    "alunos": 320639,
+    "municipios": 1096,
+    "sem_ATU_AI_alunos": 0,
+    "sem_ATU_2ano_alunos": 108,
+    "sem_DSU_AI_alunos": 0,
+    "sem_contexto_alunos": 0
+  }
+]

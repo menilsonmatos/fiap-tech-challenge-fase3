@@ -1,0 +1,11 @@
+{
+  "first_validation_block_rows": 10,
+  "new_columns": [
+    "media_escolar_alunos_turma_AI_2022",
+    "media_escolar_alunos_turma_2ano_2022",
+    "media_escolar_docentes_superior_AI_2022",
+    "percentual_escolas_rurais_2022"
+  ],
+  "original_databases_opened_read_only": true,
+  "test_rows_read": 0
+}

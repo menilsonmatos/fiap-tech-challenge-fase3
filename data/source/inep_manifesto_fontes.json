@@ -1,0 +1,33 @@
+[
+  {
+    "indicator": "ATU",
+    "reference_year": 2022,
+    "url": "https://download.inep.gov.br/informacoes_estatisticas/indicadores_educacionais/2022/ATU_2022_ESCOLAS.zip",
+    "sha256_zip": "ab6bc8cf9e0857fd0e841d9ebe632fa53018ebbce371f6b5fbc68d00e1c5326b",
+    "used_file": "ATU_2022_ESCOLAS/ATU_ESCOLAS_2022.ods",
+    "sha256_used_file": "2d96ec0a14139cb6a2987c75616606c27c4dcad80117ff54e80740b3c17e7203",
+    "xlsx_md5_match": false,
+    "used_file_md5_official_match": true,
+    "rows": 174319,
+    "columns": {
+      "FUN_AI_CAT_0": "alunos_turma_anos_iniciais_2022",
+      "FUN_02_CAT_0": "alunos_turma_2ano_2022"
+    },
+    "retrieved_at": "2026-10-27T04:42:54.609371+00:00"
+  },
+  {
+    "indicator": "DSU",
+    "reference_year": 2022,
+    "url": "https://download.inep.gov.br/informacoes_estatisticas/indicadores_educacionais/2022/DSU_2022_ESCOLAS.zip",
+    "sha256_zip": "cd74a81d31157b40063ffa7a0f06c931bc08a051b215781648297f6ea05f3218",
+    "used_file": "DSU_2022_ESCOLAS/DSU_ESCOLAS_2022.xlsx",
+    "sha256_used_file": "948a3b15f261ca3c312f44bccb9ca9b94c722d22c5edbcc05aab8c31388179b7",
+    "xlsx_md5_match": true,
+    "used_file_md5_official_match": true,
+    "rows": 178111,
+    "columns": {
+      "FUN_AI_CAT_0": "docentes_superior_anos_iniciais_2022"
+    },
+    "retrieved_at": "2026-10-27T04:43:16.070380+00:00"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "file": "censo2022.json",
+    "url": "https://servicodados.ibge.gov.br/api/v3/agregados/4714/periodos/2022/variaveis/93|6318|614?localidades=N6%5Ball%5D",
+    "reference_year": 2022,
+    "retrieved_at": "2026-10-27T03:30:22.500855+00:00",
+    "sha256": "145bd9448282278e3de4290bf1e26e025bc783965defb6f82c71be467439b641",
+    "variables": [
+      {
+        "id": "93",
+        "name": "População residente",
+        "unit": "Pessoas",
+        "locations": 5570
+      },
+      {
+        "id": "6318",
+        "name": "Área da unidade territorial",
+        "unit": "Quilômetros quadrados",
+        "locations": 5570
+      },
+      {
+        "id": "614",
+        "name": "Densidade demográfica",
+        "unit": "Habitante por quilômetro quadrado",
+        "locations": 5570
+      }
+    ]
+  },
+  {
+    "file": "economia2021.json",
+    "url": "https://servicodados.ibge.gov.br/api/v3/agregados/5938/periodos/2021/variaveis/37|516|520|6574|528?localidades=N6%5Ball%5D",
+    "reference_year": 2021,
+    "retrieved_at": "2026-10-27T03:30:26.752217+00:00",
+    "sha256": "d709c2296d017ebec119bca39dc603f5b7d4808c01334ea6422fef9fbc1a293f",
+    "variables": [
+      {
+        "id": "37",
+        "name": "Produto Interno Bruto a preços correntes",
+        "unit": "Mil Reais",
+        "locations": 5570
+      },
+      {
+        "id": "516",
+        "name": "Participação do valor adicionado bruto a preços correntes da agropecuária no valor adicionado bruto a preços correntes total",
+        "unit": "%",
+        "locations": 5570
+      },
+      {
+        "id": "520",
+        "name": "Participação do valor adicionado bruto a preços correntes da indústria no valor adicionado bruto a preços correntes total",
+        "unit": "%",
+        "locations": 5570
+      },
+      {
+        "id": "6574",
+        "name": "Participação do valor adicionado bruto a preços correntes dos serviços, exclusive administração, defesa, educação e saúde públicas e seguridade social, no valor adicionado bruto a preços correntes total",
+        "unit": "%",
+        "locations": 5570
+      },
+      {
+        "id": "528",
+        "name": "Participação do valor adicionado bruto a preços correntes da administração, defesa, educação e saúde públicas e seguridade social no valor adicionado bruto a preços correntes total",
+        "unit": "%",
+        "locations": 5570
+      }
+    ]
+  },
+  {
+    "file": "pop2021.json",
+    "url": "https://servicodados.ibge.gov.br/api/v3/agregados/6579/periodos/2021/variaveis/9324?localidades=N6%5Ball%5D",
+    "reference_year": 2021,
+    "retrieved_at": "2026-10-27T03:30:27.361280+00:00",
+    "sha256": "cbd91af7081c16b406a79535822d75258a7da86cc51320c07aef940c3be74ffc",
+    "variables": [
+      {
+        "id": "9324",
+        "name": "População residente estimada",
+        "unit": "Pessoas",
+        "locations": 5571
+      }
+    ]
+  }
+]

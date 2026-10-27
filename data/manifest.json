@@ -1,0 +1,12 @@
+{
+  "dataset_sha256": "3c6969064b47ee354c8a40489fb1b995052b2d1b13d839dfc9e377ce90be1e20",
+  "unit": "município; duas contagens de classes que representam alunos válidos de 2024",
+  "target": "não alfabetizado (classe positiva)",
+  "rows": 5450,
+  "students": 1610754,
+  "contains_individual_identifiers": false,
+  "reference_periods": "Alvo 2024; contextos 2021/2022",
+  "derivation": "Agregação sem perdas para modelos com X constante por município; não é uma base de características pessoais",
+  "source_backup_sha256": "170114395cdcd07153fe844d337cc3c45ff8a54f0ea9a3210d64c44ebfe00077",
+  "json_float_precision": 15
+}
