@@ -1,0 +1,13 @@
+{
+  "assignment_file": "atribuicao_municipios.json",
+  "assignment_sha256": "35b1bcc95d3afcac21289cfa5979b1c6be703e26c7391e738a951814985084cd",
+  "join_key": "id_municipio",
+  "join_cardinality": "many_to_one",
+  "training": "treino",
+  "validation": "validacao",
+  "test": "teste",
+  "status": "fixada_antes_do_treinamento",
+  "independent_reconciliation": "passed",
+  "original_database_modified": false,
+  "no_model_scores_used": true
+}

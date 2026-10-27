@@ -1,0 +1,2948 @@
+{
+  "run": {
+    "positive_class": "nao_alfabetizado = 1 - alfabetizado",
+    "threshold": 0.5,
+    "selection_metric": "average_precision (AP, resumo da curva precisão-recall; maior melhor)",
+    "secondary_metrics": [
+      "recall",
+      "precision",
+      "f1",
+      "ROC AUC",
+      "balanced accuracy",
+      "matriz de confusão",
+      "Brier",
+      "log loss"
+    ],
+    "split_sha256": "35b1bcc95d3afcac21289cfa5979b1c6be703e26c7391e738a951814985084cd",
+    "features": [
+      "log1p_populacao_2022",
+      "log1p_densidade_hab_km2_2022",
+      "log1p_pib_por_habitante_reais_2021",
+      "participacao_agropecuaria_2021",
+      "participacao_industria_2021",
+      "participacao_servicos_2021",
+      "sigla_uf"
+    ],
+    "sklearn_version": "1.9.1",
+    "numpy_version": "2.5.4",
+    "model_parameters": {
+      "logistica": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 3000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": 42,
+        "solver": "lbfgs",
+        "tol": 1e-08,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "arvore": {
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 5,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.01,
+        "monotonic_cst": null,
+        "random_state": 42,
+        "splitter": "best"
+      }
+    },
+    "warnings": {
+      "logistica": [],
+      "arvore": []
+    },
+    "fit_weight": "Contagem de alunos com features/rótulo idênticos; não peso amostral INEP",
+    "preprocessing": "Imputação mediana e StandardScaler ajustados só nos municípios de treino, com igual peso municipal; OneHotEncoder para UF",
+    "test_status": "Nenhuma previsão ou métrica calculada no teste; usados apenas IDs para comprovar disjunção",
+    "models_use_only_context": true
+  },
+  "metrics": {
+    "referencia_global": {
+      "treino": {
+        "alunos": 968939,
+        "prevalencia_nao_alfabetizado": 0.4056767247473783,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "average_precision": 0.4056767247473783,
+        "roc_auc": 0.5,
+        "accuracy": 0.5943232752526216,
+        "balanced_accuracy": 0.5,
+        "brier": 0.24110311974561818,
+        "log_loss": 0.6752463491019505,
+        "matriz_confusao_TN_FP_FN_TP": [
+          [
+            575863,
+            0
+          ],
+          [
+            393076,
+            0
+          ]
+        ]
+      },
+      "validacao": {
+        "alunos": 320639,
+        "prevalencia_nao_alfabetizado": 0.40720873006714714,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "average_precision": 0.40720873006714714,
+        "roc_auc": 0.5,
+        "accuracy": 0.5927912699328528,
+        "balanced_accuracy": 0.5,
+        "brier": 0.24139212726454823,
+        "log_loss": 0.6758313710829228,
+        "matriz_confusao_TN_FP_FN_TP": [
+          [
+            190072,
+            0
+          ],
+          [
+            130567,
+            0
+          ]
+        ]
+      }
+    },
+    "referencia_uf": {
+      "treino": {
+        "alunos": 968939,
+        "prevalencia_nao_alfabetizado": 0.4056767247473783,
+        "precision": 0.5664144389708353,
+        "recall": 0.3045034548026336,
+        "f1": 0.3960767249124328,
+        "average_precision": 0.5191801573443935,
+        "roc_auc": 0.6358376428303322,
+        "accuracy": 0.6232920751461134,
+        "balanced_accuracy": 0.5726980835658907,
+        "brier": 0.2270412744441577,
+        "log_loss": 0.6449353146119869,
+        "matriz_confusao_TN_FP_FN_TP": [
+          [
+            484239,
+            91624
+          ],
+          [
+            273383,
+            119693
+          ]
+        ]
+      },
+      "validacao": {
+        "alunos": 320639,
+        "prevalencia_nao_alfabetizado": 0.40720873006714714,
+        "precision": 0.5740953767746633,
+        "recall": 0.301959913301217,
+        "f1": 0.39575993013521243,
+        "average_precision": 0.5214187037231831,
+        "roc_auc": 0.6376798181760674,
+        "accuracy": 0.6245310146301604,
+        "balanced_accuracy": 0.5740380609479274,
+        "brier": 0.2269577803512916,
+        "log_loss": 0.6447527046383006,
+        "matriz_confusao_TN_FP_FN_TP": [
+          [
+            160823,
+            29249
+          ],
+          [
+            91141,
+            39426
+          ]
+        ]
+      }
+    },
+    "logistica": {
+      "treino": {
+        "alunos": 968939,
+        "prevalencia_nao_alfabetizado": 0.4056767247473783,
+        "precision": 0.5773436670559507,
+        "recall": 0.2766894951612411,
+        "f1": 0.3740953743705457,
+        "average_precision": 0.5323977017646453,
+        "roc_auc": 0.6442886357367295,
+        "accuracy": 0.6243974078863582,
+        "balanced_accuracy": 0.5692137216247942,
+        "brier": 0.22582971057076712,
+        "log_loss": 0.6420917680381376,
+        "matriz_confusao_TN_FP_FN_TP": [
+          [
+            496243,
+            79620
+          ],
+          [
+            284316,
+            108760
+          ]
+        ]
+      },
+      "validacao": {
+        "alunos": 320639,
+        "prevalencia_nao_alfabetizado": 0.40720873006714714,
+        "precision": 0.5893175183151864,
+        "recall": 0.24582015363759602,
+        "f1": 0.34692752526617304,
+        "average_precision": 0.5404577078097648,
+        "roc_auc": 0.6489891888881958,
+        "accuracy": 0.6231338046837721,
+        "balanced_accuracy": 0.5640718470953248,
+        "brier": 0.22582562684715643,
+        "log_loss": 0.6422274485341237,
+        "matriz_confusao_TN_FP_FN_TP": [
+          [
+            167705,
+            22367
+          ],
+          [
+            98471,
+            32096
+          ]
+        ]
+      }
+    },
+    "arvore": {
+      "treino": {
+        "alunos": 968939,
+        "prevalencia_nao_alfabetizado": 0.4056767247473783,
+        "precision": 0.6403455251918693,
+        "recall": 0.10146129501673977,
+        "f1": 0.17516767027262067,
+        "average_precision": 0.47564564881138405,
+        "roc_auc": 0.6052404961384015,
+        "accuracy": 0.6123656907194364,
+        "balanced_accuracy": 0.5312815771565674,
+        "brier": 0.2291431141972157,
+        "log_loss": 0.6484445233835308,
+        "matriz_confusao_TN_FP_FN_TP": [
+          [
+            553463,
+            22400
+          ],
+          [
+            353194,
+            39882
+          ]
+        ]
+      },
+      "validacao": {
+        "alunos": 320639,
+        "prevalencia_nao_alfabetizado": 0.40720873006714714,
+        "precision": 0.6403660886319846,
+        "recall": 0.10181745770370768,
+        "f1": 0.17569898299708578,
+        "average_precision": 0.47553827762700346,
+        "roc_auc": 0.6043765041321764,
+        "accuracy": 0.6109674743247079,
+        "balanced_accuracy": 0.5312688029290457,
+        "brier": 0.23007948080761137,
+        "log_loss": 0.6511405250814473,
+        "matriz_confusao_TN_FP_FN_TP": [
+          [
+            182606,
+            7466
+          ],
+          [
+            117273,
+            13294
+          ]
+        ]
+      }
+    },
+    "referencia_todos_em_risco": {
+      "validacao": {
+        "alunos": 320639,
+        "prevalencia_nao_alfabetizado": 0.40720873006714714,
+        "precision": 0.40720873006714714,
+        "recall": 1.0,
+        "f1": 0.5787467365238937,
+        "average_precision": 0.40720873006714714,
+        "roc_auc": 0.5,
+        "accuracy": 0.40720873006714714,
+        "balanced_accuracy": 0.5,
+        "brier": 0.5927912699328528,
+        "log_loss": 21.36636306555433,
+        "matriz_confusao_TN_FP_FN_TP": [
+          [
+            0,
+            190072
+          ],
+          [
+            0,
+            130567
+          ]
+        ]
+      }
+    }
+  },
+  "by_uf_validation": [
+    {
+      "modelo": "referencia_global",
+      "uf": "AC",
+      "alunos": 1151,
+      "prevalencia_nao_alfabetizado": 0.5099913119026933,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.5099913119026933,
+      "roc_auc": 0.5,
+      "accuracy": 0.4900086880973067,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2607817067798469,
+      "log_loss": 0.7150806275045352,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          564,
+          0
+        ],
+        [
+          587,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "AL",
+      "alunos": 6044,
+      "prevalencia_nao_alfabetizado": 0.5066181336863005,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.5066181336863005,
+      "roc_auc": 0.5,
+      "accuracy": 0.4933818663136995,
+      "balanced_accuracy": 0.5,
+      "brier": 0.26014536834508495,
+      "log_loss": 0.7137925227069457,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          2982,
+          0
+        ],
+        [
+          3062,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "AM",
+      "alunos": 6045,
+      "prevalencia_nao_alfabetizado": 0.575682382133995,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.575682382133995,
+      "roc_auc": 0.5,
+      "accuracy": 0.42431761786600497,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2731741005779797,
+      "log_loss": 0.7401658667938523,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          2565,
+          0
+        ],
+        [
+          3480,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "AP",
+      "alunos": 1192,
+      "prevalencia_nao_alfabetizado": 0.537751677852349,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.537751677852349,
+      "roc_auc": 0.5,
+      "accuracy": 0.462248322147651,
+      "balanced_accuracy": 0.5,
+      "brier": 0.26601860405701266,
+      "log_loss": 0.72568138983272,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          551,
+          0
+        ],
+        [
+          641,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "BA",
+      "alunos": 20760,
+      "prevalencia_nao_alfabetizado": 0.6403660886319846,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.6403660886319846,
+      "roc_auc": 0.5,
+      "accuracy": 0.3596339113680154,
+      "balanced_accuracy": 0.5,
+      "brier": 0.28537645868271905,
+      "log_loss": 0.7648664273100497,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          7466,
+          0
+        ],
+        [
+          13294,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "CE",
+      "alunos": 17538,
+      "prevalencia_nao_alfabetizado": 0.14636788687421598,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.14636788687421598,
+      "roc_auc": 0.5,
+      "accuracy": 0.853632113125784,
+      "balanced_accuracy": 0.5,
+      "brier": 0.19218540196532272,
+      "log_loss": 0.5762249109524544,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          14971,
+          0
+        ],
+        [
+          2567,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "ES",
+      "alunos": 8107,
+      "prevalencia_nao_alfabetizado": 0.2870358949056371,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.2870358949056371,
+      "roc_auc": 0.5,
+      "accuracy": 0.7129641050943629,
+      "balanced_accuracy": 0.5,
+      "brier": 0.21872193644689417,
+      "log_loss": 0.6299413541371232,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          5780,
+          0
+        ],
+        [
+          2327,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "GO",
+      "alunos": 14150,
+      "prevalencia_nao_alfabetizado": 0.2698939929328622,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.2698939929328622,
+      "roc_auc": 0.5,
+      "accuracy": 0.7301060070671378,
+      "balanced_accuracy": 0.5,
+      "brier": 0.21548817577063115,
+      "log_loss": 0.6233954307513874,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          10331,
+          0
+        ],
+        [
+          3819,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "MA",
+      "alunos": 12569,
+      "prevalencia_nao_alfabetizado": 0.3986792903174477,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3986792903174477,
+      "roc_auc": 0.5,
+      "accuracy": 0.6013207096825524,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23978307787802516,
+      "log_loss": 0.6725742611534963,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          7558,
+          0
+        ],
+        [
+          5011,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "MG",
+      "alunos": 28486,
+      "prevalencia_nao_alfabetizado": 0.2803482412413115,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.2803482412413115,
+      "roc_auc": 0.5,
+      "accuracy": 0.7196517587586885,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2174603336521454,
+      "log_loss": 0.6273875611807443,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          20500,
+          0
+        ],
+        [
+          7986,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "MS",
+      "alunos": 7302,
+      "prevalencia_nao_alfabetizado": 0.433442892358258,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.433442892358258,
+      "roc_auc": 0.5,
+      "accuracy": 0.5665571076417419,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24634111148616103,
+      "log_loss": 0.6858493268919867,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          4137,
+          0
+        ],
+        [
+          3165,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "MT",
+      "alunos": 8740,
+      "prevalencia_nao_alfabetizado": 0.3860411899313501,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3860411899313501,
+      "roc_auc": 0.5,
+      "accuracy": 0.6139588100686499,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2373989438352489,
+      "log_loss": 0.6677481901025698,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          5366,
+          0
+        ],
+        [
+          3374,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "PA",
+      "alunos": 15467,
+      "prevalencia_nao_alfabetizado": 0.5186526152453611,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.5186526152453611,
+      "roc_auc": 0.5,
+      "accuracy": 0.4813473847546389,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2624156317783207,
+      "log_loss": 0.7183880917632717,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          7445,
+          0
+        ],
+        [
+          8022,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "PB",
+      "alunos": 5965,
+      "prevalencia_nao_alfabetizado": 0.4333612740989103,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4333612740989103,
+      "roc_auc": 0.5,
+      "accuracy": 0.5666387259010897,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24632571448307683,
+      "log_loss": 0.6858181595878327,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          3380,
+          0
+        ],
+        [
+          2585,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "PE",
+      "alunos": 15161,
+      "prevalencia_nao_alfabetizado": 0.3894861816502869,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3894861816502869,
+      "roc_auc": 0.5,
+      "accuracy": 0.6105138183497131,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23804882963954546,
+      "log_loss": 0.6690637180931317,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          9256,
+          0
+        ],
+        [
+          5905,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "PI",
+      "alunos": 6195,
+      "prevalencia_nao_alfabetizado": 0.3979015334947538,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3979015334947538,
+      "roc_auc": 0.5,
+      "accuracy": 0.6020984665052461,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23963635673629208,
+      "log_loss": 0.6722772616383799,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          3730,
+          0
+        ],
+        [
+          2465,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "PR",
+      "alunos": 23926,
+      "prevalencia_nao_alfabetizado": 0.29190002507732177,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.29190002507732177,
+      "roc_auc": 0.5,
+      "accuracy": 0.7080999749226783,
+      "balanced_accuracy": 0.5,
+      "brier": 0.21963953782499093,
+      "log_loss": 0.6317988039984431,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          16942,
+          0
+        ],
+        [
+          6984,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "RJ",
+      "alunos": 25114,
+      "prevalencia_nao_alfabetizado": 0.4474396750816278,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4474396750816278,
+      "roc_auc": 0.5,
+      "accuracy": 0.5525603249183723,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2489815562650961,
+      "log_loss": 0.6911942336298438,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          13877,
+          0
+        ],
+        [
+          11237,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "RN",
+      "alunos": 3862,
+      "prevalencia_nao_alfabetizado": 0.6116002071465562,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.6116002071465562,
+      "roc_auc": 0.5,
+      "accuracy": 0.38839979285344384,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2799498743682503,
+      "log_loss": 0.7538816919740395,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          1500,
+          0
+        ],
+        [
+          2362,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "RO",
+      "alunos": 3726,
+      "prevalencia_nao_alfabetizado": 0.37037037037037035,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.37037037037037035,
+      "roc_auc": 0.5,
+      "accuracy": 0.6296296296296297,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23444269778147997,
+      "log_loss": 0.6617640242614174,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          2346,
+          0
+        ],
+        [
+          1380,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "RS",
+      "alunos": 12211,
+      "prevalencia_nao_alfabetizado": 0.5472115305871755,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.5472115305871755,
+      "roc_auc": 0.5,
+      "accuracy": 0.4527884694128245,
+      "balanced_accuracy": 0.5,
+      "brier": 0.26780317264372533,
+      "log_loss": 0.7292937935987003,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          5529,
+          0
+        ],
+        [
+          6682,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "SC",
+      "alunos": 10652,
+      "prevalencia_nao_alfabetizado": 0.35411190386781827,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.35411190386781827,
+      "roc_auc": 0.5,
+      "accuracy": 0.6458880961321818,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2313755941592684,
+      "log_loss": 0.6555554555585814,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          6880,
+          0
+        ],
+        [
+          3772,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "SE",
+      "alunos": 3135,
+      "prevalencia_nao_alfabetizado": 0.6178628389154704,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.6178628389154704,
+      "roc_auc": 0.5,
+      "accuracy": 0.3821371610845295,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2811312982485406,
+      "log_loss": 0.756273183175978,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          1198,
+          0
+        ],
+        [
+          1937,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "SP",
+      "alunos": 59781,
+      "prevalencia_nao_alfabetizado": 0.4390525417774878,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4390525417774878,
+      "roc_auc": 0.5,
+      "accuracy": 0.5609474582225121,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2473993524986425,
+      "log_loss": 0.6879914658085103,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          33534,
+          0
+        ],
+        [
+          26247,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_global",
+      "uf": "TO",
+      "alunos": 3360,
+      "prevalencia_nao_alfabetizado": 0.4988095238095238,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4988095238095238,
+      "roc_auc": 0.5,
+      "accuracy": 0.5011904761904762,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2586723010275899,
+      "log_loss": 0.7108106737800496,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          1684,
+          0
+        ],
+        [
+          1676,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "AC",
+      "alunos": 1151,
+      "prevalencia_nao_alfabetizado": 0.5099913119026933,
+      "precision": 0.5099913119026933,
+      "recall": 1.0,
+      "f1": 0.6754890678941312,
+      "average_precision": 0.5099913119026933,
+      "roc_auc": 0.5,
+      "accuracy": 0.5099913119026933,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24991674457045246,
+      "log_loss": 0.692980677947037,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          0,
+          564
+        ],
+        [
+          0,
+          587
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "AL",
+      "alunos": 6044,
+      "prevalencia_nao_alfabetizado": 0.5066181336863005,
+      "precision": 0.5066181336863005,
+      "recall": 1.0,
+      "f1": 0.6725236108060619,
+      "average_precision": 0.5066181336863005,
+      "roc_auc": 0.5,
+      "accuracy": 0.5066181336863005,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24995620112878278,
+      "log_loss": 0.6930595802597372,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          0,
+          2982
+        ],
+        [
+          0,
+          3062
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "AM",
+      "alunos": 6045,
+      "prevalencia_nao_alfabetizado": 0.575682382133995,
+      "precision": 0.575682382133995,
+      "recall": 1.0,
+      "f1": 0.7307086614173228,
+      "average_precision": 0.575682382133995,
+      "roc_auc": 0.5,
+      "accuracy": 0.575682382133995,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24919114582108928,
+      "log_loss": 0.691529407091698,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          0,
+          2565
+        ],
+        [
+          0,
+          3480
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "AP",
+      "alunos": 1192,
+      "prevalencia_nao_alfabetizado": 0.537751677852349,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.537751677852349,
+      "roc_auc": 0.5,
+      "accuracy": 0.462248322147651,
+      "balanced_accuracy": 0.5,
+      "brier": 0.25015928461518583,
+      "log_loss": 0.6934657516056808,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          551,
+          0
+        ],
+        [
+          641,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "BA",
+      "alunos": 20760,
+      "prevalencia_nao_alfabetizado": 0.6403660886319846,
+      "precision": 0.6403660886319846,
+      "recall": 1.0,
+      "f1": 0.7807599694602689,
+      "average_precision": 0.6403660886319846,
+      "roc_auc": 0.5,
+      "accuracy": 0.6403660886319846,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2302973615850129,
+      "log_loss": 0.6532072705519415,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          0,
+          7466
+        ],
+        [
+          0,
+          13294
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "CE",
+      "alunos": 17538,
+      "prevalencia_nao_alfabetizado": 0.14636788687421598,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.14636788687421598,
+      "roc_auc": 0.5,
+      "accuracy": 0.853632113125784,
+      "balanced_accuracy": 0.5,
+      "brier": 0.12494432882943479,
+      "log_loss": 0.41635673903884457,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          14971,
+          0
+        ],
+        [
+          2567,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "ES",
+      "alunos": 8107,
+      "prevalencia_nao_alfabetizado": 0.2870358949056371,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.2870358949056371,
+      "roc_auc": 0.5,
+      "accuracy": 0.7129641050943629,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2046462927840199,
+      "log_loss": 0.599476298435972,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          5780,
+          0
+        ],
+        [
+          2327,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "GO",
+      "alunos": 14150,
+      "prevalencia_nao_alfabetizado": 0.2698939929328622,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.2698939929328622,
+      "roc_auc": 0.5,
+      "accuracy": 0.7301060070671378,
+      "balanced_accuracy": 0.5,
+      "brier": 0.19705122717277462,
+      "log_loss": 0.5831533788123512,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          10331,
+          0
+        ],
+        [
+          3819,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "MA",
+      "alunos": 12569,
+      "prevalencia_nao_alfabetizado": 0.3986792903174477,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3986792903174477,
+      "roc_auc": 0.5,
+      "accuracy": 0.6013207096825524,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23973411404372333,
+      "log_loss": 0.6724725306028211,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          7558,
+          0
+        ],
+        [
+          5011,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "MG",
+      "alunos": 28486,
+      "prevalencia_nao_alfabetizado": 0.2803482412413115,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.2803482412413115,
+      "roc_auc": 0.5,
+      "accuracy": 0.7196517587586885,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2017531054219298,
+      "log_loss": 0.5932819185902775,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          20500,
+          0
+        ],
+        [
+          7986,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "MS",
+      "alunos": 7302,
+      "prevalencia_nao_alfabetizado": 0.433442892358258,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.433442892358258,
+      "roc_auc": 0.5,
+      "accuracy": 0.5665571076417419,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2455701524422314,
+      "log_loss": 0.6842611335072168,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          4137,
+          0
+        ],
+        [
+          3165,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "MT",
+      "alunos": 8740,
+      "prevalencia_nao_alfabetizado": 0.3860411899313501,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3860411899313501,
+      "roc_auc": 0.5,
+      "accuracy": 0.6139588100686499,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23701339339640404,
+      "log_loss": 0.6669442915173062,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          5366,
+          0
+        ],
+        [
+          3374,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "PA",
+      "alunos": 15467,
+      "prevalencia_nao_alfabetizado": 0.5186526152453611,
+      "precision": 0.5186526152453611,
+      "recall": 1.0,
+      "f1": 0.6830431265698838,
+      "average_precision": 0.5186526152453611,
+      "roc_auc": 0.5,
+      "accuracy": 0.5186526152453611,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2496520800521256,
+      "log_loss": 0.6924511791767636,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          0,
+          7445
+        ],
+        [
+          0,
+          8022
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "PB",
+      "alunos": 5965,
+      "prevalencia_nao_alfabetizado": 0.4333612740989103,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4333612740989103,
+      "roc_auc": 0.5,
+      "accuracy": 0.5666387259010897,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2455592812130409,
+      "log_loss": 0.6842392610836521,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          3380,
+          0
+        ],
+        [
+          2585,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "PE",
+      "alunos": 15161,
+      "prevalencia_nao_alfabetizado": 0.3894861816502869,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3894861816502869,
+      "roc_auc": 0.5,
+      "accuracy": 0.6105138183497131,
+      "balanced_accuracy": 0.5,
+      "brier": 0.237786696887084,
+      "log_loss": 0.6685176966260726,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          9256,
+          0
+        ],
+        [
+          5905,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "PI",
+      "alunos": 6195,
+      "prevalencia_nao_alfabetizado": 0.3979015334947538,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3979015334947538,
+      "roc_auc": 0.5,
+      "accuracy": 0.6020984665052461,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2395759035957069,
+      "log_loss": 0.6721516335503291,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          3730,
+          0
+        ],
+        [
+          2465,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "PR",
+      "alunos": 23926,
+      "prevalencia_nao_alfabetizado": 0.29190002507732177,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.29190002507732177,
+      "roc_auc": 0.5,
+      "accuracy": 0.7080999749226783,
+      "balanced_accuracy": 0.5,
+      "brier": 0.206694400631277,
+      "log_loss": 0.6038441798608318,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          16942,
+          0
+        ],
+        [
+          6984,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "RJ",
+      "alunos": 25114,
+      "prevalencia_nao_alfabetizado": 0.4474396750816278,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4474396750816278,
+      "roc_auc": 0.5,
+      "accuracy": 0.5525603249183723,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24734123786648862,
+      "log_loss": 0.6878224082855798,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          13877,
+          0
+        ],
+        [
+          11237,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "RN",
+      "alunos": 3862,
+      "prevalencia_nao_alfabetizado": 0.6116002071465562,
+      "precision": 0.6116002071465562,
+      "recall": 1.0,
+      "f1": 0.7589974293059126,
+      "average_precision": 0.6116002071465562,
+      "roc_auc": 0.5,
+      "accuracy": 0.6116002071465562,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23754539655092347,
+      "log_loss": 0.6680269160363592,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          0,
+          1500
+        ],
+        [
+          0,
+          2362
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "RO",
+      "alunos": 3726,
+      "prevalencia_nao_alfabetizado": 0.37037037037037035,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.37037037037037035,
+      "roc_auc": 0.5,
+      "accuracy": 0.6296296296296297,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2331961710905513,
+      "log_loss": 0.6591525294827106,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          2346,
+          0
+        ],
+        [
+          1380,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "RS",
+      "alunos": 12211,
+      "prevalencia_nao_alfabetizado": 0.5472115305871755,
+      "precision": 0.5472115305871755,
+      "recall": 1.0,
+      "f1": 0.7073519292859789,
+      "average_precision": 0.5472115305871755,
+      "roc_auc": 0.5,
+      "accuracy": 0.5472115305871755,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24777107138626062,
+      "log_loss": 0.6886826754317358,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          0,
+          5529
+        ],
+        [
+          0,
+          6682
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "SC",
+      "alunos": 10652,
+      "prevalencia_nao_alfabetizado": 0.35411190386781827,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.35411190386781827,
+      "roc_auc": 0.5,
+      "accuracy": 0.6458880961321818,
+      "balanced_accuracy": 0.5,
+      "brier": 0.22871666520239292,
+      "log_loss": 0.6499549793027178,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          6880,
+          0
+        ],
+        [
+          3772,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "SE",
+      "alunos": 3135,
+      "prevalencia_nao_alfabetizado": 0.6178628389154704,
+      "precision": 0.6178628389154704,
+      "recall": 1.0,
+      "f1": 0.763801261829653,
+      "average_precision": 0.6178628389154704,
+      "roc_auc": 0.5,
+      "accuracy": 0.6178628389154704,
+      "balanced_accuracy": 0.5,
+      "brier": 0.236108357809198,
+      "log_loss": 0.665100697719165,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          0,
+          1198
+        ],
+        [
+          0,
+          1937
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "SP",
+      "alunos": 59781,
+      "prevalencia_nao_alfabetizado": 0.4390525417774878,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4390525417774878,
+      "roc_auc": 0.5,
+      "accuracy": 0.5609474582225121,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24628540741197033,
+      "log_loss": 0.6856994875661432,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          33534,
+          0
+        ],
+        [
+          26247,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "referencia_uf",
+      "uf": "TO",
+      "alunos": 3360,
+      "prevalencia_nao_alfabetizado": 0.4988095238095238,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4988095238095238,
+      "roc_auc": 0.5,
+      "accuracy": 0.5011904761904762,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24999858523913596,
+      "log_loss": 0.6931443510355688,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          1684,
+          0
+        ],
+        [
+          1676,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "AC",
+      "alunos": 1151,
+      "prevalencia_nao_alfabetizado": 0.5099913119026933,
+      "precision": 0.4019933554817276,
+      "recall": 0.4122657580919932,
+      "f1": 0.40706476030277544,
+      "average_precision": 0.4758704892228838,
+      "roc_auc": 0.40630323679727426,
+      "accuracy": 0.38748913987836664,
+      "balanced_accuracy": 0.38698394287578386,
+      "brier": 0.25675408277836526,
+      "log_loss": 0.7066940916053351,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          204,
+          360
+        ],
+        [
+          345,
+          242
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "AL",
+      "alunos": 6044,
+      "prevalencia_nao_alfabetizado": 0.5066181336863005,
+      "precision": 0.5792079207920792,
+      "recall": 0.534944480731548,
+      "f1": 0.5561969439728354,
+      "average_precision": 0.5707609571425035,
+      "roc_auc": 0.574429157133088,
+      "accuracy": 0.5675049636002647,
+      "balanced_accuracy": 0.5679417239338491,
+      "brier": 0.24757917937254953,
+      "log_loss": 0.6882734718674441,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          1792,
+          1190
+        ],
+        [
+          1424,
+          1638
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "AM",
+      "alunos": 6045,
+      "prevalencia_nao_alfabetizado": 0.575682382133995,
+      "precision": 0.6460122699386504,
+      "recall": 0.30258620689655175,
+      "f1": 0.412133072407045,
+      "average_precision": 0.5953238189704622,
+      "roc_auc": 0.506060417646927,
+      "accuracy": 0.5030603804797353,
+      "balanced_accuracy": 0.5388174699200108,
+      "brier": 0.2530427200562501,
+      "log_loss": 0.6992616187830896,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          1988,
+          577
+        ],
+        [
+          2427,
+          1053
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "AP",
+      "alunos": 1192,
+      "prevalencia_nao_alfabetizado": 0.537751677852349,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.5018945047103415,
+      "roc_auc": 0.3377492631465695,
+      "accuracy": 0.462248322147651,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2561878901957844,
+      "log_loss": 0.7055466059638992,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          551,
+          0
+        ],
+        [
+          641,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "BA",
+      "alunos": 20760,
+      "prevalencia_nao_alfabetizado": 0.6403660886319846,
+      "precision": 0.6403660886319846,
+      "recall": 1.0,
+      "f1": 0.7807599694602689,
+      "average_precision": 0.6648784459679178,
+      "roc_auc": 0.5252904536773517,
+      "accuracy": 0.6403660886319846,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23022304371559574,
+      "log_loss": 0.6530084902069261,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          0,
+          7466
+        ],
+        [
+          0,
+          13294
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "CE",
+      "alunos": 17538,
+      "prevalencia_nao_alfabetizado": 0.14636788687421598,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.2475468827093362,
+      "roc_auc": 0.6219385917305338,
+      "accuracy": 0.853632113125784,
+      "balanced_accuracy": 0.5,
+      "brier": 0.12433988189372146,
+      "log_loss": 0.41384055006697706,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          14971,
+          0
+        ],
+        [
+          2567,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "ES",
+      "alunos": 8107,
+      "prevalencia_nao_alfabetizado": 0.2870358949056371,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3409183659814973,
+      "roc_auc": 0.5968738801165199,
+      "accuracy": 0.7129641050943629,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2017655265788466,
+      "log_loss": 0.5923246506515076,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          5780,
+          0
+        ],
+        [
+          2327,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "GO",
+      "alunos": 14150,
+      "prevalencia_nao_alfabetizado": 0.2698939929328622,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3040264612700713,
+      "roc_auc": 0.5661563748183364,
+      "accuracy": 0.7301060070671378,
+      "balanced_accuracy": 0.5,
+      "brier": 0.195232126947306,
+      "log_loss": 0.5783980904533503,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          10331,
+          0
+        ],
+        [
+          3819,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "MA",
+      "alunos": 12569,
+      "prevalencia_nao_alfabetizado": 0.3986792903174477,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.40766734624316725,
+      "roc_auc": 0.5031065553638571,
+      "accuracy": 0.6013207096825524,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24000304033800698,
+      "log_loss": 0.673049695278521,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          7558,
+          0
+        ],
+        [
+          5011,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "MG",
+      "alunos": 28486,
+      "prevalencia_nao_alfabetizado": 0.2803482412413115,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.29511365886286656,
+      "roc_auc": 0.5244042043087598,
+      "accuracy": 0.7196517587586885,
+      "balanced_accuracy": 0.5,
+      "brier": 0.20181699109020695,
+      "log_loss": 0.5935245210337385,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          20500,
+          0
+        ],
+        [
+          7986,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "MS",
+      "alunos": 7302,
+      "prevalencia_nao_alfabetizado": 0.433442892358258,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4561190884126026,
+      "roc_auc": 0.5394690003249678,
+      "accuracy": 0.5665571076417419,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24458322471030094,
+      "log_loss": 0.6822128464001743,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          4137,
+          0
+        ],
+        [
+          3165,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "MT",
+      "alunos": 8740,
+      "prevalencia_nao_alfabetizado": 0.3860411899313501,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.40477520108883835,
+      "roc_auc": 0.536441354719533,
+      "accuracy": 0.6139588100686499,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23681371535133394,
+      "log_loss": 0.6666299857869633,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          5366,
+          0
+        ],
+        [
+          3374,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "PA",
+      "alunos": 15467,
+      "prevalencia_nao_alfabetizado": 0.5186526152453611,
+      "precision": 0.5167261792896072,
+      "recall": 0.6854899027673896,
+      "f1": 0.5892627518216889,
+      "average_precision": 0.5233076082726055,
+      "roc_auc": 0.5072782721927057,
+      "accuracy": 0.5043641300834034,
+      "balanced_accuracy": 0.4973453543386982,
+      "brier": 0.2502111555521516,
+      "log_loss": 0.6935799404325265,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          2302,
+          5143
+        ],
+        [
+          2523,
+          5499
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "PB",
+      "alunos": 5965,
+      "prevalencia_nao_alfabetizado": 0.4333612740989103,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.48975556654383784,
+      "roc_auc": 0.5759157291154018,
+      "accuracy": 0.5666387259010897,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24343556338051647,
+      "log_loss": 0.6798702123422614,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          3380,
+          0
+        ],
+        [
+          2585,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "PE",
+      "alunos": 15161,
+      "prevalencia_nao_alfabetizado": 0.3894861816502869,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4288434619461472,
+      "roc_auc": 0.5459892551102629,
+      "accuracy": 0.6105138183497131,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23657478549268598,
+      "log_loss": 0.6659686793920582,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          9256,
+          0
+        ],
+        [
+          5905,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "PI",
+      "alunos": 6195,
+      "prevalencia_nao_alfabetizado": 0.3979015334947538,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4745600563591993,
+      "roc_auc": 0.5998669305939996,
+      "accuracy": 0.6020984665052461,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23585433510625184,
+      "log_loss": 0.6640800230661524,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          3730,
+          0
+        ],
+        [
+          2465,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "PR",
+      "alunos": 23926,
+      "prevalencia_nao_alfabetizado": 0.29190002507732177,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.35468052705178493,
+      "roc_auc": 0.567237133448895,
+      "accuracy": 0.7080999749226783,
+      "balanced_accuracy": 0.5,
+      "brier": 0.20438148145462096,
+      "log_loss": 0.5983880218798202,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          16942,
+          0
+        ],
+        [
+          6984,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "RJ",
+      "alunos": 25114,
+      "prevalencia_nao_alfabetizado": 0.4474396750816278,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.5756347465402334,
+      "roc_auc": 0.6382530421211866,
+      "accuracy": 0.5525603249183723,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24193826351650022,
+      "log_loss": 0.6767139777143695,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          13877,
+          0
+        ],
+        [
+          11237,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "RN",
+      "alunos": 3862,
+      "prevalencia_nao_alfabetizado": 0.6116002071465562,
+      "precision": 0.6116002071465562,
+      "recall": 1.0,
+      "f1": 0.7589974293059126,
+      "average_precision": 0.6244962674812301,
+      "roc_auc": 0.5116088060965284,
+      "accuracy": 0.6116002071465562,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2379424973304939,
+      "log_loss": 0.6688267543012778,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          0,
+          1500
+        ],
+        [
+          0,
+          2362
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "RO",
+      "alunos": 3726,
+      "prevalencia_nao_alfabetizado": 0.37037037037037035,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3662310269069724,
+      "roc_auc": 0.49181693786525316,
+      "accuracy": 0.6296296296296297,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2333433791605524,
+      "log_loss": 0.6594726579371555,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          2346,
+          0
+        ],
+        [
+          1380,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "RS",
+      "alunos": 12211,
+      "prevalencia_nao_alfabetizado": 0.5472115305871755,
+      "precision": 0.5587441255874412,
+      "recall": 0.8362765639030231,
+      "f1": 0.6699034945753162,
+      "average_precision": 0.5653079881406575,
+      "roc_auc": 0.5304334756051314,
+      "accuracy": 0.5490131848333469,
+      "balanced_accuracy": 0.519060691067084,
+      "brier": 0.24728707844621664,
+      "log_loss": 0.6877096861618438,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          1116,
+          4413
+        ],
+        [
+          1094,
+          5588
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "SC",
+      "alunos": 10652,
+      "prevalencia_nao_alfabetizado": 0.35411190386781827,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.34583662128737047,
+      "roc_auc": 0.5011701313534241,
+      "accuracy": 0.6458880961321818,
+      "balanced_accuracy": 0.5,
+      "brier": 0.22911914288620813,
+      "log_loss": 0.6508109769372348,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          6880,
+          0
+        ],
+        [
+          3772,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "SE",
+      "alunos": 3135,
+      "prevalencia_nao_alfabetizado": 0.6178628389154704,
+      "precision": 0.6178628389154704,
+      "recall": 1.0,
+      "f1": 0.763801261829653,
+      "average_precision": 0.6742699077862708,
+      "roc_auc": 0.5813664660512315,
+      "accuracy": 0.6178628389154704,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23399556518404951,
+      "log_loss": 0.660531452964096,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          0,
+          1198
+        ],
+        [
+          0,
+          1937
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "SP",
+      "alunos": 59781,
+      "prevalencia_nao_alfabetizado": 0.4390525417774878,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.47421602780236327,
+      "roc_auc": 0.548082139985228,
+      "accuracy": 0.5609474582225121,
+      "balanced_accuracy": 0.5,
+      "brier": 0.244823681204642,
+      "log_loss": 0.6827343234331134,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          33534,
+          0
+        ],
+        [
+          26247,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "logistica",
+      "uf": "TO",
+      "alunos": 3360,
+      "prevalencia_nao_alfabetizado": 0.4988095238095238,
+      "precision": 0.481555333998006,
+      "recall": 0.2881861575178998,
+      "f1": 0.36058230683090703,
+      "average_precision": 0.4918792909788548,
+      "roc_auc": 0.4942054305863412,
+      "accuracy": 0.4901785714285714,
+      "balanced_accuracy": 0.48969877947153895,
+      "brier": 0.25238912078148773,
+      "log_loss": 0.6979673730174227,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          1164,
+          520
+        ],
+        [
+          1193,
+          483
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "AC",
+      "alunos": 1151,
+      "prevalencia_nao_alfabetizado": 0.5099913119026933,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.5099913119026933,
+      "roc_auc": 0.5,
+      "accuracy": 0.4900086880973067,
+      "balanced_accuracy": 0.5,
+      "brier": 0.25454393779108647,
+      "log_loss": 0.7022917869384263,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          564,
+          0
+        ],
+        [
+          587,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "AL",
+      "alunos": 6044,
+      "prevalencia_nao_alfabetizado": 0.5066181336863005,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.5066181336863005,
+      "roc_auc": 0.5,
+      "accuracy": 0.4933818663136995,
+      "balanced_accuracy": 0.5,
+      "brier": 0.25415161114086077,
+      "log_loss": 0.7015035665118927,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          2982,
+          0
+        ],
+        [
+          3062,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "AM",
+      "alunos": 6045,
+      "prevalencia_nao_alfabetizado": 0.575682382133995,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.575682382133995,
+      "roc_auc": 0.5,
+      "accuracy": 0.42431761786600497,
+      "balanced_accuracy": 0.5,
+      "brier": 0.26218431605759407,
+      "log_loss": 0.7176420115857722,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          2565,
+          0
+        ],
+        [
+          3480,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "AP",
+      "alunos": 1192,
+      "prevalencia_nao_alfabetizado": 0.537751677852349,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.537751677852349,
+      "roc_auc": 0.5,
+      "accuracy": 0.462248322147651,
+      "balanced_accuracy": 0.5,
+      "brier": 0.25777268251887414,
+      "log_loss": 0.7087786328996708,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          551,
+          0
+        ],
+        [
+          641,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "BA",
+      "alunos": 20760,
+      "prevalencia_nao_alfabetizado": 0.6403660886319846,
+      "precision": 0.6403660886319846,
+      "recall": 1.0,
+      "f1": 0.7807599694602689,
+      "average_precision": 0.6429958793582597,
+      "roc_auc": 0.5037309903486649,
+      "accuracy": 0.6403660886319846,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2313947507575779,
+      "log_loss": 0.6556763064141057,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          0,
+          7466
+        ],
+        [
+          0,
+          13294
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "CE",
+      "alunos": 17538,
+      "prevalencia_nao_alfabetizado": 0.14636788687421598,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.17479109505764856,
+      "roc_auc": 0.5828652184250153,
+      "accuracy": 0.853632113125784,
+      "balanced_accuracy": 0.5,
+      "brier": 0.12586160922563963,
+      "log_loss": 0.4180157891684504,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          14971,
+          0
+        ],
+        [
+          2567,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "ES",
+      "alunos": 8107,
+      "prevalencia_nao_alfabetizado": 0.2870358949056371,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.2870358949056371,
+      "roc_auc": 0.5,
+      "accuracy": 0.7129641050943629,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2286125027204372,
+      "log_loss": 0.6501931420967909,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          5780,
+          0
+        ],
+        [
+          2327,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "GO",
+      "alunos": 14150,
+      "prevalencia_nao_alfabetizado": 0.2698939929328622,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.2698939929328622,
+      "roc_auc": 0.5,
+      "accuracy": 0.7301060070671378,
+      "balanced_accuracy": 0.5,
+      "brier": 0.19705122717277462,
+      "log_loss": 0.5831533788123512,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          10331,
+          0
+        ],
+        [
+          3819,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "MA",
+      "alunos": 12569,
+      "prevalencia_nao_alfabetizado": 0.3986792903174477,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3986792903174477,
+      "roc_auc": 0.5,
+      "accuracy": 0.6013207096825524,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24159749092203098,
+      "log_loss": 0.6762811810635724,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          7558,
+          0
+        ],
+        [
+          5011,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "MG",
+      "alunos": 28486,
+      "prevalencia_nao_alfabetizado": 0.2803482412413115,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.30161178318649,
+      "roc_auc": 0.5332893020102253,
+      "accuracy": 0.7196517587586885,
+      "balanced_accuracy": 0.5,
+      "brier": 0.20106460111764904,
+      "log_loss": 0.591683873605474,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          20500,
+          0
+        ],
+        [
+          7986,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "MS",
+      "alunos": 7302,
+      "prevalencia_nao_alfabetizado": 0.433442892358258,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.433442892358258,
+      "roc_auc": 0.5,
+      "accuracy": 0.5665571076417419,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24564076603633356,
+      "log_loss": 0.6844044936994973,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          4137,
+          0
+        ],
+        [
+          3165,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "MT",
+      "alunos": 8740,
+      "prevalencia_nao_alfabetizado": 0.3860411899313501,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3860411899313501,
+      "roc_auc": 0.5,
+      "accuracy": 0.6139588100686499,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24012758234572232,
+      "log_loss": 0.6733279991568196,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          5366,
+          0
+        ],
+        [
+          3374,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "PA",
+      "alunos": 15467,
+      "prevalencia_nao_alfabetizado": 0.5186526152453611,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.5186526152453611,
+      "roc_auc": 0.5,
+      "accuracy": 0.4813473847546389,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2555513141907393,
+      "log_loss": 0.704315699040644,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          7445,
+          0
+        ],
+        [
+          8022,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "PB",
+      "alunos": 5965,
+      "prevalencia_nao_alfabetizado": 0.4333612740989103,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4333612740989103,
+      "roc_auc": 0.5,
+      "accuracy": 0.5666387259010897,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2456312732030965,
+      "log_loss": 0.6843854217219529,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          3380,
+          0
+        ],
+        [
+          2585,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "PE",
+      "alunos": 15161,
+      "prevalencia_nao_alfabetizado": 0.3894861816502869,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3894861816502869,
+      "roc_auc": 0.5,
+      "accuracy": 0.6105138183497131,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24052826146032627,
+      "log_loss": 0.6741330004546783,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          9256,
+          0
+        ],
+        [
+          5905,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "PI",
+      "alunos": 6195,
+      "prevalencia_nao_alfabetizado": 0.3979015334947538,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.3979015334947538,
+      "roc_auc": 0.5,
+      "accuracy": 0.6020984665052461,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2415070318032525,
+      "log_loss": 0.6760994403504537,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          3730,
+          0
+        ],
+        [
+          2465,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "PR",
+      "alunos": 23926,
+      "prevalencia_nao_alfabetizado": 0.29190002507732177,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.29190002507732177,
+      "roc_auc": 0.5,
+      "accuracy": 0.7080999749226783,
+      "balanced_accuracy": 0.5,
+      "brier": 0.20745402370404128,
+      "log_loss": 0.6057563869839198,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          16942,
+          0
+        ],
+        [
+          6984,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "RJ",
+      "alunos": 25114,
+      "prevalencia_nao_alfabetizado": 0.4474396750816278,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4474396750816278,
+      "roc_auc": 0.5,
+      "accuracy": 0.5525603249183723,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24726869985053573,
+      "log_loss": 0.6876751628846286,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          13877,
+          0
+        ],
+        [
+          11237,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "RN",
+      "alunos": 3862,
+      "prevalencia_nao_alfabetizado": 0.6116002071465562,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.6116002071465562,
+      "roc_auc": 0.5,
+      "accuracy": 0.38839979285344384,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2663618362082011,
+      "log_loss": 0.7260350348817172,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          1500,
+          0
+        ],
+        [
+          2362,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "RO",
+      "alunos": 3726,
+      "prevalencia_nao_alfabetizado": 0.37037037037037035,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.37037037037037035,
+      "roc_auc": 0.5,
+      "accuracy": 0.6296296296296297,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23830494513231584,
+      "log_loss": 0.6696661528842275,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          2346,
+          0
+        ],
+        [
+          1380,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "RS",
+      "alunos": 12211,
+      "prevalencia_nao_alfabetizado": 0.5472115305871755,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.5472115305871755,
+      "roc_auc": 0.5,
+      "accuracy": 0.4527884694128245,
+      "balanced_accuracy": 0.5,
+      "brier": 0.25887293637354636,
+      "log_loss": 0.7109891443755699,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          5529,
+          0
+        ],
+        [
+          6682,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "SC",
+      "alunos": 10652,
+      "prevalencia_nao_alfabetizado": 0.35411190386781827,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.35411190386781827,
+      "roc_auc": 0.5,
+      "accuracy": 0.6458880961321818,
+      "balanced_accuracy": 0.5,
+      "brier": 0.23641396004597975,
+      "log_loss": 0.6658669894308575,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          6880,
+          0
+        ],
+        [
+          3772,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "SE",
+      "alunos": 3135,
+      "prevalencia_nao_alfabetizado": 0.6178628389154704,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.6178628389154704,
+      "roc_auc": 0.5,
+      "accuracy": 0.3821371610845295,
+      "balanced_accuracy": 0.5,
+      "brier": 0.2670902285983672,
+      "log_loss": 0.7274984423767992,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          1198,
+          0
+        ],
+        [
+          1937,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "SP",
+      "alunos": 59781,
+      "prevalencia_nao_alfabetizado": 0.4390525417774878,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4390525417774878,
+      "roc_auc": 0.5,
+      "accuracy": 0.5609474582225121,
+      "balanced_accuracy": 0.5,
+      "brier": 0.24629321154155215,
+      "log_loss": 0.6857153168977621,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          33534,
+          0
+        ],
+        [
+          26247,
+          0
+        ]
+      ]
+    },
+    {
+      "modelo": "arvore",
+      "uf": "TO",
+      "alunos": 3360,
+      "prevalencia_nao_alfabetizado": 0.4988095238095238,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.4988095238095238,
+      "roc_auc": 0.5,
+      "accuracy": 0.5011904761904762,
+      "balanced_accuracy": 0.5,
+      "brier": 0.25324340956971736,
+      "log_loss": 0.6996789057875362,
+      "matriz_confusao_TN_FP_FN_TP": [
+        [
+          1684,
+          0
+        ],
+        [
+          1676,
+          0
+        ]
+      ]
+    }
+  ],
+  "coefficients_and_importances": [
+    {
+      "feature": "numerico__log1p_populacao_2022",
+      "coeficiente_logistica": 0.07598328746705202,
+      "importancia_arvore": 0.03864135075538545
+    },
+    {
+      "feature": "numerico__log1p_densidade_hab_km2_2022",
+      "coeficiente_logistica": 0.05143832938482936,
+      "importancia_arvore": 0.01670421259587122
+    },
+    {
+      "feature": "numerico__log1p_pib_por_habitante_reais_2021",
+      "coeficiente_logistica": -0.05212725935596479,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "numerico__participacao_agropecuaria_2021",
+      "coeficiente_logistica": -0.1342333718279543,
+      "importancia_arvore": 0.004290788360768832
+    },
+    {
+      "feature": "numerico__participacao_industria_2021",
+      "coeficiente_logistica": -0.07637011607934216,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "numerico__participacao_servicos_2021",
+      "coeficiente_logistica": -0.10812785183288573,
+      "importancia_arvore": 0.0016810489588975908
+    },
+    {
+      "feature": "uf__sigla_uf_AC",
+      "coeficiente_logistica": 0.39767656546565816,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_AL",
+      "coeficiente_logistica": 0.3034678310692165,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_AM",
+      "coeficiente_logistica": 0.20088341525955647,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_AP",
+      "coeficiente_logistica": 0.1621717482040682,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_BA",
+      "coeficiente_logistica": 0.8715451202616454,
+      "importancia_arvore": 0.27853325986381533
+    },
+    {
+      "feature": "uf__sigla_uf_CE",
+      "coeficiente_logistica": -1.5747526438200155,
+      "importancia_arvore": 0.32284990151240917
+    },
+    {
+      "feature": "uf__sigla_uf_ES",
+      "coeficiente_logistica": -0.5985883158839848,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_GO",
+      "coeficiente_logistica": -0.6319585087977087,
+      "importancia_arvore": 0.10175685394224937
+    },
+    {
+      "feature": "uf__sigla_uf_MA",
+      "coeficiente_logistica": -0.17580620960262314,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_MG",
+      "coeficiente_logistica": -0.5971985671119132,
+      "importancia_arvore": 0.12633587146513653
+    },
+    {
+      "feature": "uf__sigla_uf_MS",
+      "coeficiente_logistica": 0.15814063209757032,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_MT",
+      "coeficiente_logistica": 0.08673836406422392,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_PA",
+      "coeficiente_logistica": 0.38646017539880434,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_PB",
+      "coeficiente_logistica": -0.07112556857252347,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_PE",
+      "coeficiente_logistica": -0.2666514502004245,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_PI",
+      "coeficiente_logistica": -0.16340911178148895,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_PR",
+      "coeficiente_logistica": -0.5035760501486045,
+      "importancia_arvore": 0.10920671254546645
+    },
+    {
+      "feature": "uf__sigla_uf_RJ",
+      "coeficiente_logistica": -0.1914147348735599,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_RN",
+      "coeficiente_logistica": 0.689047148781933,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_RO",
+      "coeficiente_logistica": -0.11605387967843965,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_RS",
+      "coeficiente_logistica": 0.587867860491301,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_SC",
+      "coeficiente_logistica": -0.16125865452831847,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_SE",
+      "coeficiente_logistica": 0.7362203042037698,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_SP",
+      "coeficiente_logistica": 0.06251337531806982,
+      "importancia_arvore": 0.0
+    },
+    {
+      "feature": "uf__sigla_uf_TO",
+      "coeficiente_logistica": 0.4109334909708648,
+      "importancia_arvore": 0.0
+    }
+  ]
+}

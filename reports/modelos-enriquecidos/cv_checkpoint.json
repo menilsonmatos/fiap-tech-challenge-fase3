@@ -1,0 +1,146 @@
+[
+  {
+    "candidate": "logistica_contexto",
+    "fold": 0,
+    "AP": 0.5104395152368002,
+    "holdout_students": 382028,
+    "holdout_municipalities": 1089,
+    "seconds": 0.15599999999903957
+  },
+  {
+    "candidate": "logistica_contexto",
+    "fold": 1,
+    "AP": 0.513034372321043,
+    "holdout_students": 308393,
+    "holdout_municipalities": 1089,
+    "seconds": 0.15700000000288128
+  },
+  {
+    "candidate": "logistica_contexto",
+    "fold": 2,
+    "AP": 0.536245747355237,
+    "holdout_students": 278518,
+    "holdout_municipalities": 1089,
+    "seconds": 0.125
+  },
+  {
+    "candidate": "logistica_educacional",
+    "fold": 0,
+    "AP": 0.5151142438811095,
+    "holdout_students": 382028,
+    "holdout_municipalities": 1089,
+    "seconds": 0.15599999999903957
+  },
+  {
+    "candidate": "logistica_educacional",
+    "fold": 1,
+    "AP": 0.5193058949121601,
+    "holdout_students": 308393,
+    "holdout_municipalities": 1089,
+    "seconds": 0.18699999999807915
+  },
+  {
+    "candidate": "logistica_educacional",
+    "fold": 2,
+    "AP": 0.533237414499588,
+    "holdout_students": 278518,
+    "holdout_municipalities": 1089,
+    "seconds": 0.23500000000058208
+  },
+  {
+    "candidate": "rf_prof8",
+    "fold": 0,
+    "AP": 0.522823723800953,
+    "holdout_students": 382028,
+    "holdout_municipalities": 1089,
+    "seconds": 0.4220000000022992
+  },
+  {
+    "candidate": "rf_prof8",
+    "fold": 1,
+    "AP": 0.5171187653955176,
+    "holdout_students": 308393,
+    "holdout_municipalities": 1089,
+    "seconds": 0.35900000000037835
+  },
+  {
+    "candidate": "rf_prof8",
+    "fold": 2,
+    "AP": 0.5301735476692899,
+    "holdout_students": 278518,
+    "holdout_municipalities": 1089,
+    "seconds": 0.39099999999962165
+  },
+  {
+    "candidate": "rf_prof12",
+    "fold": 0,
+    "AP": 0.5194779518305639,
+    "holdout_students": 382028,
+    "holdout_municipalities": 1089,
+    "seconds": 0.43699999999807915
+  },
+  {
+    "candidate": "rf_prof12",
+    "fold": 1,
+    "AP": 0.5208238880081884,
+    "holdout_students": 308393,
+    "holdout_municipalities": 1089,
+    "seconds": 0.43800000000192085
+  },
+  {
+    "candidate": "rf_prof12",
+    "fold": 2,
+    "AP": 0.5329501969628505,
+    "holdout_students": 278518,
+    "holdout_municipalities": 1089,
+    "seconds": 0.43699999999807915
+  },
+  {
+    "candidate": "gb_prof2",
+    "fold": 0,
+    "AP": 0.5242844254995179,
+    "holdout_students": 382028,
+    "holdout_municipalities": 1089,
+    "seconds": 1.110000000000582
+  },
+  {
+    "candidate": "gb_prof2",
+    "fold": 1,
+    "AP": 0.5236671665090636,
+    "holdout_students": 308393,
+    "holdout_municipalities": 1089,
+    "seconds": 1.0780000000013388
+  },
+  {
+    "candidate": "gb_prof2",
+    "fold": 2,
+    "AP": 0.5319392381468646,
+    "holdout_students": 278518,
+    "holdout_municipalities": 1089,
+    "seconds": 1.1090000000003783
+  },
+  {
+    "candidate": "gb_prof3",
+    "fold": 0,
+    "AP": 0.5257863595215384,
+    "holdout_students": 382028,
+    "holdout_municipalities": 1089,
+    "seconds": 2.1089999999967404
+  },
+  {
+    "candidate": "gb_prof3",
+    "fold": 1,
+    "AP": 0.523182170273232,
+    "holdout_students": 308393,
+    "holdout_municipalities": 1089,
+    "seconds": 1.9220000000022992
+  },
+  {
+    "candidate": "gb_prof3",
+    "fold": 2,
+    "AP": 0.5385198365163864,
+    "holdout_students": 278518,
+    "holdout_municipalities": 1089,
+    "seconds": 1.9219999999986612
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "selected": "gb_prof3",
+  "summary": [
+    {
+      "candidate": "gb_prof3",
+      "mean": 0.5291627887703856,
+      "std": 0.008207387361453839
+    },
+    {
+      "candidate": "gb_prof2",
+      "mean": 0.5266302767184821,
+      "std": 0.004608042507547478
+    },
+    {
+      "candidate": "rf_prof12",
+      "mean": 0.5244173456005342,
+      "std": 0.007420245974837805
+    },
+    {
+      "candidate": "rf_prof8",
+      "mean": 0.5233720122885869,
+      "std": 0.006544639046819443
+    },
+    {
+      "candidate": "logistica_educacional",
+      "mean": 0.5225525177642858,
+      "std": 0.00948776835059637
+    },
+    {
+      "candidate": "logistica_contexto",
+      "mean": 0.5199065449710267,
+      "std": 0.014209520461157291
+    }
+  ],
+  "reason": "Highest mean AP inside training; validation not used for configuration selection"
+}

@@ -1,0 +1,811 @@
+{
+  "scope": "Auditoria local do backup; sem consulta à nuvem",
+  "source": "basedosdados.br_inep_avaliacao_alfabetizacao",
+  "year": 2024,
+  "files": {
+    "municipio": {
+      "sha256_ok": true,
+      "manifest_rows": 5448,
+      "rows": 5448,
+      "columns": [
+        "ano",
+        "id_municipio",
+        "serie",
+        "rede",
+        "taxa_alfabetizacao",
+        "media_portugues",
+        "proporcao_aluno_nivel_0",
+        "proporcao_aluno_nivel_1",
+        "proporcao_aluno_nivel_2",
+        "proporcao_aluno_nivel_3",
+        "proporcao_aluno_nivel_4",
+        "proporcao_aluno_nivel_5",
+        "proporcao_aluno_nivel_6",
+        "proporcao_aluno_nivel_7",
+        "proporcao_aluno_nivel_8"
+      ],
+      "missing": {
+        "ano": 0,
+        "id_municipio": 0,
+        "serie": 0,
+        "rede": 0,
+        "taxa_alfabetizacao": 0,
+        "media_portugues": 0,
+        "proporcao_aluno_nivel_0": 0,
+        "proporcao_aluno_nivel_1": 0,
+        "proporcao_aluno_nivel_2": 0,
+        "proporcao_aluno_nivel_3": 0,
+        "proporcao_aluno_nivel_4": 0,
+        "proporcao_aluno_nivel_5": 0,
+        "proporcao_aluno_nivel_6": 0,
+        "proporcao_aluno_nivel_7": 0,
+        "proporcao_aluno_nivel_8": 0
+      },
+      "duplicates": 0
+    },
+    "uf": {
+      "sha256_ok": true,
+      "manifest_rows": 25,
+      "rows": 25,
+      "columns": [
+        "ano",
+        "sigla_uf",
+        "serie",
+        "rede",
+        "taxa_alfabetizacao",
+        "media_portugues",
+        "proporcao_aluno_nivel_0",
+        "proporcao_aluno_nivel_1",
+        "proporcao_aluno_nivel_2",
+        "proporcao_aluno_nivel_3",
+        "proporcao_aluno_nivel_4",
+        "proporcao_aluno_nivel_5",
+        "proporcao_aluno_nivel_6",
+        "proporcao_aluno_nivel_7",
+        "proporcao_aluno_nivel_8"
+      ],
+      "missing": {
+        "ano": 0,
+        "sigla_uf": 0,
+        "serie": 0,
+        "rede": 0,
+        "taxa_alfabetizacao": 0,
+        "media_portugues": 0,
+        "proporcao_aluno_nivel_0": 0,
+        "proporcao_aluno_nivel_1": 0,
+        "proporcao_aluno_nivel_2": 0,
+        "proporcao_aluno_nivel_3": 0,
+        "proporcao_aluno_nivel_4": 0,
+        "proporcao_aluno_nivel_5": 0,
+        "proporcao_aluno_nivel_6": 0,
+        "proporcao_aluno_nivel_7": 0,
+        "proporcao_aluno_nivel_8": 0
+      },
+      "duplicates": 0
+    },
+    "meta_alfabetizacao_brasil": {
+      "sha256_ok": true,
+      "manifest_rows": 1,
+      "rows": 1,
+      "columns": [
+        "ano",
+        "rede",
+        "taxa_alfabetizacao",
+        "meta_alfabetizacao_2024",
+        "meta_alfabetizacao_2025",
+        "meta_alfabetizacao_2026",
+        "meta_alfabetizacao_2027",
+        "meta_alfabetizacao_2028",
+        "meta_alfabetizacao_2029",
+        "meta_alfabetizacao_2030",
+        "percentual_participacao"
+      ],
+      "missing": {
+        "ano": 0,
+        "rede": 0,
+        "taxa_alfabetizacao": 0,
+        "meta_alfabetizacao_2024": 0,
+        "meta_alfabetizacao_2025": 0,
+        "meta_alfabetizacao_2026": 0,
+        "meta_alfabetizacao_2027": 0,
+        "meta_alfabetizacao_2028": 0,
+        "meta_alfabetizacao_2029": 0,
+        "meta_alfabetizacao_2030": 0,
+        "percentual_participacao": 0
+      },
+      "duplicates": 0
+    },
+    "meta_alfabetizacao_uf": {
+      "sha256_ok": true,
+      "manifest_rows": 27,
+      "rows": 27,
+      "columns": [
+        "ano",
+        "sigla_uf",
+        "rede",
+        "taxa_alfabetizacao",
+        "meta_alfabetizacao_2024",
+        "meta_alfabetizacao_2025",
+        "meta_alfabetizacao_2026",
+        "meta_alfabetizacao_2027",
+        "meta_alfabetizacao_2028",
+        "meta_alfabetizacao_2029",
+        "meta_alfabetizacao_2030",
+        "percentual_participacao"
+      ],
+      "missing": {
+        "ano": 0,
+        "sigla_uf": 0,
+        "rede": 0,
+        "taxa_alfabetizacao": 1,
+        "meta_alfabetizacao_2024": 3,
+        "meta_alfabetizacao_2025": 1,
+        "meta_alfabetizacao_2026": 1,
+        "meta_alfabetizacao_2027": 1,
+        "meta_alfabetizacao_2028": 1,
+        "meta_alfabetizacao_2029": 1,
+        "meta_alfabetizacao_2030": 1,
+        "percentual_participacao": 1
+      },
+      "duplicates": 0
+    },
+    "meta_alfabetizacao_municipio": {
+      "sha256_ok": true,
+      "manifest_rows": 5352,
+      "rows": 5352,
+      "columns": [
+        "ano",
+        "id_municipio",
+        "rede",
+        "taxa_alfabetizacao",
+        "meta_alfabetizacao_2024",
+        "meta_alfabetizacao_2025",
+        "meta_alfabetizacao_2026",
+        "meta_alfabetizacao_2027",
+        "meta_alfabetizacao_2028",
+        "meta_alfabetizacao_2029",
+        "meta_alfabetizacao_2030",
+        "nivel_alfabetizacao",
+        "percentual_participacao"
+      ],
+      "missing": {
+        "ano": 0,
+        "id_municipio": 0,
+        "rede": 0,
+        "taxa_alfabetizacao": 0,
+        "meta_alfabetizacao_2024": 120,
+        "meta_alfabetizacao_2025": 0,
+        "meta_alfabetizacao_2026": 0,
+        "meta_alfabetizacao_2027": 0,
+        "meta_alfabetizacao_2028": 0,
+        "meta_alfabetizacao_2029": 0,
+        "meta_alfabetizacao_2030": 0,
+        "nivel_alfabetizacao": 0,
+        "percentual_participacao": 0
+      },
+      "duplicates": 0
+    },
+    "alunos": {
+      "sha256_ok": true,
+      "manifest_rows": 1840277
+    },
+    "diretorio_municipio": {
+      "sha256_ok": true,
+      "manifest_rows": 5448,
+      "rows": 5448,
+      "columns": [
+        "id_municipio",
+        "nome",
+        "sigla_uf"
+      ],
+      "missing": {
+        "id_municipio": 0,
+        "nome": 0,
+        "sigla_uf": 0
+      },
+      "duplicates": 0
+    }
+  },
+  "snapshots": {
+    "fiap-backup-bruto-B9DePx/s3/bronze/oficial/ingestao=87e3d21d50d04c65bc8df7bb98108b54/extraction_manifest.json": "80b38ffcd6dcffe78a16f1358e27e5e6a8c3783ea263eb6f8f2e13c8565d007b",
+    "fiap-backup-bruto-B9DePx/s3/bronze/oficial/ingestao=02416c1f0ea345bc91b285f5a65b0023/extraction_manifest.json": "80b38ffcd6dcffe78a16f1358e27e5e6a8c3783ea263eb6f8f2e13c8565d007b"
+  },
+  "silver": {
+    "rows": 5232,
+    "columns": [
+      "ano",
+      "sigla_uf",
+      "id_municipio",
+      "nome_municipio",
+      "percentual_alfabetizado",
+      "meta_percentual",
+      "total_avaliados",
+      "taxa_alfabetizacao_uf",
+      "meta_alfabetizacao_uf",
+      "taxa_alfabetizacao_brasil",
+      "meta_alfabetizacao_brasil",
+      "percentual_participacao",
+      "fonte",
+      "data_ingestao",
+      "atingiu_meta",
+      "gap_meta_pp"
+    ],
+    "missing": {
+      "ano": 0,
+      "sigla_uf": 0,
+      "id_municipio": 0,
+      "nome_municipio": 0,
+      "percentual_alfabetizado": 0,
+      "meta_percentual": 0,
+      "total_avaliados": 0,
+      "taxa_alfabetizacao_uf": 0,
+      "meta_alfabetizacao_uf": 0,
+      "taxa_alfabetizacao_brasil": 0,
+      "meta_alfabetizacao_brasil": 0,
+      "percentual_participacao": 0,
+      "fonte": 0,
+      "data_ingestao": 0,
+      "atingiu_meta": 0,
+      "gap_meta_pp": 0
+    },
+    "duplicate_keys": 0,
+    "years": [
+      "2024"
+    ],
+    "ufs": [
+      "AL",
+      "AM",
+      "AP",
+      "BA",
+      "CE",
+      "ES",
+      "GO",
+      "MA",
+      "MG",
+      "MS",
+      "MT",
+      "PA",
+      "PB",
+      "PE",
+      "PI",
+      "PR",
+      "RJ",
+      "RN",
+      "RO",
+      "RS",
+      "SC",
+      "SE",
+      "SP",
+      "TO"
+    ],
+    "ranges": {
+      "percentual_alfabetizado": {
+        "min": 6.25,
+        "max": 100.0
+      },
+      "meta_percentual": {
+        "min": 7.94,
+        "max": 80.0
+      },
+      "total_avaliados": {
+        "min": 7.0,
+        "max": 43340.0
+      },
+      "taxa_alfabetizacao_uf": {
+        "min": 35.96,
+        "max": 85.31
+      },
+      "meta_alfabetizacao_uf": {
+        "min": 38.3,
+        "max": 80.0
+      },
+      "taxa_alfabetizacao_brasil": {
+        "min": 59.2,
+        "max": 59.2
+      },
+      "meta_alfabetizacao_brasil": {
+        "min": 59.9,
+        "max": 59.9
+      },
+      "percentual_participacao": {
+        "min": 70.0,
+        "max": 100.0
+      },
+      "gap_meta_pp": {
+        "min": -68.9,
+        "max": 84.27
+      }
+    }
+  },
+  "gold_ranking": {
+    "rows": 5232,
+    "columns": [
+      "ano",
+      "sigla_uf",
+      "id_municipio",
+      "nome_municipio",
+      "percentual_alfabetizado",
+      "meta_percentual",
+      "total_avaliados",
+      "taxa_alfabetizacao_uf",
+      "meta_alfabetizacao_uf",
+      "taxa_alfabetizacao_brasil",
+      "meta_alfabetizacao_brasil",
+      "percentual_participacao",
+      "fonte",
+      "data_ingestao",
+      "atingiu_meta",
+      "gap_meta_pp",
+      "prioridade",
+      "ranking_vulnerabilidade"
+    ],
+    "missing": {
+      "ano": 0,
+      "sigla_uf": 0,
+      "id_municipio": 0,
+      "nome_municipio": 0,
+      "percentual_alfabetizado": 0,
+      "meta_percentual": 0,
+      "total_avaliados": 0,
+      "taxa_alfabetizacao_uf": 0,
+      "meta_alfabetizacao_uf": 0,
+      "taxa_alfabetizacao_brasil": 0,
+      "meta_alfabetizacao_brasil": 0,
+      "percentual_participacao": 0,
+      "fonte": 0,
+      "data_ingestao": 0,
+      "atingiu_meta": 0,
+      "gap_meta_pp": 0,
+      "prioridade": 0,
+      "ranking_vulnerabilidade": 0
+    },
+    "duplicate_keys": 0,
+    "years": [
+      "2024"
+    ],
+    "ufs": [
+      "AL",
+      "AM",
+      "AP",
+      "BA",
+      "CE",
+      "ES",
+      "GO",
+      "MA",
+      "MG",
+      "MS",
+      "MT",
+      "PA",
+      "PB",
+      "PE",
+      "PI",
+      "PR",
+      "RJ",
+      "RN",
+      "RO",
+      "RS",
+      "SC",
+      "SE",
+      "SP",
+      "TO"
+    ],
+    "ranges": {
+      "percentual_alfabetizado": {
+        "min": 6.25,
+        "max": 100.0
+      },
+      "meta_percentual": {
+        "min": 7.94,
+        "max": 80.0
+      },
+      "total_avaliados": {
+        "min": 7.0,
+        "max": 43340.0
+      },
+      "taxa_alfabetizacao_uf": {
+        "min": 35.96,
+        "max": 85.31
+      },
+      "meta_alfabetizacao_uf": {
+        "min": 38.3,
+        "max": 80.0
+      },
+      "taxa_alfabetizacao_brasil": {
+        "min": 59.2,
+        "max": 59.2
+      },
+      "meta_alfabetizacao_brasil": {
+        "min": 59.9,
+        "max": 59.9
+      },
+      "percentual_participacao": {
+        "min": 70.0,
+        "max": 100.0
+      },
+      "gap_meta_pp": {
+        "min": -68.9,
+        "max": 84.27
+      },
+      "prioridade": {
+        "min": -84.27,
+        "max": 68.9
+      },
+      "ranking_vulnerabilidade": {
+        "min": 1.0,
+        "max": 5232.0
+      }
+    }
+  },
+  "gold_uf": {
+    "rows": 24,
+    "columns": [
+      "ano",
+      "sigla_uf",
+      "percentual_alfabetizado_ponderado",
+      "meta_percentual_ponderada",
+      "gap_meta_pp",
+      "municipios",
+      "municipios_na_meta",
+      "total_avaliados"
+    ],
+    "missing": {
+      "ano": 0,
+      "sigla_uf": 0,
+      "percentual_alfabetizado_ponderado": 0,
+      "meta_percentual_ponderada": 0,
+      "gap_meta_pp": 0,
+      "municipios": 0,
+      "municipios_na_meta": 0,
+      "total_avaliados": 0
+    },
+    "duplicate_keys": 0,
+    "years": [
+      "2024"
+    ],
+    "ufs": [
+      "AL",
+      "AM",
+      "AP",
+      "BA",
+      "CE",
+      "ES",
+      "GO",
+      "MA",
+      "MG",
+      "MS",
+      "MT",
+      "PA",
+      "PB",
+      "PE",
+      "PI",
+      "PR",
+      "RJ",
+      "RN",
+      "RO",
+      "RS",
+      "SC",
+      "SE",
+      "SP",
+      "TO"
+    ],
+    "ranges": {
+      "percentual_alfabetizado_ponderado": {
+        "min": 35.97,
+        "max": 85.36
+      },
+      "meta_percentual_ponderada": {
+        "min": 37.0,
+        "max": 77.56
+      },
+      "gap_meta_pp": {
+        "min": -21.44,
+        "max": 9.51
+      },
+      "municipios": {
+        "min": 16.0,
+        "max": 801.0
+      },
+      "municipios_na_meta": {
+        "min": 7.0,
+        "max": 637.0
+      },
+      "total_avaliados": {
+        "min": 8287.0,
+        "max": 296603.0
+      }
+    }
+  },
+  "students": {
+    "columns": [
+      "ano",
+      "id_municipio",
+      "id_escola",
+      "id_aluno",
+      "caderno",
+      "serie",
+      "rede",
+      "presenca",
+      "preenchimento_caderno",
+      "alfabetizado",
+      "proficiencia",
+      "peso_aluno"
+    ],
+    "counts": {
+      "rows": 1840277,
+      "eligible": 1610754,
+      "eligible_missing_id": 0,
+      "eligible_rows_in_gold": 1568597
+    },
+    "missing": {
+      "ano": 0,
+      "id_municipio": 0,
+      "id_escola": 0,
+      "id_aluno": 0,
+      "caderno": 0,
+      "serie": 0,
+      "rede": 0,
+      "presenca": 0,
+      "preenchimento_caderno": 0,
+      "alfabetizado": 0,
+      "proficiencia": 229523,
+      "peso_aluno": 229523
+    },
+    "values": {
+      "ano": {
+        "2024": 1840277
+      },
+      "rede": {
+        "3": 1840277
+      },
+      "serie": {
+        "2": 1840277
+      },
+      "caderno": {
+        "1": 101954,
+        "10": 84672,
+        "11": 84644,
+        "12": 84508,
+        "13": 84494,
+        "14": 84552,
+        "15": 86797,
+        "16": 84659,
+        "17": 84805,
+        "18": 84826,
+        "19": 84799,
+        "2": 91499,
+        "20": 84838,
+        "21": 84811,
+        "3": 91392,
+        "4": 91490,
+        "43": 17,
+        "5": 91491,
+        "6": 91391,
+        "7": 91438,
+        "8": 86584,
+        "9": 84616
+      },
+      "presenca": {
+        "0": 228686,
+        "1": 1611591
+      },
+      "preenchimento_caderno": {
+        "0": 229523,
+        "1": 1610754
+      },
+      "alfabetizado": {
+        "0": 883934,
+        "1": 956343
+      }
+    },
+    "eligible_class_counts": {
+      "0": 654411,
+      "1": 956343
+    },
+    "duplicate_key_rows": 0,
+    "duplicate_full_rows": 0,
+    "conflicting_label_keys": 0,
+    "eligible_unique_keys": 1610754,
+    "eligible_municipalities": 5450,
+    "numeric_by_label": {
+      "proficiencia_0": {
+        "min": 594.2,
+        "max": 742.9996427,
+        "missing": 0
+      },
+      "proficiencia_1": {
+        "min": 743.0,
+        "max": 900.89,
+        "missing": 0
+      },
+      "peso_aluno_0": {
+        "min": 1.0,
+        "max": 29.83,
+        "missing": 0
+      },
+      "peso_aluno_1": {
+        "min": 1.0,
+        "max": 22.0,
+        "missing": 0
+      }
+    },
+    "invalid_numeric": {
+      "proficiencia": 0,
+      "peso_aluno": 0
+    },
+    "eligibility_combinations": {
+      "0|0|0": 228686,
+      "1|0|0": 837,
+      "1|1|0": 654411,
+      "1|1|1": 956343
+    }
+  },
+  "coverage": {
+    "municipios_input": 5448,
+    "municipios_gold": 5232,
+    "municipios_excluded": 216,
+    "without_meta_row": 96,
+    "meta_2024_blank": 120,
+    "student_municipalities_outside_municipio": 2,
+    "gold_student_total": 1568597,
+    "uf_student_total": 1568597,
+    "gold_count_matches_raw_per_municipality": true
+  },
+  "gold_checks": {
+    "ranking_same_municipalities_as_silver": true,
+    "priority_matches_meta_minus_result": true,
+    "gap_matches_result_minus_meta": true,
+    "ranking_consecutive": true,
+    "ranking_sorted_priority_desc": true,
+    "target_counts": {
+      "True": 2788,
+      "False": 2444
+    }
+  },
+  "uf_reconciliation": [
+    {
+      "uf": "AL",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "AM",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "AP",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "BA",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "CE",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "ES",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "GO",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "MA",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "MG",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "MS",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "MT",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "PA",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "PB",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "PE",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "PI",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "PR",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "RJ",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "RN",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "RO",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "RS",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "SC",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "SE",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "SP",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    },
+    {
+      "uf": "TO",
+      "municipios_ok": true,
+      "total_ok": true,
+      "weighted_rate_ok": true
+    }
+  ],
+  "zip_sha256": "170114395cdcd07153fe844d337cc3c45ff8a54f0ea9a3210d64c44ebfe00077"
+}

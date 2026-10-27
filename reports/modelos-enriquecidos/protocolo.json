@@ -1,0 +1,84 @@
+{
+  "positive_class": "não alfabetizado = 1 - alfabetizado",
+  "selection_metric": "Mean validation AP across three municipal folds inside training",
+  "candidates": [
+    {
+      "name": "logistica_contexto",
+      "family": "logistica",
+      "base": true,
+      "params": {
+        "C": 1.0
+      }
+    },
+    {
+      "name": "logistica_educacional",
+      "family": "logistica",
+      "base": false,
+      "params": {
+        "C": 1.0
+      }
+    },
+    {
+      "name": "rf_prof8",
+      "family": "random_forest",
+      "base": false,
+      "params": {
+        "max_depth": 8,
+        "min_weight_fraction_leaf": 0.001
+      }
+    },
+    {
+      "name": "rf_prof12",
+      "family": "random_forest",
+      "base": false,
+      "params": {
+        "max_depth": 12,
+        "min_weight_fraction_leaf": 0.0005
+      }
+    },
+    {
+      "name": "gb_prof2",
+      "family": "boosting",
+      "base": false,
+      "params": {
+        "n_estimators": 120,
+        "max_depth": 2
+      }
+    },
+    {
+      "name": "gb_prof3",
+      "family": "boosting",
+      "base": false,
+      "params": {
+        "n_estimators": 160,
+        "max_depth": 3
+      }
+    }
+  ],
+  "cv": "StratifiedKFold on unique municipalities, stratified by UF, n_splits=3, shuffle=True, random_state=42; school rows assigned by municipality",
+  "threshold_protocol": "Fixed 0.20/0.30/0.40/0.50/0.60, plus threshold for >=80% recall and <=20% alert budget derived from training out-of-fold scores. Scenarios, not operational approval.",
+  "split_sha256": "35b1bcc95d3afcac21289cfa5979b1c6be703e26c7391e738a951814985084cd",
+  "features_numeric": [
+    "log1p_populacao_2022",
+    "log1p_densidade_hab_km2_2022",
+    "log1p_pib_por_habitante_reais_2021",
+    "participacao_agropecuaria_2021",
+    "participacao_industria_2021",
+    "participacao_servicos_2021",
+    "media_escolar_alunos_turma_AI_2022",
+    "media_escolar_alunos_turma_2ano_2022",
+    "media_escolar_docentes_superior_AI_2022",
+    "percentual_escolas_rurais_2022"
+  ],
+  "features_categorical": [
+    "sigla_uf"
+  ],
+  "random_forest_bootstrap": false,
+  "reason_bootstrap_false": "Compressed school/class rows carry student-count weights; bootstrapping these rows would sample schools/classes rather than students. Forest uses feature randomness and full weighted training data.",
+  "sample_weight": "Student counts, not INEP sampling weights",
+  "test": "Not queried for training, predictions or metrics",
+  "versions": {
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4"
+  }
+}
