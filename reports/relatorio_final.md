@@ -116,7 +116,3 @@ O valor estratégico desta versão está em evidenciar desigualdades territoriai
 - SQLite foi apoio local de preparação/auditoria. A entrega reproduzível usa JSON agregado e pipelines Scikit-learn; nenhuma arquitetura cloud é imposta por essa escolha.
 
 A evolução recomendada é obter uma chave escolar legítima ou atributos individuais autorizados anteriores à avaliação, ampliar os anos observados, avaliar calibração e estabilidade por grupos, e manter avaliação futura separada. Não reajustar esta versão após o teste.
-
-## Estado da entrega
-
-Código, dados analíticos agregados, modelos, EDA, comparações, SHAP, agrupamentos, protocolo e resultados de teste foram organizados localmente. Há roteiro e apoio visual para vídeo executivo. **O vídeo ainda precisa ser gravado; o repositório remoto, PR e submissão no portal ainda não foram realizados.** Não há alegação de execução de nuvem, publicação ou envio. Prazo informado pelo aluno: 03/11/2026.
