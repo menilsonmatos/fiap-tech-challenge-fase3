@@ -1,12 +1,12 @@
 # Tech Challenge — Fase 3: Alfabetização no Brasil
 
-Consolidação para publicação, 28/10/2026. O relatório principal está em **[reports/relatorio_final.pdf](reports/relatorio_final.pdf)**. A versão acadêmica v1 e sua avaliação de teste permanecem congeladas na tag **v1.0.0** e no relatório histórico `reports/relatorio_final.md`.
+Relatório e código consolidados em 28/10/2026. O relatório principal está em **[reports/relatorio_final.pdf](reports/relatorio_final.pdf)**. A versão acadêmica v1 e sua avaliação de teste permanecem congeladas na tag **v1.0.0** e no relatório histórico `reports/relatorio_final.md`.
 
 ## Resultado atualizado e limites
 
 Nos mesmos três folds por município do treino, a AP média foi 0,40509 para a probabilidade global, 0,51088 para a probabilidade por UF, 0,51990 para a logística de referência e 0,52735 com rendimento escolar de 2022. O ganho além da informação estadual é modesto. A combinação de rendimento e distorção não superou rendimento isolado na métrica principal.
 
-Estes resultados são de desenvolvimento por validação cruzada, não um novo teste final. O candidato enriquecido não substituiu o modelo entregue na v1. Todos os alunos de um município recebem o mesmo score, interpretado como risco do contexto. O professor confirmou a adequação dessa escolha e informou que não existe desempenho mínimo, enfatizando metodologia, validação, interpretação e documentação.
+Estes resultados são de desenvolvimento por validação cruzada, não um novo teste final. O candidato enriquecido não substituiu o modelo entregue na v1. Todos os alunos de um município recebem o mesmo score, interpretado como risco do contexto. A avaliação compara os resultados com a prevalência da classe positiva e com um baseline estadual.
 
 ## Reprodução dos novos experimentos
 
@@ -23,7 +23,7 @@ Os diretórios de saída devem ser novos. O comando de enriquecimento refaz os b
 
 Os contextos municipais públicos e scores agregados de treino estão em `data/processed/`. O manifesto adicional é `data/manifest_enriquecimento.json`. Não distribuímos registros individuais, chaves HMAC, bancos SQLite ou credenciais. Resultados e decisões estão em `reports/consolidacao-fase3/`, além dos relatórios de fontes, CV e combinação. Os relatórios originais registram os caminhos de preparação da época; os comandos acima são o caminho de reprodução portátil.
 
-O roteiro atualizado está em `video/roteiro_atualizado.md`. A publicação em etapas está descrita em `docs/publicacao-em-etapas.md`. Ainda faltam revisão do grupo, gravação do vídeo e submissão. A Gold individual é um contrato proposto e a tabela analítica local existe; não se afirma publicação de uma nova Gold em cloud.
+A tabela analítica local preserva a origem individual do alvo e os contextos municipais; não se afirma publicação de uma nova Gold em cloud.
 
 ## Documentação da v1 preservada
 
@@ -78,7 +78,6 @@ reports/          Relatório, métricas, decisões e verificações
 images/           Figuras
 models/           Modelos congelados de confiança local
 notebooks/        Guia dos scripts, sem duplicação de pipeline
-video/            Roteiro de até 5 minutos e apoio visual
 docs/             Dados, arquitetura e aderência ao enunciado
 ```
 
@@ -90,9 +89,6 @@ UF tem maior influência nos modelos. O enriquecimento e o aumento de complexida
 
 Faltam características que diferenciem alunos do mesmo município; o vínculo escolar direto teve cobertura zero. Dados de um único ano não permitem alegar previsão de anos futuros. Nenhuma capacidade real ou limiar operacional foi escolhido. A aplicação desta versão é análise acadêmica e planejamento territorial exploratório. Evoluir requer dados anteriores mais granulares e novos anos de avaliação.
 
-## Entrega e versionamento
-
-Há repositório Git local com commits e branches reais desta organização. Não representa um histórico de desenvolvimento desde a Fase 2. Nenhum repositório remoto ou PR foi publicado nesta etapa. Vídeo, revisão do grupo e submissão no FIAP ON permanecem pendentes. Consulte `docs/checklist-entrega.md`.
 
 ## Exportar o relatório em PDF
 

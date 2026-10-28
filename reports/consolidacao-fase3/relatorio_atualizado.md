@@ -1,14 +1,14 @@
 # Alfabetização no Brasil — relatório consolidado
 
-Atualização de 28/10/2026 após orientação do professor. Este documento consolida a interpretação metodológica e os experimentos posteriores à entrega acadêmica v1. A v1 permanece congelada. O candidato enriquecido não substituiu o modelo final da v1.
+Atualização de 28/10/2026. Este documento consolida a interpretação metodológica e os experimentos posteriores à entrega acadêmica v1. A v1 permanece congelada. O candidato enriquecido não substituiu o modelo final da v1.
 
 ## Resultado e decisão
 
-O modelo estima o risco de não alfabetização associado ao contexto municipal de cada aluno. A granularidade do alvo é individual; os atributos disponíveis são municipais. Assim, alunos de um mesmo município recebem a mesma probabilidade. Essa abordagem foi considerada adequada pelo professor na resposta compartilhada pelo aluno, desde que suas motivações e limitações sejam documentadas. O professor também informou que não há desempenho mínimo e recomendou comparar AP com prevalência e baselines.
+O modelo estima o risco de não alfabetização associado ao contexto municipal de cada aluno. A granularidade do alvo é individual; os atributos disponíveis são municipais. Assim, alunos de um mesmo município recebem a mesma probabilidade. A interpretação considera a granularidade disponível e suas limitações. O desempenho é comparado com a prevalência da classe positiva e com baselines global e estadual.
 
 O candidato prioritário para evolução é a regressão logística com o bloco de rendimento escolar de 2022: reprovação e abandono nos anos iniciais e no 2º ano. Sua AP média foi 0,52735, frente a 0,51990 da referência e 0,51088 do baseline por UF. A combinação com distorção não acrescentou ganho na métrica principal. Não há confirmação independente de superioridade em uma nova safra.
 
-## Comparação solicitada pelo professor
+## Comparação com prevalência e baselines
 
 A classe positiva é **não alfabetizado**. No treino, são 393.076 alunos nessa classe, em 968.939 avaliações válidas, resultando em prevalência de **40,57%**. As contagens abaixo devem ser lidas no recorte de alunos elegíveis, sem pesos amostrais do INEP.
 
@@ -100,8 +100,6 @@ Na raiz do repositório, execute python -m src.evaluation.baselines --output wor
 
 Os experimentos originais, a interpretação SHAP, os perfis exploratórios e a avaliação histórica permanecem documentados na entrega v1 e nos relatórios de validação cruzada e combinação. Esta atualização complementa essas evidências e não transforma os experimentos em um novo resultado final de teste.
 
-## Conclusão para a entrega
+## Conclusão
 
-A modelagem é aderente à orientação do professor: explicita a granularidade, separa municípios, ajusta transformações dentro dos folds, compara com baselines e documenta limitações. O desempenho mostra ganho frente à prevalência e um ganho menor frente à referência por UF. Não há requisito de desempenho mínimo, conforme orientação recebida.
-
-A publicação inicial no repositório remoto foi realizada pelo autor e um PR de consolidação foi aberto. Antes da submissão continuam necessários a revisão do grupo, a gravação do vídeo executivo, a conclusão da revisão e integração do PR e a submissão no portal. A recomendação é apresentar a v1 como avaliação histórica congelada e os novos indicadores como evolução exploratória, distinguindo claramente as duas etapas.
+A classificação individual usa atributos municipais e, por isso, produz uma estimativa de risco contextual. A separação por município e o ajuste das transformações dentro dos folds evitam vazamento entre os grupos de avaliação. O desempenho mostra ganho frente à prevalência e um ganho menor frente ao baseline por UF. Os indicadores de rendimento escolar constituem um candidato à evolução, cuja confirmação requer uma nova amostra independente.
