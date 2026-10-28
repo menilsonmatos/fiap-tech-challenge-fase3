@@ -1,0 +1,6 @@
+# Preserve the exact bytes covered by the frozen v1 dataset hash.
+data/processed/dados_analiticos_municipais.json -text
+# New public contexts and OOF data have canonical LF bytes.
+data/processed/contexto_municipal_candidato.json text eol=lf
+data/processed/contexto_pnad_uf.json text eol=lf
+data/processed/dados_treino_oof.json text eol=lf
