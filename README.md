@@ -1,6 +1,6 @@
 # Tech Challenge — Fase 3: Alfabetização no Brasil
 
-Consolidação para publicação, 28/10/2026. O relatório principal está em **[reports/relatorio_final.pdf](reports/relatorio_final.pdf)**. A versão acadêmica v1 e sua avaliação de teste permanecem congeladas na tag **v1.0.0** e em `ABRIR_RELATORIO.html`.
+Consolidação para publicação, 28/10/2026. O relatório principal está em **[reports/relatorio_final.pdf](reports/relatorio_final.pdf)**. A versão acadêmica v1 e sua avaliação de teste permanecem congeladas na tag **v1.0.0** e no relatório histórico `reports/relatorio_final.md`.
 
 ## Resultado atualizado e limites
 
@@ -28,7 +28,7 @@ O roteiro atualizado está em `video/roteiro_atualizado.md`. A publicação em e
 ## Documentação da v1 preservada
 
 
-Versão acadêmica 1.0, preparada em 27/10/2026. Comece por **ABRIR_RELATORIO.html**. A documentação técnica completa está em `reports/relatorio_final.md`.
+Versão acadêmica 1.0, preparada em 27/10/2026. A documentação histórica está em `reports/relatorio_final.md`. A documentação técnica completa está em `reports/relatorio_final.md`.
 
 ## Problema e resultado
 
