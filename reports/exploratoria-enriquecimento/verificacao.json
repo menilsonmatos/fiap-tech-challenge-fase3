@@ -1,0 +1,32 @@
+{
+  "municipios_contexto": 5568,
+  "chaves_unicas": true,
+  "sem_alvo_ou_identificacao_individual": true,
+  "rendimento_AI": {
+    "municipios": 5557,
+    "maior_desvio_soma_100": 1.4210854715202004e-14
+  },
+  "rendimento_2ano": {
+    "municipios": 5541,
+    "maior_desvio_soma_100": 1.4210854715202004e-14
+  },
+  "vaat": {
+    "municipios_extraidos": 5507,
+    "posterior_maior_igual_anterior": true,
+    "sem_complementacao_ambigua": true
+  },
+  "bloco_prioritario": {
+    "municipios_completos": 3180,
+    "alunos_cobertos": 963719,
+    "pct_alunos": 99.46126639551096,
+    "ufs": 25
+  },
+  "amostras_pdf_verificadas": [
+    "2211704",
+    "2110104",
+    "2701506",
+    "3153806",
+    "3536505",
+    "5200506"
+  ]
+}

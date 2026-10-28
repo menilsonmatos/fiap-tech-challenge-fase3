@@ -1,0 +1,8 @@
+{
+  "testes_existentes_aprovados": 5,
+  "cv_portatil_reproduz_blocos": true,
+  "baselines_portateis_reproduzidos": true,
+  "v1_preservada": true,
+  "padroes_credenciais_encontrados": [],
+  "ambiente": "Dependências instaladas do projeto; não houve instalação em ambiente virtual novo."
+}

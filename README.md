@@ -1,6 +1,34 @@
 # Tech Challenge — Fase 3: Alfabetização no Brasil
 
-Versão acadêmica 1.0, preparada em 27/10/2026. Comece por **ABRIR_RELATORIO.html**. A documentação técnica completa está em `reports/relatorio_final.md`.
+Consolidação para publicação, 28/10/2026. O relatório principal está em **[reports/relatorio_final.pdf](reports/relatorio_final.pdf)**. A versão acadêmica v1 e sua avaliação de teste permanecem congeladas na tag **v1.0.0** e no relatório histórico `reports/relatorio_final.md`.
+
+## Resultado atualizado e limites
+
+Nos mesmos três folds por município do treino, a AP média foi 0,40509 para a probabilidade global, 0,51088 para a probabilidade por UF, 0,51990 para a logística de referência e 0,52735 com rendimento escolar de 2022. O ganho além da informação estadual é modesto. A combinação de rendimento e distorção não superou rendimento isolado na métrica principal.
+
+Estes resultados são de desenvolvimento por validação cruzada, não um novo teste final. O candidato enriquecido não substituiu o modelo entregue na v1. Todos os alunos de um município recebem o mesmo score, interpretado como risco do contexto. O professor confirmou a adequação dessa escolha e informou que não existe desempenho mínimo, enfatizando metodologia, validação, interpretação e documentação.
+
+## Reprodução dos novos experimentos
+
+Após instalar `requirements.txt`, na raiz do repositório:
+
+```text
+python -m src.cli verify
+python -m unittest discover -s tests -v
+python -m src.modeling.enrichment --output work/enriquecimento_novo
+python -m src.evaluation.baselines --output work/baselines_novos
+```
+
+Os diretórios de saída devem ser novos. O comando de enriquecimento refaz os blocos separados e a combinação somente no treino; o comando de baselines compara previsões OOF congeladas com baselines estimados dentro dos mesmos folds. Ambos usam os dados incluídos e caminhos relativos ao projeto, sem acesso aos Downloads ou à pasta de preparação original. Não consultam validação ou teste para gerar novos scores. Os módulos novos usam os mesmos parâmetros das análises relatadas.
+
+Os contextos municipais públicos e scores agregados de treino estão em `data/processed/`. O manifesto adicional é `data/manifest_enriquecimento.json`. Não distribuímos registros individuais, chaves HMAC, bancos SQLite ou credenciais. Resultados e decisões estão em `reports/consolidacao-fase3/`, além dos relatórios de fontes, CV e combinação. Os relatórios originais registram os caminhos de preparação da época; os comandos acima são o caminho de reprodução portátil.
+
+O roteiro atualizado está em `video/roteiro_atualizado.md`. A publicação em etapas está descrita em `docs/publicacao-em-etapas.md`. Ainda faltam revisão do grupo, gravação do vídeo e submissão. A Gold individual é um contrato proposto e a tabela analítica local existe; não se afirma publicação de uma nova Gold em cloud.
+
+## Documentação da v1 preservada
+
+
+Versão acadêmica 1.0, preparada em 27/10/2026. A documentação histórica está em `reports/relatorio_final.md`. A documentação técnica completa está em `reports/relatorio_final.md`.
 
 ## Problema e resultado
 
@@ -65,3 +93,14 @@ Faltam características que diferenciem alunos do mesmo município; o vínculo e
 ## Entrega e versionamento
 
 Há repositório Git local com commits e branches reais desta organização. Não representa um histórico de desenvolvimento desde a Fase 2. Nenhum repositório remoto ou PR foi publicado nesta etapa. Vídeo, revisão do grupo e submissão no FIAP ON permanecem pendentes. Consulte `docs/checklist-entrega.md`.
+
+## Exportar o relatório em PDF
+
+O PDF consolidado está em `reports/relatorio_final.pdf`. A fonte editável está em `reports/consolidacao-fase3/relatorio_atualizado.md`. Para regenerar o PDF, instale a dependência opcional e execute na raiz:
+
+```text
+python -m pip install -r requirements-pdf.txt
+python -m src.visualization.report_pdf
+```
+
+O gerador apenas formata o relatório e incorpora figuras históricas existentes; não treina modelos nem recalcula o teste.

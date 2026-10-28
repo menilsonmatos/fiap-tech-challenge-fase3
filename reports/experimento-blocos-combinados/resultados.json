@@ -1,0 +1,262 @@
+{
+  "resumo": [
+    {
+      "bloco": "referencia",
+      "AP_media_folds": 0.5199033334493247,
+      "AP_desvio_folds": 0.014203981187276544,
+      "delta_AP_media": 0.0,
+      "delta_AP_por_fold": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "OOF": {
+        "AP": 0.5155166949024709,
+        "ROC_AUC": 0.6342129669031722,
+        "Brier": 0.22922447639717947,
+        "log_loss": 0.6496734413148175
+      }
+    },
+    {
+      "bloco": "distorcao",
+      "AP_media_folds": 0.5258985566852562,
+      "AP_desvio_folds": 0.012617551899881927,
+      "delta_AP_media": 0.005995223235931528,
+      "delta_AP_por_fold": [
+        0.006867449725104446,
+        0.006969738340111942,
+        0.0041484816425781945
+      ],
+      "OOF": {
+        "AP": 0.5251435709733878,
+        "ROC_AUC": 0.6399913067310385,
+        "Brier": 0.22730768434997167,
+        "log_loss": 0.6454368628520162
+      },
+      "IC95_delta_AP_OOF_condicional": [
+        0.0011805737846313392,
+        0.018472692925289972
+      ],
+      "delta_AP_OOF": 0.009626876070916945
+    },
+    {
+      "bloco": "rendimento",
+      "AP_media_folds": 0.527346337698862,
+      "AP_desvio_folds": 0.014493359374546053,
+      "delta_AP_media": 0.007443004249537477,
+      "delta_AP_por_fold": [
+        0.0037735048580163078,
+        0.011895615636308587,
+        0.006659892254287536
+      ],
+      "OOF": {
+        "AP": 0.5256989317521592,
+        "ROC_AUC": 0.6395782233359235,
+        "Brier": 0.2275644865939255,
+        "log_loss": 0.6461411256851642
+      },
+      "IC95_delta_AP_OOF_condicional": [
+        0.0027348785372646235,
+        0.017809254763469423
+      ],
+      "delta_AP_OOF": 0.010182236849688331
+    },
+    {
+      "bloco": "combinado",
+      "AP_media_folds": 0.5264048453343864,
+      "AP_desvio_folds": 0.01389029382829997,
+      "delta_AP_media": 0.0065015118850617615,
+      "delta_AP_por_fold": [
+        0.0040894624902805266,
+        0.009972289365570264,
+        0.005442783799334494
+      ],
+      "OOF": {
+        "AP": 0.525092544520892,
+        "ROC_AUC": 0.639899027540734,
+        "Brier": 0.22741057773097617,
+        "log_loss": 0.6457161601619624
+      },
+      "IC95_delta_AP_OOF_condicional": [
+        0.0018310745821502718,
+        0.01790053517266584
+      ],
+      "delta_AP_OOF": 0.009575849618421173
+    }
+  ],
+  "folds": [
+    {
+      "bloco": "referencia",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "iteracoes": 286,
+      "segundos": 0.18799999999828287,
+      "AP": 0.5104395152368002,
+      "ROC_AUC": 0.6234426914868637,
+      "Brier": 0.23444771926181251,
+      "log_loss": 0.6615188071752153
+    },
+    {
+      "bloco": "referencia",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "iteracoes": 313,
+      "segundos": 0.15599999999903957,
+      "AP": 0.513034372321043,
+      "ROC_AUC": 0.6319872995203755,
+      "Brier": 0.227798192316676,
+      "log_loss": 0.6461752117812045
+    },
+    {
+      "bloco": "referencia",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "iteracoes": 412,
+      "segundos": 0.18800000000192085,
+      "AP": 0.5362361127901306,
+      "ROC_AUC": 0.6536632769895211,
+      "Brier": 0.22363931134985277,
+      "log_loss": 0.6372992610882018
+    },
+    {
+      "bloco": "distorcao",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "iteracoes": 299,
+      "segundos": 0.13999999999941792,
+      "AP": 0.5173069649619046,
+      "ROC_AUC": 0.6292436006427405,
+      "Brier": 0.2310996274474302,
+      "log_loss": 0.6541435593969812
+    },
+    {
+      "bloco": "distorcao",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "iteracoes": 304,
+      "segundos": 0.13999999999941792,
+      "AP": 0.5200041106611549,
+      "ROC_AUC": 0.6392870586895141,
+      "Brier": 0.2262993612122072,
+      "log_loss": 0.6428712189845386
+    },
+    {
+      "bloco": "distorcao",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "iteracoes": 485,
+      "segundos": 0.23399999999674037,
+      "AP": 0.5403845944327088,
+      "ROC_AUC": 0.654238839397508,
+      "Brier": 0.2232229622127622,
+      "log_loss": 0.6363352060167058
+    },
+    {
+      "bloco": "rendimento",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "iteracoes": 255,
+      "segundos": 0.14099999999962165,
+      "AP": 0.5142130200948165,
+      "ROC_AUC": 0.6272713683718609,
+      "Brier": 0.23196918945465214,
+      "log_loss": 0.656233427335434
+    },
+    {
+      "bloco": "rendimento",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "iteracoes": 353,
+      "segundos": 0.18799999999828287,
+      "AP": 0.5249299879573516,
+      "ROC_AUC": 0.6390001278772325,
+      "Brier": 0.22628189695130366,
+      "log_loss": 0.6429279004526122
+    },
+    {
+      "bloco": "rendimento",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "iteracoes": 536,
+      "segundos": 0.2649999999994179,
+      "AP": 0.5428960050444182,
+      "ROC_AUC": 0.6555638943888095,
+      "Brier": 0.22294296067164893,
+      "log_loss": 0.6358559532880236
+    },
+    {
+      "bloco": "combinado",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "iteracoes": 427,
+      "segundos": 0.21899999999732245,
+      "AP": 0.5145289777270807,
+      "ROC_AUC": 0.6279514231005114,
+      "Brier": 0.23162240251357538,
+      "log_loss": 0.6553536866829587
+    },
+    {
+      "bloco": "combinado",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "iteracoes": 352,
+      "segundos": 0.18800000000192085,
+      "AP": 0.5230066616866133,
+      "ROC_AUC": 0.640242775012918,
+      "Brier": 0.22613247032002357,
+      "log_loss": 0.6425202937095009
+    },
+    {
+      "bloco": "combinado",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "iteracoes": 391,
+      "segundos": 0.21900000000096043,
+      "AP": 0.5416788965894651,
+      "ROC_AUC": 0.6549466926220937,
+      "Brier": 0.22304864916886927,
+      "log_loss": 0.6360355573323816
+    }
+  ],
+  "cobertura": [
+    {
+      "bloco": "referencia",
+      "municipios_completos": 3267,
+      "alunos_completos": 968939,
+      "alunos_pct": 100.0
+    },
+    {
+      "bloco": "distorcao",
+      "municipios_completos": 3261,
+      "alunos_completos": 968813,
+      "alunos_pct": 99.98699608540889
+    },
+    {
+      "bloco": "rendimento",
+      "municipios_completos": 3261,
+      "alunos_completos": 968813,
+      "alunos_pct": 99.98699608540889
+    },
+    {
+      "bloco": "combinado",
+      "municipios_completos": 3261,
+      "alunos_completos": 968813,
+      "alunos_pct": 99.98699608540889
+    }
+  ],
+  "avisos": [],
+  "integridade_entradas_preservada": true,
+  "teste_reavaliado": false
+}

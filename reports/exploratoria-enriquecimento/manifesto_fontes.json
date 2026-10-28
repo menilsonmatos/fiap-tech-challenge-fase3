@@ -1,0 +1,47 @@
+[
+  {
+    "arquivo": "FUNDEB_VAAT_2023.pdf",
+    "bytes": 5113576,
+    "sha256": "c999fa67796fc3c40fae4b9f60a379da8abace5b44cba46723bff765a15f4de2",
+    "url": "https://www.gov.br/fnde/pt-br/acesso-a-informacao/acoes-e-programas/financiamento/fundeb/2023-1/AnexoIIIPortariaInterm.n3de28.08.2023.pdf/@@display-file/file",
+    "data_download": "2026-10-27",
+    "uso": "Fonte pública exploratória; verificar revisão para simulação histórica estrita"
+  },
+  {
+    "arquivo": "INSE2021.xlsx",
+    "bytes": 6568528,
+    "sha256": "fe467b90efff622d9cbdd19934710b1123968e8160dd639d3766acc29e8ca157",
+    "url": "https://download.inep.gov.br/informacoes_estatisticas/indicadores_educacionais/2021/nivel_socioeconomico/INSE_2021_municipios.xlsx",
+    "data_download": "2026-10-27",
+    "uso": "Fonte pública exploratória; verificar revisão para simulação histórica estrita"
+  },
+  {
+    "arquivo": "PNAD_RDPC_2022.pdf",
+    "bytes": 85150,
+    "sha256": "73c4ebc20259db1f3f1b547b2387e8eb37beae3040479d519559bff8ebcaab7d",
+    "url": "https://www.ibge.gov.br/biblioteca/visualizacao/periodicos/3100/rdpc_2022.pdf",
+    "data_download": "2026-10-27",
+    "uso": "Fonte pública exploratória; verificar revisão para simulação histórica estrita"
+  },
+  {
+    "arquivo": "REND2022.zip",
+    "bytes": 35558134,
+    "sha256": "87d8b33c1a7b9582a758283eb855c84ca080d3c1ef1d5cd781e59ed304de6659",
+    "url": "https://download.inep.gov.br/informacoes_estatisticas/indicadores_educacionais/2022/tx_rend_municipios_2022.zip",
+    "data_download": "2026-10-27",
+    "uso": "Fonte pública exploratória; verificar revisão para simulação histórica estrita"
+  },
+  {
+    "arquivo": "TDI2022.zip",
+    "bytes": 14627876,
+    "sha256": "30ca963d8accdcd7a3715e996e00720e872731d1e08491253d48304c6f263f0b",
+    "url": "https://download.inep.gov.br/informacoes_estatisticas/indicadores_educacionais/2022/TDI_2022_MUNICIPIOS.zip",
+    "data_download": "2026-10-27",
+    "uso": "Fonte pública exploratória; verificar revisão para simulação histórica estrita"
+  },
+  {
+    "arquivo": "AFD2022.zip",
+    "url": "https://download.inep.gov.br/informacoes_estatisticas/indicadores_educacionais/2022/AFD_2022_MUNICIPIOS.zip",
+    "status": "Download não concluído; cobertura não medida"
+  }
+]

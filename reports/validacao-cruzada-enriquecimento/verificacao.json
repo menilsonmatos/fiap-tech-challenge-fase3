@@ -1,0 +1,11 @@
+{
+  "oof_uma_previsao_por_municipio_por_bloco": true,
+  "contagens_folds_reconciliadas": true,
+  "calibracao_e_ufs_reconciliadas": true,
+  "metricas_comprimidas_conferidas_por_expansao_individual": true,
+  "amostra_verificacao_municipios": 20,
+  "amostra_verificacao_alunos": 4172,
+  "convergencia_todos_ajustes": true,
+  "avisos": [],
+  "entradas_preservadas": true
+}

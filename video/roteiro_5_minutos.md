@@ -1,6 +1,6 @@
 # Roteiro do vídeo executivo — até 5 minutos
 
-Duração planejada: aproximadamente 4min40s, ajustável ao ritmo da apresentação. Confirmar integrantes antes da gravação. O material visual está em `apoio_visual.html`. Não exibir microdados, identificadores individuais ou arquivos privados.
+Duração planejada: aproximadamente 4min40s, ajustável ao ritmo da apresentação. Confirmar integrantes antes da gravação. Use as figuras da pasta `images/` e o relatório `reports/relatorio_final.pdf` como apoio visual. O roteiro consolidado está em `roteiro_atualizado.md`. Não exibir microdados, identificadores individuais ou arquivos privados.
 
 ## 0:00–0:40 | Problema e objetivo
 

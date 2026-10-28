@@ -14,3 +14,7 @@
 | Vídeo executivo até 5 minutos | Roteiro e apoio visual prontos; gravação pendente. |
 
 Não foi prometida alta precisão nem generalização temporal. O relatório explica o resultado modesto e o caminho de evolução. O PDF original contém identificação do aluno e não foi incluído no pacote de distribuição.
+
+## Esclarecimento posterior do professor — 28/10/2026
+
+Na resposta compartilhada pelo aluno, o professor confirmou a adequação da classificação individual com atributos municipais, a separação por município e o pré-processamento dentro dos folds. Não há desempenho mínimo informado. A interpretação é risco contextual. Foram acrescentadas comparações com prevalência e baseline por UF, sem alterar a origem documentada do alvo ou afirmar que a Gold individual já foi publicada em cloud.
