@@ -1,0 +1,326 @@
+{
+  "data": "2026-10-28",
+  "classe_positiva": "não alfabetizado",
+  "alunos": 968939,
+  "municipios": 3267,
+  "prevalencia_treino": 0.4056767247473783,
+  "prevalencia_media_folds": 0.40509126942904633,
+  "resumo": [
+    {
+      "modelo": "global",
+      "AP_media_folds": 0.40509126942904633,
+      "AP_desvio_folds": 0.005562811479276685,
+      "delta_AP_vs_global": 0.0,
+      "delta_AP_vs_UF": -0.10578452951253542,
+      "razao_AP_vs_global": 1.0,
+      "OOF": {
+        "AP": 0.40338026621978024,
+        "Brier": 0.24113564503941443,
+        "ROC_AUC": 0.49520610050664193,
+        "log_loss": 0.675313865278385
+      }
+    },
+    {
+      "modelo": "uf",
+      "AP_media_folds": 0.5108757989415817,
+      "AP_desvio_folds": 0.00876181918624317,
+      "delta_AP_vs_global": 0.10578452951253542,
+      "delta_AP_vs_UF": 0.0,
+      "razao_AP_vs_global": 1.2611375200991937,
+      "OOF": {
+        "AP": 0.5114849260611456,
+        "Brier": 0.2293848873927298,
+        "ROC_AUC": 0.6250476060315521,
+        "log_loss": 0.6507184270537152
+      }
+    },
+    {
+      "modelo": "referencia",
+      "AP_media_folds": 0.5199033334493247,
+      "AP_desvio_folds": 0.014203981187276544,
+      "delta_AP_vs_global": 0.11481206402027838,
+      "delta_AP_vs_UF": 0.009027534507742963,
+      "razao_AP_vs_global": 1.283422706646084,
+      "OOF": {
+        "AP": 0.5155166949024709,
+        "Brier": 0.22922447639660498,
+        "ROC_AUC": 0.6342129669031722,
+        "log_loss": 0.6496734413132114
+      }
+    },
+    {
+      "modelo": "distorcao",
+      "AP_media_folds": 0.5258985566852562,
+      "AP_desvio_folds": 0.012617551899881927,
+      "delta_AP_vs_global": 0.12080728725620987,
+      "delta_AP_vs_UF": 0.015022757743674453,
+      "razao_AP_vs_global": 1.2982223917747746,
+      "OOF": {
+        "AP": 0.5251435709733878,
+        "Brier": 0.22730768435000975,
+        "ROC_AUC": 0.6399913067310385,
+        "log_loss": 0.6454368628517959
+      }
+    },
+    {
+      "modelo": "rendimento",
+      "AP_media_folds": 0.527346337698862,
+      "AP_desvio_folds": 0.014493359374546053,
+      "delta_AP_vs_global": 0.12225506826981564,
+      "delta_AP_vs_UF": 0.016470538757280218,
+      "razao_AP_vs_global": 1.3017963542935087,
+      "OOF": {
+        "AP": 0.5256989317521592,
+        "Brier": 0.22756448659319883,
+        "ROC_AUC": 0.6395782233359235,
+        "log_loss": 0.6461411256834447
+      }
+    },
+    {
+      "modelo": "combinado",
+      "AP_media_folds": 0.5264048453343864,
+      "AP_desvio_folds": 0.01389029382829997,
+      "delta_AP_vs_global": 0.12131357590534003,
+      "delta_AP_vs_UF": 0.015529046392804613,
+      "razao_AP_vs_global": 1.2994722055509238,
+      "OOF": {
+        "AP": 0.525092544520892,
+        "Brier": 0.22741057773018578,
+        "ROC_AUC": 0.639899027540734,
+        "log_loss": 0.6457161601605068
+      }
+    }
+  ],
+  "folds": [
+    {
+      "modelo": "global",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "prevalencia_holdout": 0.41151433926309067,
+      "prevalencia_ajuste": 0.40187694556755627,
+      "AP": 0.41151433926309067,
+      "Brier": 0.2422631672011953,
+      "ROC_AUC": 0.5,
+      "log_loss": 0.6775976824533712
+    },
+    {
+      "modelo": "uf",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "prevalencia_holdout": 0.41151433926309067,
+      "prevalencia_ajuste": 0.40187694556755627,
+      "AP": 0.5063222326367463,
+      "Brier": 0.23315677253093142,
+      "ROC_AUC": 0.6162626901927242,
+      "log_loss": 0.6600485084006328
+    },
+    {
+      "modelo": "referencia",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "prevalencia_holdout": 0.41151433926309067,
+      "prevalencia_ajuste": 0.40187694556755627,
+      "AP": 0.5104395152368002,
+      "Brier": 0.23444771926035407,
+      "ROC_AUC": 0.6234426914868637,
+      "log_loss": 0.6615188071710187
+    },
+    {
+      "modelo": "distorcao",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "prevalencia_holdout": 0.41151433926309067,
+      "prevalencia_ajuste": 0.40187694556755627,
+      "AP": 0.5173069649619046,
+      "Brier": 0.2310996274476567,
+      "ROC_AUC": 0.6292436006427405,
+      "log_loss": 0.6541435593966202
+    },
+    {
+      "modelo": "rendimento",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "prevalencia_holdout": 0.41151433926309067,
+      "prevalencia_ajuste": 0.40187694556755627,
+      "AP": 0.5142130200948165,
+      "Brier": 0.23196918945285644,
+      "ROC_AUC": 0.6272713683718609,
+      "log_loss": 0.65623342733087
+    },
+    {
+      "modelo": "combinado",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "prevalencia_holdout": 0.41151433926309067,
+      "prevalencia_ajuste": 0.40187694556755627,
+      "AP": 0.5145289777270807,
+      "Brier": 0.23162240251146063,
+      "ROC_AUC": 0.6279514231005114,
+      "log_loss": 0.6553536866790544
+    },
+    {
+      "modelo": "global",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "prevalencia_holdout": 0.40182494414594366,
+      "prevalencia_ajuste": 0.4074750282342184,
+      "AP": 0.40182494414594366,
+      "Brier": 0.2403935818582575,
+      "ROC_AUC": 0.5,
+      "log_loss": 0.6738108911712117
+    },
+    {
+      "modelo": "uf",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "prevalencia_holdout": 0.40182494414594366,
+      "prevalencia_ajuste": 0.4074750282342184,
+      "AP": 0.505328372812352,
+      "Brier": 0.22857192322169778,
+      "ROC_AUC": 0.6236725053148714,
+      "log_loss": 0.6482147683325701
+    },
+    {
+      "modelo": "referencia",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "prevalencia_holdout": 0.40182494414594366,
+      "prevalencia_ajuste": 0.4074750282342184,
+      "AP": 0.513034372321043,
+      "Brier": 0.2277981923164628,
+      "ROC_AUC": 0.6319872995203755,
+      "log_loss": 0.6461752117808669
+    },
+    {
+      "modelo": "distorcao",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "prevalencia_holdout": 0.40182494414594366,
+      "prevalencia_ajuste": 0.4074750282342184,
+      "AP": 0.5200041106611549,
+      "Brier": 0.2262993612116912,
+      "ROC_AUC": 0.6392870586895141,
+      "log_loss": 0.6428712189835052
+    },
+    {
+      "modelo": "rendimento",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "prevalencia_holdout": 0.40182494414594366,
+      "prevalencia_ajuste": 0.4074750282342184,
+      "AP": 0.5249299879573516,
+      "Brier": 0.2262818969514247,
+      "ROC_AUC": 0.6390001278772325,
+      "log_loss": 0.6429279004530423
+    },
+    {
+      "modelo": "combinado",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "prevalencia_holdout": 0.40182494414594366,
+      "prevalencia_ajuste": 0.4074750282342184,
+      "AP": 0.5230066616866133,
+      "Brier": 0.2261324703201958,
+      "ROC_AUC": 0.640242775012918,
+      "log_loss": 0.6425202937098788
+    },
+    {
+      "modelo": "global",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "prevalencia_holdout": 0.4019345248781048,
+      "prevalencia_ajuste": 0.407186339928826,
+      "AP": 0.4019345248781048,
+      "Brier": 0.24041074415044397,
+      "ROC_AUC": 0.5,
+      "log_loss": 0.6738454667767008
+    },
+    {
+      "modelo": "uf",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "prevalencia_holdout": 0.4019345248781048,
+      "prevalencia_ajuste": 0.407186339928826,
+      "AP": 0.520976791375647,
+      "Brier": 0.22511136368517848,
+      "ROC_AUC": 0.6427117504373628,
+      "log_loss": 0.6406930732424347
+    },
+    {
+      "modelo": "referencia",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "prevalencia_holdout": 0.4019345248781048,
+      "prevalencia_ajuste": 0.407186339928826,
+      "AP": 0.5362361127901306,
+      "Brier": 0.2236393113500908,
+      "ROC_AUC": 0.6536632769895211,
+      "log_loss": 0.6372992610887442
+    },
+    {
+      "modelo": "distorcao",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "prevalencia_holdout": 0.4019345248781048,
+      "prevalencia_ajuste": 0.407186339928826,
+      "AP": 0.5403845944327088,
+      "Brier": 0.2232229622131554,
+      "ROC_AUC": 0.654238839397508,
+      "log_loss": 0.6363352060175795
+    },
+    {
+      "modelo": "rendimento",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "prevalencia_holdout": 0.4019345248781048,
+      "prevalencia_ajuste": 0.407186339928826,
+      "AP": 0.5428960050444182,
+      "Brier": 0.22294296067145,
+      "ROC_AUC": 0.6555638943888095,
+      "log_loss": 0.6358559532878258
+    },
+    {
+      "modelo": "combinado",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "prevalencia_holdout": 0.4019345248781048,
+      "prevalencia_ajuste": 0.407186339928826,
+      "AP": 0.5416788965894651,
+      "Brier": 0.22304864916882947,
+      "ROC_AUC": 0.6549466926220937,
+      "log_loss": 0.6360355573322543
+    }
+  ],
+  "fonte_sha256": "a219ac49c2da3e6b70ff8fa6dbafbe8ba8526acd7dc0f52ff6f99ab392717a71",
+  "regras": [
+    "Baselines estimados somente nos folds de ajuste.",
+    "Scores dos modelos reutilizados da CV anterior, sem novos ajustes.",
+    "AP média e AP OOF agrupada são medidas distintas.",
+    "Bootstrap e resultados de desenvolvimento anteriores não constituem confirmação independente."
+  ],
+  "verificacoes": {
+    "AP_constante_igual_prevalencia_em_cada_fold": true,
+    "municipios_separados": true,
+    "todas_UFs_holdout_presentes_no_ajuste": true,
+    "scores_completos": true,
+    "sem_acesso_a_validacao_ou_teste": true
+  }
+}

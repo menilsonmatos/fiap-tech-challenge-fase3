@@ -1,0 +1,3002 @@
+[
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 36,
+    "alunos": 23436,
+    "alunos_cobertos": 23272
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 10,
+    "alunos": 5356,
+    "alunos_cobertos": 5356
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 24313,
+    "alunos_cobertos": 24313
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 142,
+    "alunos": 42449,
+    "alunos_cobertos": 42227
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 453,
+    "alunos": 85458,
+    "alunos_cobertos": 83275
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 45,
+    "alunos": 21909,
+    "alunos_cobertos": 21288
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 79,
+    "alunos": 26221,
+    "alunos_cobertos": 26071
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 84,
+    "alunos": 46400,
+    "alunos_cobertos": 45477
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 238,
+    "alunos": 71778,
+    "alunos_cobertos": 71763
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 55,
+    "alunos": 75307,
+    "alunos_cobertos": 75307
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 100,
+    "alunos": 11587,
+    "alunos_cobertos": 11587
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 265,
+    "alunos": 36631,
+    "alunos_cobertos": 36511
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 170,
+    "alunos": 31957,
+    "alunos_cobertos": 31887
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 365,
+    "alunos": 179342,
+    "alunos_cobertos": 178778
+  },
+  {
+    "variavel": "inse_municipal_2021",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 80,
+    "alunos": 10079,
+    "alunos_cobertos": 9891
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 36,
+    "alunos": 23436,
+    "alunos_cobertos": 23272
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 10,
+    "alunos": 5356,
+    "alunos_cobertos": 5356
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 24313,
+    "alunos_cobertos": 24313
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 142,
+    "alunos": 42449,
+    "alunos_cobertos": 42227
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 453,
+    "alunos": 85458,
+    "alunos_cobertos": 83275
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 45,
+    "alunos": 21909,
+    "alunos_cobertos": 21288
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 79,
+    "alunos": 26221,
+    "alunos_cobertos": 26071
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 84,
+    "alunos": 46400,
+    "alunos_cobertos": 45477
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 238,
+    "alunos": 71778,
+    "alunos_cobertos": 71763
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 55,
+    "alunos": 75307,
+    "alunos_cobertos": 75307
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 100,
+    "alunos": 11587,
+    "alunos_cobertos": 11587
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 265,
+    "alunos": 36631,
+    "alunos_cobertos": 36511
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 170,
+    "alunos": 31957,
+    "alunos_cobertos": 31887
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 365,
+    "alunos": 179342,
+    "alunos_cobertos": 178778
+  },
+  {
+    "variavel": "inse_niveis_1_2_pct_2021",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 80,
+    "alunos": 10079,
+    "alunos_cobertos": 9891
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 37,
+    "alunos": 23436,
+    "alunos_cobertos": 23436
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 10,
+    "alunos": 5356,
+    "alunos_cobertos": 5356
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 24313,
+    "alunos_cobertos": 24313
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 146,
+    "alunos": 42449,
+    "alunos_cobertos": 42427
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 498,
+    "alunos": 85458,
+    "alunos_cobertos": 85458
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 21909,
+    "alunos_cobertos": 21909
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 83,
+    "alunos": 26221,
+    "alunos_cobertos": 26185
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 86,
+    "alunos": 46400,
+    "alunos_cobertos": 46400
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 239,
+    "alunos": 71778,
+    "alunos_cobertos": 71778
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 55,
+    "alunos": 75307,
+    "alunos_cobertos": 75307
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 100,
+    "alunos": 11587,
+    "alunos_cobertos": 11587
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 272,
+    "alunos": 36631,
+    "alunos_cobertos": 36601
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 173,
+    "alunos": 31957,
+    "alunos_cobertos": 31957
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 376,
+    "alunos": 179342,
+    "alunos_cobertos": 179342
+  },
+  {
+    "variavel": "tdi_AI_pct_2022",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 83,
+    "alunos": 10079,
+    "alunos_cobertos": 10079
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 37,
+    "alunos": 23436,
+    "alunos_cobertos": 23436
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 10,
+    "alunos": 5356,
+    "alunos_cobertos": 5356
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 24313,
+    "alunos_cobertos": 24313
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 146,
+    "alunos": 42449,
+    "alunos_cobertos": 42427
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 498,
+    "alunos": 85458,
+    "alunos_cobertos": 85458
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 21909,
+    "alunos_cobertos": 21909
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 83,
+    "alunos": 26221,
+    "alunos_cobertos": 26185
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 86,
+    "alunos": 46400,
+    "alunos_cobertos": 46400
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 239,
+    "alunos": 71778,
+    "alunos_cobertos": 71778
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 55,
+    "alunos": 75307,
+    "alunos_cobertos": 75307
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 100,
+    "alunos": 11587,
+    "alunos_cobertos": 11587
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 272,
+    "alunos": 36631,
+    "alunos_cobertos": 36601
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 173,
+    "alunos": 31957,
+    "alunos_cobertos": 31957
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 375,
+    "alunos": 179342,
+    "alunos_cobertos": 179329
+  },
+  {
+    "variavel": "tdi_2ano_pct_2022",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 82,
+    "alunos": 10079,
+    "alunos_cobertos": 10054
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 37,
+    "alunos": 23436,
+    "alunos_cobertos": 23436
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 10,
+    "alunos": 5356,
+    "alunos_cobertos": 5356
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 24313,
+    "alunos_cobertos": 24313
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 146,
+    "alunos": 42449,
+    "alunos_cobertos": 42427
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 498,
+    "alunos": 85458,
+    "alunos_cobertos": 85458
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 21909,
+    "alunos_cobertos": 21909
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 83,
+    "alunos": 26221,
+    "alunos_cobertos": 26185
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 86,
+    "alunos": 46400,
+    "alunos_cobertos": 46400
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 239,
+    "alunos": 71778,
+    "alunos_cobertos": 71778
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 55,
+    "alunos": 75307,
+    "alunos_cobertos": 75307
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 100,
+    "alunos": 11587,
+    "alunos_cobertos": 11587
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 272,
+    "alunos": 36631,
+    "alunos_cobertos": 36601
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 173,
+    "alunos": 31957,
+    "alunos_cobertos": 31957
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 376,
+    "alunos": 179342,
+    "alunos_cobertos": 179342
+  },
+  {
+    "variavel": "aprovacao_AI_pct_2022",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 83,
+    "alunos": 10079,
+    "alunos_cobertos": 10079
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 37,
+    "alunos": 23436,
+    "alunos_cobertos": 23436
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 10,
+    "alunos": 5356,
+    "alunos_cobertos": 5356
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 24313,
+    "alunos_cobertos": 24313
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 146,
+    "alunos": 42449,
+    "alunos_cobertos": 42427
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 498,
+    "alunos": 85458,
+    "alunos_cobertos": 85458
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 21909,
+    "alunos_cobertos": 21909
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 83,
+    "alunos": 26221,
+    "alunos_cobertos": 26185
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 86,
+    "alunos": 46400,
+    "alunos_cobertos": 46400
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 239,
+    "alunos": 71778,
+    "alunos_cobertos": 71778
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 55,
+    "alunos": 75307,
+    "alunos_cobertos": 75307
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 100,
+    "alunos": 11587,
+    "alunos_cobertos": 11587
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 272,
+    "alunos": 36631,
+    "alunos_cobertos": 36601
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 173,
+    "alunos": 31957,
+    "alunos_cobertos": 31957
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 375,
+    "alunos": 179342,
+    "alunos_cobertos": 179329
+  },
+  {
+    "variavel": "aprovacao_2ano_pct_2022",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 82,
+    "alunos": 10079,
+    "alunos_cobertos": 10054
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 37,
+    "alunos": 23436,
+    "alunos_cobertos": 23436
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 10,
+    "alunos": 5356,
+    "alunos_cobertos": 5356
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 24313,
+    "alunos_cobertos": 24313
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 146,
+    "alunos": 42449,
+    "alunos_cobertos": 42427
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 498,
+    "alunos": 85458,
+    "alunos_cobertos": 85458
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 21909,
+    "alunos_cobertos": 21909
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 83,
+    "alunos": 26221,
+    "alunos_cobertos": 26185
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 86,
+    "alunos": 46400,
+    "alunos_cobertos": 46400
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 239,
+    "alunos": 71778,
+    "alunos_cobertos": 71778
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 55,
+    "alunos": 75307,
+    "alunos_cobertos": 75307
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 100,
+    "alunos": 11587,
+    "alunos_cobertos": 11587
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 272,
+    "alunos": 36631,
+    "alunos_cobertos": 36601
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 173,
+    "alunos": 31957,
+    "alunos_cobertos": 31957
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 376,
+    "alunos": 179342,
+    "alunos_cobertos": 179342
+  },
+  {
+    "variavel": "reprovacao_AI_pct_2022",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 83,
+    "alunos": 10079,
+    "alunos_cobertos": 10079
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 37,
+    "alunos": 23436,
+    "alunos_cobertos": 23436
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 10,
+    "alunos": 5356,
+    "alunos_cobertos": 5356
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 24313,
+    "alunos_cobertos": 24313
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 146,
+    "alunos": 42449,
+    "alunos_cobertos": 42427
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 498,
+    "alunos": 85458,
+    "alunos_cobertos": 85458
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 21909,
+    "alunos_cobertos": 21909
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 83,
+    "alunos": 26221,
+    "alunos_cobertos": 26185
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 86,
+    "alunos": 46400,
+    "alunos_cobertos": 46400
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 239,
+    "alunos": 71778,
+    "alunos_cobertos": 71778
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 55,
+    "alunos": 75307,
+    "alunos_cobertos": 75307
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 100,
+    "alunos": 11587,
+    "alunos_cobertos": 11587
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 272,
+    "alunos": 36631,
+    "alunos_cobertos": 36601
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 173,
+    "alunos": 31957,
+    "alunos_cobertos": 31957
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 375,
+    "alunos": 179342,
+    "alunos_cobertos": 179329
+  },
+  {
+    "variavel": "reprovacao_2ano_pct_2022",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 82,
+    "alunos": 10079,
+    "alunos_cobertos": 10054
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 37,
+    "alunos": 23436,
+    "alunos_cobertos": 23436
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 10,
+    "alunos": 5356,
+    "alunos_cobertos": 5356
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 24313,
+    "alunos_cobertos": 24313
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 146,
+    "alunos": 42449,
+    "alunos_cobertos": 42427
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 498,
+    "alunos": 85458,
+    "alunos_cobertos": 85458
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 21909,
+    "alunos_cobertos": 21909
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 83,
+    "alunos": 26221,
+    "alunos_cobertos": 26185
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 86,
+    "alunos": 46400,
+    "alunos_cobertos": 46400
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 239,
+    "alunos": 71778,
+    "alunos_cobertos": 71778
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 55,
+    "alunos": 75307,
+    "alunos_cobertos": 75307
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 100,
+    "alunos": 11587,
+    "alunos_cobertos": 11587
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 272,
+    "alunos": 36631,
+    "alunos_cobertos": 36601
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 173,
+    "alunos": 31957,
+    "alunos_cobertos": 31957
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 376,
+    "alunos": 179342,
+    "alunos_cobertos": 179342
+  },
+  {
+    "variavel": "abandono_AI_pct_2022",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 83,
+    "alunos": 10079,
+    "alunos_cobertos": 10079
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 37,
+    "alunos": 23436,
+    "alunos_cobertos": 23436
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 10,
+    "alunos": 5356,
+    "alunos_cobertos": 5356
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 24313,
+    "alunos_cobertos": 24313
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 146,
+    "alunos": 42449,
+    "alunos_cobertos": 42427
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 498,
+    "alunos": 85458,
+    "alunos_cobertos": 85458
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 21909,
+    "alunos_cobertos": 21909
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 83,
+    "alunos": 26221,
+    "alunos_cobertos": 26185
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 86,
+    "alunos": 46400,
+    "alunos_cobertos": 46400
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 239,
+    "alunos": 71778,
+    "alunos_cobertos": 71778
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 55,
+    "alunos": 75307,
+    "alunos_cobertos": 75307
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 100,
+    "alunos": 11587,
+    "alunos_cobertos": 11587
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 272,
+    "alunos": 36631,
+    "alunos_cobertos": 36601
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 173,
+    "alunos": 31957,
+    "alunos_cobertos": 31957
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 375,
+    "alunos": 179342,
+    "alunos_cobertos": 179329
+  },
+  {
+    "variavel": "abandono_2ano_pct_2022",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 82,
+    "alunos": 10079,
+    "alunos_cobertos": 10054
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 36,
+    "alunos": 23436,
+    "alunos_cobertos": 23365
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 5,
+    "alunos": 5356,
+    "alunos_cobertos": 4715
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 46,
+    "alunos": 24313,
+    "alunos_cobertos": 24161
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 147,
+    "alunos": 42449,
+    "alunos_cobertos": 42449
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 493,
+    "alunos": 85458,
+    "alunos_cobertos": 83998
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 21909,
+    "alunos_cobertos": 21909
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 84,
+    "alunos": 26221,
+    "alunos_cobertos": 26221
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 82,
+    "alunos": 46400,
+    "alunos_cobertos": 45645
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 237,
+    "alunos": 71778,
+    "alunos_cobertos": 71652
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 50,
+    "alunos": 75307,
+    "alunos_cobertos": 72366
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 97,
+    "alunos": 11587,
+    "alunos_cobertos": 11366
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 272,
+    "alunos": 36631,
+    "alunos_cobertos": 35431
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 172,
+    "alunos": 31957,
+    "alunos_cobertos": 31837
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 367,
+    "alunos": 179342,
+    "alunos_cobertos": 176259
+  },
+  {
+    "variavel": "vaat_antes_reais_2023",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 83,
+    "alunos": 10079,
+    "alunos_cobertos": 10079
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 36,
+    "alunos": 23436,
+    "alunos_cobertos": 23365
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 5,
+    "alunos": 5356,
+    "alunos_cobertos": 4715
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 46,
+    "alunos": 24313,
+    "alunos_cobertos": 24161
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 147,
+    "alunos": 42449,
+    "alunos_cobertos": 42449
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 493,
+    "alunos": 85458,
+    "alunos_cobertos": 83998
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 21909,
+    "alunos_cobertos": 21909
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 84,
+    "alunos": 26221,
+    "alunos_cobertos": 26221
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 82,
+    "alunos": 46400,
+    "alunos_cobertos": 45645
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 237,
+    "alunos": 71778,
+    "alunos_cobertos": 71652
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 50,
+    "alunos": 75307,
+    "alunos_cobertos": 72366
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 97,
+    "alunos": 11587,
+    "alunos_cobertos": 11366
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 272,
+    "alunos": 36631,
+    "alunos_cobertos": 35431
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 172,
+    "alunos": 31957,
+    "alunos_cobertos": 31837
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 367,
+    "alunos": 179342,
+    "alunos_cobertos": 176259
+  },
+  {
+    "variavel": "vaat_apos_reais_2023",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 83,
+    "alunos": 10079,
+    "alunos_cobertos": 10079
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 36,
+    "alunos": 23436,
+    "alunos_cobertos": 23365
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 5,
+    "alunos": 5356,
+    "alunos_cobertos": 4715
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 46,
+    "alunos": 24313,
+    "alunos_cobertos": 24161
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 147,
+    "alunos": 42449,
+    "alunos_cobertos": 42449
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 493,
+    "alunos": 85458,
+    "alunos_cobertos": 83998
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 21909,
+    "alunos_cobertos": 21909
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 84,
+    "alunos": 26221,
+    "alunos_cobertos": 26221
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 82,
+    "alunos": 46400,
+    "alunos_cobertos": 45645
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 237,
+    "alunos": 71778,
+    "alunos_cobertos": 71652
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 50,
+    "alunos": 75307,
+    "alunos_cobertos": 72366
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 97,
+    "alunos": 11587,
+    "alunos_cobertos": 11366
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 272,
+    "alunos": 36631,
+    "alunos_cobertos": 35431
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 172,
+    "alunos": 31957,
+    "alunos_cobertos": 31837
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 367,
+    "alunos": 179342,
+    "alunos_cobertos": 176259
+  },
+  {
+    "variavel": "complementacao_vaat_reais_2023",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 83,
+    "alunos": 10079,
+    "alunos_cobertos": 10079
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 36,
+    "alunos": 23436,
+    "alunos_cobertos": 23365
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 5,
+    "alunos": 5356,
+    "alunos_cobertos": 4715
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 46,
+    "alunos": 24313,
+    "alunos_cobertos": 24161
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 147,
+    "alunos": 42449,
+    "alunos_cobertos": 42449
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 493,
+    "alunos": 85458,
+    "alunos_cobertos": 83998
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 21909,
+    "alunos_cobertos": 21909
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 84,
+    "alunos": 26221,
+    "alunos_cobertos": 26221
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 82,
+    "alunos": 46400,
+    "alunos_cobertos": 45645
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 237,
+    "alunos": 71778,
+    "alunos_cobertos": 71652
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 50,
+    "alunos": 75307,
+    "alunos_cobertos": 72366
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 97,
+    "alunos": 11587,
+    "alunos_cobertos": 11366
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 272,
+    "alunos": 36631,
+    "alunos_cobertos": 35431
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 172,
+    "alunos": 31957,
+    "alunos_cobertos": 31837
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 367,
+    "alunos": 179342,
+    "alunos_cobertos": 176259
+  },
+  {
+    "variavel": "recebe_vaat_2023",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 83,
+    "alunos": 10079,
+    "alunos_cobertos": 10079
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "AC",
+    "municipios": 13,
+    "municipios_com_dado": 13,
+    "alunos": 3449,
+    "alunos_cobertos": 3449
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "AL",
+    "municipios": 61,
+    "municipios_com_dado": 61,
+    "alunos": 18129,
+    "alunos_cobertos": 18129
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "AM",
+    "municipios": 37,
+    "municipios_com_dado": 37,
+    "alunos": 23436,
+    "alunos_cobertos": 23436
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "AP",
+    "municipios": 10,
+    "municipios_com_dado": 10,
+    "alunos": 5356,
+    "alunos_cobertos": 5356
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "BA",
+    "municipios": 244,
+    "municipios_com_dado": 244,
+    "alunos": 62282,
+    "alunos_cobertos": 62282
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "CE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 52613,
+    "alunos_cobertos": 52613
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "ES",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 24313,
+    "alunos_cobertos": 24313
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "GO",
+    "municipios": 147,
+    "municipios_com_dado": 147,
+    "alunos": 42449,
+    "alunos_cobertos": 42449
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "MA",
+    "municipios": 130,
+    "municipios_com_dado": 130,
+    "alunos": 37708,
+    "alunos_cobertos": 37708
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "MG",
+    "municipios": 498,
+    "municipios_com_dado": 498,
+    "alunos": 85458,
+    "alunos_cobertos": 85458
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "MS",
+    "municipios": 47,
+    "municipios_com_dado": 47,
+    "alunos": 21909,
+    "alunos_cobertos": 21909
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "MT",
+    "municipios": 84,
+    "municipios_com_dado": 84,
+    "alunos": 26221,
+    "alunos_cobertos": 26221
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "PA",
+    "municipios": 86,
+    "municipios_com_dado": 86,
+    "alunos": 46400,
+    "alunos_cobertos": 46400
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "PB",
+    "municipios": 133,
+    "municipios_com_dado": 133,
+    "alunos": 17894,
+    "alunos_cobertos": 17894
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "PE",
+    "municipios": 110,
+    "municipios_com_dado": 110,
+    "alunos": 45482,
+    "alunos_cobertos": 45482
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "PI",
+    "municipios": 134,
+    "municipios_com_dado": 134,
+    "alunos": 18584,
+    "alunos_cobertos": 18584
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "PR",
+    "municipios": 239,
+    "municipios_com_dado": 239,
+    "alunos": 71778,
+    "alunos_cobertos": 71778
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "RJ",
+    "municipios": 55,
+    "municipios_com_dado": 55,
+    "alunos": 75307,
+    "alunos_cobertos": 75307
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "RN",
+    "municipios": 100,
+    "municipios_com_dado": 100,
+    "alunos": 11587,
+    "alunos_cobertos": 11587
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "RO",
+    "municipios": 31,
+    "municipios_com_dado": 31,
+    "alunos": 11172,
+    "alunos_cobertos": 11172
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "RS",
+    "municipios": 274,
+    "municipios_com_dado": 274,
+    "alunos": 36631,
+    "alunos_cobertos": 36631
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "SC",
+    "municipios": 173,
+    "municipios_com_dado": 173,
+    "alunos": 31957,
+    "alunos_cobertos": 31957
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "SE",
+    "municipios": 45,
+    "municipios_com_dado": 45,
+    "alunos": 9403,
+    "alunos_cobertos": 9403
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "SP",
+    "municipios": 376,
+    "municipios_com_dado": 376,
+    "alunos": 179342,
+    "alunos_cobertos": 179342
+  },
+  {
+    "variavel": "renda_domiciliar_pc_UF_2022",
+    "uf": "TO",
+    "municipios": 83,
+    "municipios_com_dado": 83,
+    "alunos": 10079,
+    "alunos_cobertos": 10079
+  }
+]

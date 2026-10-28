@@ -1,0 +1,390 @@
+{
+  "resumo": [
+    {
+      "bloco": "referencia",
+      "AP_media_folds": 0.5199033334493247,
+      "AP_desvio_folds": 0.014203981187276544,
+      "delta_AP_media": 0.0,
+      "delta_AP_por_fold": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "OOF": {
+        "AP": 0.5155166949024709,
+        "ROC_AUC": 0.6342129669031722,
+        "Brier": 0.22922447639717947,
+        "log_loss": 0.6496734413148175
+      }
+    },
+    {
+      "bloco": "INSE",
+      "AP_media_folds": 0.5185031596841699,
+      "AP_desvio_folds": 0.026179543156276307,
+      "delta_AP_media": -0.0014001737651545738,
+      "delta_AP_por_fold": [
+        -0.01828769087867116,
+        0.005815822021332018,
+        0.00827134756187542
+      ],
+      "OOF": {
+        "AP": 0.5050475287752426,
+        "ROC_AUC": 0.6345047308832503,
+        "Brier": 0.22988864115045254,
+        "log_loss": 0.6509659491447033
+      },
+      "IC95_delta_AP_OOF_condicional": [
+        -0.02297357819012693,
+        0.006799353975115812
+      ],
+      "delta_AP_OOF": -0.010469166127228258
+    },
+    {
+      "bloco": "distorcao",
+      "AP_media_folds": 0.5258985566852562,
+      "AP_desvio_folds": 0.012617551899881927,
+      "delta_AP_media": 0.005995223235931528,
+      "delta_AP_por_fold": [
+        0.006867449725104446,
+        0.006969738340111942,
+        0.0041484816425781945
+      ],
+      "OOF": {
+        "AP": 0.5251435709733878,
+        "ROC_AUC": 0.6399913067310385,
+        "Brier": 0.22730768434997167,
+        "log_loss": 0.6454368628520162
+      },
+      "IC95_delta_AP_OOF_condicional": [
+        0.0011805737846313392,
+        0.018472692925289972
+      ],
+      "delta_AP_OOF": 0.009626876070916945
+    },
+    {
+      "bloco": "rendimento",
+      "AP_media_folds": 0.527346337698862,
+      "AP_desvio_folds": 0.014493359374546053,
+      "delta_AP_media": 0.007443004249537477,
+      "delta_AP_por_fold": [
+        0.0037735048580163078,
+        0.011895615636308587,
+        0.006659892254287536
+      ],
+      "OOF": {
+        "AP": 0.5256989317521592,
+        "ROC_AUC": 0.6395782233359235,
+        "Brier": 0.2275644865939255,
+        "log_loss": 0.6461411256851642
+      },
+      "IC95_delta_AP_OOF_condicional": [
+        0.0027348785372646235,
+        0.017809254763469423
+      ],
+      "delta_AP_OOF": 0.010182236849688331
+    },
+    {
+      "bloco": "FUNDEB",
+      "AP_media_folds": 0.5190810376183168,
+      "AP_desvio_folds": 0.012278967610768375,
+      "delta_AP_media": -0.000822295831007828,
+      "delta_AP_por_fold": [
+        0.00016690051902723546,
+        0.0004397579354206149,
+        -0.0030735459474713345
+      ],
+      "OOF": {
+        "AP": 0.5155036427235634,
+        "ROC_AUC": 0.6340418046075711,
+        "Brier": 0.22922937184998182,
+        "log_loss": 0.6496630372060843
+      },
+      "IC95_delta_AP_OOF_condicional": [
+        -0.0016444275537884994,
+        0.001260297781145335
+      ],
+      "delta_AP_OOF": -1.3052178907457801e-05
+    },
+    {
+      "bloco": "PNAD",
+      "AP_media_folds": 0.5199089105226217,
+      "AP_desvio_folds": 0.014208970318495547,
+      "delta_AP_media": 5.577073297143483e-06,
+      "delta_AP_por_fold": [
+        3.515909430262809e-08,
+        5.630388572042122e-06,
+        1.1065672225085699e-05
+      ],
+      "OOF": {
+        "AP": 0.5155177208796018,
+        "ROC_AUC": 0.6342140133829914,
+        "Brier": 0.2292245227840875,
+        "log_loss": 0.6496735320798921
+      },
+      "IC95_delta_AP_OOF_condicional": [
+        -4.63300986877635e-07,
+        5.03555994618987e-06
+      ],
+      "delta_AP_OOF": 1.0259771309195642e-06
+    }
+  ],
+  "folds": [
+    {
+      "bloco": "referencia",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "iteracoes": 286,
+      "segundos": 0.31199999999807915,
+      "AP": 0.5104395152368002,
+      "ROC_AUC": 0.6234426914868637,
+      "Brier": 0.23444771926181251,
+      "log_loss": 0.6615188071752153
+    },
+    {
+      "bloco": "referencia",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "iteracoes": 313,
+      "segundos": 0.26599999999962165,
+      "AP": 0.513034372321043,
+      "ROC_AUC": 0.6319872995203755,
+      "Brier": 0.227798192316676,
+      "log_loss": 0.6461752117812045
+    },
+    {
+      "bloco": "referencia",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "iteracoes": 412,
+      "segundos": 0.2820000000028813,
+      "AP": 0.5362361127901306,
+      "ROC_AUC": 0.6536632769895211,
+      "Brier": 0.22363931134985277,
+      "log_loss": 0.6372992610882018
+    },
+    {
+      "bloco": "INSE",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "iteracoes": 287,
+      "segundos": 0.1569999999992433,
+      "AP": 0.49215182435812904,
+      "ROC_AUC": 0.6172316159499753,
+      "Brier": 0.237599301951098,
+      "log_loss": 0.6680304275768051
+    },
+    {
+      "bloco": "INSE",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "iteracoes": 317,
+      "segundos": 0.1720000000022992,
+      "AP": 0.518850194342375,
+      "ROC_AUC": 0.6382755223788841,
+      "Brier": 0.2266605852130235,
+      "log_loss": 0.6437043816491844
+    },
+    {
+      "bloco": "INSE",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "iteracoes": 435,
+      "segundos": 0.26599999999962165,
+      "AP": 0.544507460352006,
+      "ROC_AUC": 0.6565739570901848,
+      "Brier": 0.22288665754566792,
+      "log_loss": 0.6356000051776582
+    },
+    {
+      "bloco": "distorcao",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "iteracoes": 299,
+      "segundos": 0.17199999999866122,
+      "AP": 0.5173069649619046,
+      "ROC_AUC": 0.6292436006427405,
+      "Brier": 0.2310996274474302,
+      "log_loss": 0.6541435593969812
+    },
+    {
+      "bloco": "distorcao",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "iteracoes": 304,
+      "segundos": 0.18800000000192085,
+      "AP": 0.5200041106611549,
+      "ROC_AUC": 0.6392870586895141,
+      "Brier": 0.2262993612122072,
+      "log_loss": 0.6428712189845386
+    },
+    {
+      "bloco": "distorcao",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "iteracoes": 485,
+      "segundos": 0.2809999999990396,
+      "AP": 0.5403845944327088,
+      "ROC_AUC": 0.654238839397508,
+      "Brier": 0.2232229622127622,
+      "log_loss": 0.6363352060167058
+    },
+    {
+      "bloco": "rendimento",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "iteracoes": 255,
+      "segundos": 0.23400000000037835,
+      "AP": 0.5142130200948165,
+      "ROC_AUC": 0.6272713683718609,
+      "Brier": 0.23196918945465214,
+      "log_loss": 0.656233427335434
+    },
+    {
+      "bloco": "rendimento",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "iteracoes": 353,
+      "segundos": 0.3120000000017171,
+      "AP": 0.5249299879573516,
+      "ROC_AUC": 0.6390001278772325,
+      "Brier": 0.22628189695130366,
+      "log_loss": 0.6429279004526122
+    },
+    {
+      "bloco": "rendimento",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "iteracoes": 536,
+      "segundos": 0.3279999999977008,
+      "AP": 0.5428960050444182,
+      "ROC_AUC": 0.6555638943888095,
+      "Brier": 0.22294296067164893,
+      "log_loss": 0.6358559532880236
+    },
+    {
+      "bloco": "FUNDEB",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "iteracoes": 279,
+      "segundos": 0.15600000000267755,
+      "AP": 0.5106064157558274,
+      "ROC_AUC": 0.6231874780293201,
+      "Brier": 0.2342819812628613,
+      "log_loss": 0.6611689443793248
+    },
+    {
+      "bloco": "FUNDEB",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "iteracoes": 357,
+      "segundos": 0.2649999999994179,
+      "AP": 0.5134741302564636,
+      "ROC_AUC": 0.6322540558735465,
+      "Brier": 0.22775377490435805,
+      "log_loss": 0.6460800564196542
+    },
+    {
+      "bloco": "FUNDEB",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "iteracoes": 447,
+      "segundos": 0.31199999999807915,
+      "AP": 0.5331625668426593,
+      "ROC_AUC": 0.6524149905773139,
+      "Brier": 0.22393285780086544,
+      "log_loss": 0.6378483160321953
+    },
+    {
+      "bloco": "PNAD",
+      "fold": 0,
+      "municipios": 1089,
+      "alunos": 382028,
+      "iteracoes": 263,
+      "segundos": 0.17199999999866122,
+      "AP": 0.5104395503958945,
+      "ROC_AUC": 0.6234427849407413,
+      "Brier": 0.23444761031793956,
+      "log_loss": 0.6615185510549537
+    },
+    {
+      "bloco": "PNAD",
+      "fold": 1,
+      "municipios": 1089,
+      "alunos": 308393,
+      "iteracoes": 294,
+      "segundos": 0.1709999999984575,
+      "AP": 0.513040002709615,
+      "ROC_AUC": 0.6319932411051898,
+      "Brier": 0.2277985809984735,
+      "log_loss": 0.646176034685033
+    },
+    {
+      "bloco": "PNAD",
+      "fold": 2,
+      "municipios": 1089,
+      "alunos": 278518,
+      "iteracoes": 426,
+      "segundos": 0.21899999999732245,
+      "AP": 0.5362471784623557,
+      "ROC_AUC": 0.6536708151178541,
+      "Brier": 0.22363919178468522,
+      "log_loss": 0.6372990169860306
+    }
+  ],
+  "cobertura": [
+    {
+      "bloco": "referencia",
+      "municipios_completos": 3267,
+      "alunos_completos": 968939,
+      "alunos_pct": 100.0
+    },
+    {
+      "bloco": "INSE",
+      "municipios_completos": 3180,
+      "alunos_completos": 963719,
+      "alunos_pct": 99.46126639551096
+    },
+    {
+      "bloco": "distorcao",
+      "municipios_completos": 3261,
+      "alunos_completos": 968813,
+      "alunos_pct": 99.98699608540889
+    },
+    {
+      "bloco": "rendimento",
+      "municipios_completos": 3261,
+      "alunos_completos": 968813,
+      "alunos_pct": 99.98699608540889
+    },
+    {
+      "bloco": "FUNDEB",
+      "municipios_completos": 3229,
+      "alunos_completos": 958169,
+      "alunos_pct": 98.88847491947378
+    },
+    {
+      "bloco": "PNAD",
+      "municipios_completos": 3267,
+      "alunos_completos": 968939,
+      "alunos_pct": 100.0
+    }
+  ],
+  "avisos": [],
+  "integridade_entradas_preservada": true,
+  "teste_reavaliado": false
+}

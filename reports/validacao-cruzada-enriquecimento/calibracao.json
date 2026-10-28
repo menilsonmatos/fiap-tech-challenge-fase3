@@ -1,0 +1,452 @@
+[
+  {
+    "bloco": "referencia",
+    "faixa_inferior": 0.0,
+    "faixa_superior": 0.1,
+    "municipios": 35,
+    "alunos": 12526,
+    "probabilidade_media": 0.08675170039104592,
+    "frequencia_observada": 0.1001916014689446
+  },
+  {
+    "bloco": "referencia",
+    "faixa_inferior": 0.1,
+    "faixa_superior": 0.2,
+    "municipios": 96,
+    "alunos": 41224,
+    "probabilidade_media": 0.13209392596041006,
+    "frequencia_observada": 0.16318164176208033
+  },
+  {
+    "bloco": "referencia",
+    "faixa_inferior": 0.2,
+    "faixa_superior": 0.3,
+    "municipios": 938,
+    "alunos": 155719,
+    "probabilidade_media": 0.2612315907189204,
+    "frequencia_observada": 0.2649965643241994
+  },
+  {
+    "bloco": "referencia",
+    "faixa_inferior": 0.3,
+    "faixa_superior": 0.4,
+    "municipios": 904,
+    "alunos": 241295,
+    "probabilidade_media": 0.35619865952930585,
+    "frequencia_observada": 0.36111813340516796
+  },
+  {
+    "bloco": "referencia",
+    "faixa_inferior": 0.4,
+    "faixa_superior": 0.5,
+    "municipios": 662,
+    "alunos": 230458,
+    "probabilidade_media": 0.4393382116450955,
+    "frequencia_observada": 0.4464891650539361
+  },
+  {
+    "bloco": "referencia",
+    "faixa_inferior": 0.5,
+    "faixa_superior": 0.6,
+    "municipios": 346,
+    "alunos": 162568,
+    "probabilidade_media": 0.5443719514013026,
+    "frequencia_observada": 0.5353882682938832
+  },
+  {
+    "bloco": "referencia",
+    "faixa_inferior": 0.6,
+    "faixa_superior": 0.7,
+    "municipios": 284,
+    "alunos": 110517,
+    "probabilidade_media": 0.6236941673815571,
+    "frequencia_observada": 0.5227431073952423
+  },
+  {
+    "bloco": "referencia",
+    "faixa_inferior": 0.7,
+    "faixa_superior": 0.8,
+    "municipios": 2,
+    "alunos": 14632,
+    "probabilidade_media": 0.7059659203097609,
+    "frequencia_observada": 0.6142017495899399
+  },
+  {
+    "bloco": "INSE",
+    "faixa_inferior": 0.0,
+    "faixa_superior": 0.1,
+    "municipios": 31,
+    "alunos": 10986,
+    "probabilidade_media": 0.0874142384567026,
+    "frequencia_observada": 0.1056799563080284
+  },
+  {
+    "bloco": "INSE",
+    "faixa_inferior": 0.1,
+    "faixa_superior": 0.2,
+    "municipios": 173,
+    "alunos": 50212,
+    "probabilidade_media": 0.14169313874776596,
+    "frequencia_observada": 0.1644029315701426
+  },
+  {
+    "bloco": "INSE",
+    "faixa_inferior": 0.2,
+    "faixa_superior": 0.3,
+    "municipios": 754,
+    "alunos": 128969,
+    "probabilidade_media": 0.256960863919974,
+    "frequencia_observada": 0.25330893470523924
+  },
+  {
+    "bloco": "INSE",
+    "faixa_inferior": 0.3,
+    "faixa_superior": 0.4,
+    "municipios": 1014,
+    "alunos": 277136,
+    "probabilidade_media": 0.3490609767681035,
+    "frequencia_observada": 0.3648244905028578
+  },
+  {
+    "bloco": "INSE",
+    "faixa_inferior": 0.4,
+    "faixa_superior": 0.5,
+    "municipios": 614,
+    "alunos": 201774,
+    "probabilidade_media": 0.43582783798779845,
+    "frequencia_observada": 0.446038637287262
+  },
+  {
+    "bloco": "INSE",
+    "faixa_inferior": 0.5,
+    "faixa_superior": 0.6,
+    "municipios": 407,
+    "alunos": 132189,
+    "probabilidade_media": 0.5493825019906021,
+    "frequencia_observada": 0.5312696215267534
+  },
+  {
+    "bloco": "INSE",
+    "faixa_inferior": 0.6,
+    "faixa_superior": 0.7,
+    "municipios": 272,
+    "alunos": 155394,
+    "probabilidade_media": 0.6321255587173871,
+    "frequencia_observada": 0.5271825166994865
+  },
+  {
+    "bloco": "INSE",
+    "faixa_inferior": 0.7,
+    "faixa_superior": 0.8,
+    "municipios": 2,
+    "alunos": 12279,
+    "probabilidade_media": 0.7426776197945449,
+    "frequencia_observada": 0.630100171023699
+  },
+  {
+    "bloco": "distorcao",
+    "faixa_inferior": 0.0,
+    "faixa_superior": 0.1,
+    "municipios": 31,
+    "alunos": 11099,
+    "probabilidade_media": 0.08635781806811912,
+    "frequencia_observada": 0.10045950085593297
+  },
+  {
+    "bloco": "distorcao",
+    "faixa_inferior": 0.1,
+    "faixa_superior": 0.2,
+    "municipios": 162,
+    "alunos": 46700,
+    "probabilidade_media": 0.1367351068912468,
+    "frequencia_observada": 0.16224839400428265
+  },
+  {
+    "bloco": "distorcao",
+    "faixa_inferior": 0.2,
+    "faixa_superior": 0.3,
+    "municipios": 878,
+    "alunos": 149533,
+    "probabilidade_media": 0.2604306726249065,
+    "frequencia_observada": 0.26819498037222556
+  },
+  {
+    "bloco": "distorcao",
+    "faixa_inferior": 0.3,
+    "faixa_superior": 0.4,
+    "municipios": 927,
+    "alunos": 251455,
+    "probabilidade_media": 0.3528877198092974,
+    "frequencia_observada": 0.3557296534171124
+  },
+  {
+    "bloco": "distorcao",
+    "faixa_inferior": 0.4,
+    "faixa_superior": 0.5,
+    "municipios": 637,
+    "alunos": 239801,
+    "probabilidade_media": 0.44407558701970373,
+    "frequencia_observada": 0.45465615239302587
+  },
+  {
+    "bloco": "distorcao",
+    "faixa_inferior": 0.5,
+    "faixa_superior": 0.6,
+    "municipios": 392,
+    "alunos": 183982,
+    "probabilidade_media": 0.5430780408555758,
+    "frequencia_observada": 0.49659749323303365
+  },
+  {
+    "bloco": "distorcao",
+    "faixa_inferior": 0.6,
+    "faixa_superior": 0.7,
+    "municipios": 208,
+    "alunos": 65304,
+    "probabilidade_media": 0.6428778119889569,
+    "frequencia_observada": 0.6290732573808648
+  },
+  {
+    "bloco": "distorcao",
+    "faixa_inferior": 0.7,
+    "faixa_superior": 0.8,
+    "municipios": 29,
+    "alunos": 20645,
+    "probabilidade_media": 0.7218296175403276,
+    "frequencia_observada": 0.6354565270041173
+  },
+  {
+    "bloco": "distorcao",
+    "faixa_inferior": 0.8,
+    "faixa_superior": 0.9,
+    "municipios": 3,
+    "alunos": 420,
+    "probabilidade_media": 0.8262389296444034,
+    "frequencia_observada": 0.5666666666666667
+  },
+  {
+    "bloco": "rendimento",
+    "faixa_inferior": 0.0,
+    "faixa_superior": 0.1,
+    "municipios": 36,
+    "alunos": 12752,
+    "probabilidade_media": 0.08765606593917653,
+    "frequencia_observada": 0.1019447929736512
+  },
+  {
+    "bloco": "rendimento",
+    "faixa_inferior": 0.1,
+    "faixa_superior": 0.2,
+    "municipios": 156,
+    "alunos": 44612,
+    "probabilidade_media": 0.13674107605998848,
+    "frequencia_observada": 0.16580740607908187
+  },
+  {
+    "bloco": "rendimento",
+    "faixa_inferior": 0.2,
+    "faixa_superior": 0.3,
+    "municipios": 867,
+    "alunos": 148715,
+    "probabilidade_media": 0.2596821827247879,
+    "frequencia_observada": 0.2691994755068419
+  },
+  {
+    "bloco": "rendimento",
+    "faixa_inferior": 0.3,
+    "faixa_superior": 0.4,
+    "municipios": 953,
+    "alunos": 253690,
+    "probabilidade_media": 0.3551213214403668,
+    "frequencia_observada": 0.35571760810437936
+  },
+  {
+    "bloco": "rendimento",
+    "faixa_inferior": 0.4,
+    "faixa_superior": 0.5,
+    "municipios": 623,
+    "alunos": 241955,
+    "probabilidade_media": 0.44477274154401053,
+    "frequencia_observada": 0.45212126221818105
+  },
+  {
+    "bloco": "rendimento",
+    "faixa_inferior": 0.5,
+    "faixa_superior": 0.6,
+    "municipios": 404,
+    "alunos": 181912,
+    "probabilidade_media": 0.5453026644159691,
+    "frequencia_observada": 0.5001649149039096
+  },
+  {
+    "bloco": "rendimento",
+    "faixa_inferior": 0.6,
+    "faixa_superior": 0.7,
+    "municipios": 182,
+    "alunos": 64334,
+    "probabilidade_media": 0.6446869112446328,
+    "frequencia_observada": 0.6239624459850157
+  },
+  {
+    "bloco": "rendimento",
+    "faixa_inferior": 0.7,
+    "faixa_superior": 0.8,
+    "municipios": 41,
+    "alunos": 20069,
+    "probabilidade_media": 0.719958475765162,
+    "frequencia_observada": 0.644626040161443
+  },
+  {
+    "bloco": "rendimento",
+    "faixa_inferior": 0.8,
+    "faixa_superior": 0.9,
+    "municipios": 5,
+    "alunos": 900,
+    "probabilidade_media": 0.8130004162051147,
+    "frequencia_observada": 0.7166666666666667
+  },
+  {
+    "bloco": "FUNDEB",
+    "faixa_inferior": 0.0,
+    "faixa_superior": 0.1,
+    "municipios": 35,
+    "alunos": 12526,
+    "probabilidade_media": 0.08678662741495707,
+    "frequencia_observada": 0.1001916014689446
+  },
+  {
+    "bloco": "FUNDEB",
+    "faixa_inferior": 0.1,
+    "faixa_superior": 0.2,
+    "municipios": 108,
+    "alunos": 41790,
+    "probabilidade_media": 0.13223584760918508,
+    "frequencia_observada": 0.16271835367312754
+  },
+  {
+    "bloco": "FUNDEB",
+    "faixa_inferior": 0.2,
+    "faixa_superior": 0.3,
+    "municipios": 932,
+    "alunos": 151220,
+    "probabilidade_media": 0.26008009220093126,
+    "frequencia_observada": 0.26319269937838913
+  },
+  {
+    "bloco": "FUNDEB",
+    "faixa_inferior": 0.3,
+    "faixa_superior": 0.4,
+    "municipios": 916,
+    "alunos": 252862,
+    "probabilidade_media": 0.3566743392080499,
+    "frequencia_observada": 0.3668443657014498
+  },
+  {
+    "bloco": "FUNDEB",
+    "faixa_inferior": 0.4,
+    "faixa_superior": 0.5,
+    "municipios": 647,
+    "alunos": 216878,
+    "probabilidade_media": 0.4399300716641251,
+    "frequencia_observada": 0.4444249762539308
+  },
+  {
+    "bloco": "FUNDEB",
+    "faixa_inferior": 0.5,
+    "faixa_superior": 0.6,
+    "municipios": 342,
+    "alunos": 163592,
+    "probabilidade_media": 0.5413845828651197,
+    "frequencia_observada": 0.531658027287398
+  },
+  {
+    "bloco": "FUNDEB",
+    "faixa_inferior": 0.6,
+    "faixa_superior": 0.7,
+    "municipios": 285,
+    "alunos": 115439,
+    "probabilidade_media": 0.6213987113127585,
+    "frequencia_observada": 0.5207252315075495
+  },
+  {
+    "bloco": "FUNDEB",
+    "faixa_inferior": 0.7,
+    "faixa_superior": 0.8,
+    "municipios": 2,
+    "alunos": 14632,
+    "probabilidade_media": 0.7067187356701612,
+    "frequencia_observada": 0.6142017495899399
+  },
+  {
+    "bloco": "PNAD",
+    "faixa_inferior": 0.0,
+    "faixa_superior": 0.1,
+    "municipios": 35,
+    "alunos": 12526,
+    "probabilidade_media": 0.08675194915248315,
+    "frequencia_observada": 0.1001916014689446
+  },
+  {
+    "bloco": "PNAD",
+    "faixa_inferior": 0.1,
+    "faixa_superior": 0.2,
+    "municipios": 96,
+    "alunos": 41224,
+    "probabilidade_media": 0.1320943471266136,
+    "frequencia_observada": 0.16318164176208033
+  },
+  {
+    "bloco": "PNAD",
+    "faixa_inferior": 0.2,
+    "faixa_superior": 0.3,
+    "municipios": 938,
+    "alunos": 155719,
+    "probabilidade_media": 0.2612310162224085,
+    "frequencia_observada": 0.2649965643241994
+  },
+  {
+    "bloco": "PNAD",
+    "faixa_inferior": 0.3,
+    "faixa_superior": 0.4,
+    "municipios": 904,
+    "alunos": 241295,
+    "probabilidade_media": 0.35619788683822856,
+    "frequencia_observada": 0.36111813340516796
+  },
+  {
+    "bloco": "PNAD",
+    "faixa_inferior": 0.4,
+    "faixa_superior": 0.5,
+    "municipios": 662,
+    "alunos": 230458,
+    "probabilidade_media": 0.43933875361828784,
+    "frequencia_observada": 0.4464891650539361
+  },
+  {
+    "bloco": "PNAD",
+    "faixa_inferior": 0.5,
+    "faixa_superior": 0.6,
+    "municipios": 346,
+    "alunos": 162568,
+    "probabilidade_media": 0.5443763784410307,
+    "frequencia_observada": 0.5353882682938832
+  },
+  {
+    "bloco": "PNAD",
+    "faixa_inferior": 0.6,
+    "faixa_superior": 0.7,
+    "municipios": 284,
+    "alunos": 110517,
+    "probabilidade_media": 0.623693595059145,
+    "frequencia_observada": 0.5227431073952423
+  },
+  {
+    "bloco": "PNAD",
+    "faixa_inferior": 0.7,
+    "faixa_superior": 0.8,
+    "municipios": 2,
+    "alunos": 14632,
+    "probabilidade_media": 0.7059686917082252,
+    "frequencia_observada": 0.6142017495899399
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "comparacoes": [
+    {
+      "comparacao": "combinado menos rendimento",
+      "delta_AP_media": -0.0009414923644756046,
+      "deltas_folds": [
+        0.0003159576322642188,
+        -0.0019233262707383236,
+        -0.001217108454953042
+      ],
+      "delta_AP_OOF": -0.0006063872312671581,
+      "IC95_delta_AP_OOF_condicional": [
+        -0.0021006911399777616,
+        0.0007447490758787983
+      ]
+    },
+    {
+      "comparacao": "combinado menos distorcao",
+      "delta_AP_media": 0.0005062886491301599,
+      "deltas_folds": [
+        -0.00277798723482392,
+        0.003002551025458322,
+        0.0012943021567562996
+      ],
+      "delta_AP_OOF": -5.1026452495772645e-05,
+      "IC95_delta_AP_OOF_condicional": [
+        -0.0026479735417490546,
+        0.0020977889857141012
+      ]
+    }
+  ],
+  "ufs": {
+    "referencia": {
+      "melhora": 21,
+      "piora": 4,
+      "igual": 0
+    },
+    "rendimento": {
+      "melhora": 14,
+      "piora": 11,
+      "igual": 0
+    },
+    "distorcao": {
+      "melhora": 13,
+      "piora": 12,
+      "igual": 0
+    }
+  },
+  "verificacoes": {
+    "contagens_e_metricas_oof_reconciliadas": true,
+    "tres_controles_reproduzidos": true,
+    "ajustes_convergiram_sem_avisos": true,
+    "entradas_preservadas": true,
+    "teste_reavaliado": false
+  }
+}

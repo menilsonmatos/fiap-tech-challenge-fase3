@@ -1,0 +1,75 @@
+{
+  "data": "2026-10-27",
+  "escopo": "Treino exclusivamente. Sem ajuste na validação externa ou teste; sem substituição do modelo v1.",
+  "alvo": "não alfabetizado = 1 - alfabetizado",
+  "blocos": {
+    "referencia": [],
+    "INSE": [
+      "inse_municipal_2021",
+      "inse_niveis_1_2_pct_2021"
+    ],
+    "distorcao": [
+      "tdi_AI_pct_2022",
+      "tdi_2ano_pct_2022"
+    ],
+    "rendimento": [
+      "reprovacao_AI_pct_2022",
+      "abandono_AI_pct_2022",
+      "reprovacao_2ano_pct_2022",
+      "abandono_2ano_pct_2022"
+    ],
+    "FUNDEB": [
+      "vaat_antes_reais_2023"
+    ],
+    "PNAD": [
+      "renda_domiciliar_pc_UF_2022"
+    ]
+  },
+  "referencia_numerica": [
+    "log1p_populacao_2022",
+    "log1p_densidade_hab_km2_2022",
+    "log1p_pib_por_habitante_reais_2021",
+    "participacao_agropecuaria_2021",
+    "participacao_industria_2021",
+    "participacao_servicos_2021"
+  ],
+  "categoricas": [
+    "sigla_uf"
+  ],
+  "modelo": {
+    "classe": "LogisticRegression",
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 3000,
+    "tol": 1e-08,
+    "random_state": 42
+  },
+  "folds": "Os mesmos 3 folds municipais anteriores, estratificados por UF, semente 42. Não são repetições independentes.",
+  "metrica_primaria": "Média simples da AP nos 3 folds; comparação pareada com referência",
+  "metricas_secundarias": [
+    "AP OOF agrupada",
+    "ROC AUC",
+    "Brier",
+    "log loss",
+    "calibração por faixas fixas",
+    "AP por UF"
+  ],
+  "preprocessamento": "Mediana, indicadores de ausência para colunas com ausência observada no fold, StandardScaler e one-hot ajustados só em municípios de ajuste de cada fold, com peso igual por município.",
+  "pesos": "Contagens de alunos em duas linhas por município/classe; não pesos amostrais INEP.",
+  "rendimento": "Aprovação omitida para evitar dependência linear com reprovação e abandono.",
+  "fundeb": "Somente VAAT anterior à complementação. Não testar receita total sem denominador compatível.",
+  "pnad": "Experimento de redundância: renda da UF é função das dummies já existentes. A regularização pode mudar previsões sem nova informação.",
+  "incerteza": "Bootstrap pareado estratificado por UF de municípios com previsões OOF fixas, 500 réplicas, semente 42; intervalo condicional, sem refazer ajuste e seleção, não confirmação independente.",
+  "hashes_entrada": {
+    "base": "3c6969064b47ee354c8a40489fb1b995052b2d1b13d839dfc9e377ce90be1e20",
+    "contexto": "4804127c30b018c279ca581c54f1fdeec1e0c8659ec7f275671d26c61e099353",
+    "pnad": "50585b10cacaf70e061afb4edd631a742d564e9ba6070e269b8aa11a3bec7d66",
+    "folds": "f8416672a7a48a8187c71b6cfbddbf588e17e18d1f58d3a5b5432fa502be4bd4",
+    "teste_fechado": "6551cfaea1022f7c015f55c668d8cab9aed9af39ef46c6d9bb0f7f61a2f122ed"
+  },
+  "versoes": {
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1"
+  }
+}
