@@ -1,6 +1,6 @@
 # Tech Challenge — Fase 3: Alfabetização no Brasil
 
-Consolidação para publicação, 28/10/2026. Abra **ABRIR_RELATORIO_ATUALIZADO.html** para o relatório atual. A versão acadêmica v1 e sua avaliação de teste permanecem congeladas na tag **v1.0.0** e em `ABRIR_RELATORIO.html`.
+Consolidação para publicação, 28/10/2026. O relatório principal está em **[reports/relatorio_final.pdf](reports/relatorio_final.pdf)**. A versão acadêmica v1 e sua avaliação de teste permanecem congeladas na tag **v1.0.0** e em `ABRIR_RELATORIO.html`.
 
 ## Resultado atualizado e limites
 
@@ -93,3 +93,14 @@ Faltam características que diferenciem alunos do mesmo município; o vínculo e
 ## Entrega e versionamento
 
 Há repositório Git local com commits e branches reais desta organização. Não representa um histórico de desenvolvimento desde a Fase 2. Nenhum repositório remoto ou PR foi publicado nesta etapa. Vídeo, revisão do grupo e submissão no FIAP ON permanecem pendentes. Consulte `docs/checklist-entrega.md`.
+
+## Exportar o relatório em PDF
+
+O PDF consolidado está em `reports/relatorio_final.pdf`. A fonte editável está em `reports/consolidacao-fase3/relatorio_atualizado.md`. Para regenerar o PDF, instale a dependência opcional e execute na raiz:
+
+```text
+python -m pip install -r requirements-pdf.txt
+python -m src.visualization.report_pdf
+```
+
+O gerador apenas formata o relatório e incorpora figuras históricas existentes; não treina modelos nem recalcula o teste.

@@ -96,7 +96,7 @@ Nenhum limiar operacional ou capacidade real de atendimento foi escolhido. Recom
 
 ## Reprodução e arquivos
 
-Execute comparar_baselines.py em ambiente com numpy, pandas e scikit-learn do projeto. O script lê apenas dados_treino_oof.json, contendo agregados municipais, contagens e previsões OOF, e recalcula os dois baselines. Não carrega modelos, não acessa microdados individuais e não consulta validação ou teste. comparacao_baselines.json registra métricas por fold, resumo, prevalência e hash da entrada. metricas_baselines_por_uf.json registra os resultados por estado. O dataset distribuído não contém identificadores individuais ou escolares.
+Na raiz do repositório, execute python -m src.evaluation.baselines --output work/baselines_novos, em ambiente com as dependências de requirements.txt. O módulo lê data/processed/dados_treino_oof.json, contendo agregados municipais, contagens e previsões OOF, e recalcula os dois baselines. Não carrega modelos, não acessa microdados individuais e não consulta validação ou teste. comparacao_baselines.json registra métricas por fold, resumo, prevalência e hash da entrada. metricas_baselines_por_uf.json registra os resultados por estado. O dataset distribuído não contém identificadores individuais ou escolares.
 
 Os experimentos originais, a interpretação SHAP, os perfis exploratórios e a avaliação histórica permanecem documentados na entrega v1 e nos relatórios de validação cruzada e combinação. Esta atualização complementa essas evidências e não transforma os experimentos em um novo resultado final de teste.
 
@@ -104,4 +104,4 @@ Os experimentos originais, a interpretação SHAP, os perfis exploratórios e a 
 
 A modelagem é aderente à orientação do professor: explicita a granularidade, separa municípios, ajusta transformações dentro dos folds, compara com baselines e documenta limitações. O desempenho mostra ganho frente à prevalência e um ganho menor frente à referência por UF. Não há requisito de desempenho mínimo, conforme orientação recebida.
 
-Antes da submissão continuam necessários a revisão do grupo, a gravação do vídeo executivo, a publicação/versionamento no repositório remoto e a submissão no portal. A recomendação é apresentar a v1 como avaliação histórica congelada e os novos indicadores como evolução exploratória, distinguindo claramente as duas etapas.
+A publicação inicial no repositório remoto foi realizada pelo autor e um PR de consolidação foi aberto. Antes da submissão continuam necessários a revisão do grupo, a gravação do vídeo executivo, a conclusão da revisão e integração do PR e a submissão no portal. A recomendação é apresentar a v1 como avaliação histórica congelada e os novos indicadores como evolução exploratória, distinguindo claramente as duas etapas.
