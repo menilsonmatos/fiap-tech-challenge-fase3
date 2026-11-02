@@ -4,3 +4,5 @@ data/processed/dados_analiticos_municipais.json -text
 data/processed/contexto_municipal_candidato.json text eol=lf
 data/processed/contexto_pnad_uf.json text eol=lf
 data/processed/dados_treino_oof.json text eol=lf
+# Preserve PDF bytes and render binary diffs in Git.
+*.pdf binary
