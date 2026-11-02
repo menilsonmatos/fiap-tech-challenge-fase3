@@ -1,18 +1,18 @@
 # Alfabetização no Brasil — relatório consolidado
 
-Atualização de 28/10/2026. Este documento consolida a interpretação metodológica e os experimentos posteriores à entrega acadêmica v1. A v1 permanece congelada. O candidato enriquecido não substituiu o modelo final da v1.
+Atualização de 01/11/2026. Este documento consolida a interpretação metodológica e os experimentos posteriores à entrega acadêmica v1. A v1 permanece congelada. O candidato enriquecido não substituiu o modelo final da v1.
 
 ## Resultado e decisão
 
 O modelo estima o risco de não alfabetização associado ao contexto municipal de cada aluno. A granularidade do alvo é individual; os atributos disponíveis são municipais. Assim, alunos de um mesmo município recebem a mesma probabilidade. A interpretação considera a granularidade disponível e suas limitações. O desempenho é comparado com a prevalência da classe positiva e com baselines global e estadual.
 
-O candidato prioritário para evolução é a regressão logística com o bloco de rendimento escolar de 2022: reprovação e abandono nos anos iniciais e no 2º ano. Sua AP média foi 0,52735, frente a 0,51990 da referência e 0,51088 do baseline por UF. A combinação com distorção não acrescentou ganho na métrica principal. Não há confirmação independente de superioridade em uma nova safra.
+O candidato prioritário para evolução é a regressão logística com o bloco de rendimento escolar de 2022: reprovação e abandono nos anos iniciais e no 2º ano. Com C=1, sua AP média foi 0,52735, frente a 0,51990 da referência e 0,51088 do baseline por UF. A combinação com distorção não acrescentou ganho na métrica principal. A comparação curta de regularização posteriormente obteve AP média de 0,52765 com C=0,01 nesse candidato, um acréscimo pequeno que não justifica substituir a versão congelada. Não há confirmação independente de superioridade em uma nova safra.
 
 ## Comparação com prevalência e baselines
 
 A classe positiva é **não alfabetizado**. No treino, são 393.076 alunos nessa classe, em 968.939 avaliações válidas, resultando em prevalência de **40,57%**. As contagens abaixo devem ser lidas no recorte de alunos elegíveis, sem pesos amostrais do INEP.
 
-Todos os candidatos e baselines foram comparados nos mesmos três folds de municípios, estratificados por UF. Para cada fold, o baseline global recebe a prevalência dos municípios de ajuste. O baseline por UF recebe a prevalência estadual calculada apenas nos municípios de ajuste. Nenhum alvo do fold de avaliação é usado para criar suas previsões.
+Todos os candidatos e baselines foram comparados nos mesmos três folds de municípios, estratificados por UF. Os modelos logísticos da tabela a seguir usam C=1; a busca posterior de regularização é apresentada separadamente. Para cada fold, o baseline global recebe a prevalência dos municípios de ajuste. O baseline por UF recebe a prevalência estadual calculada apenas nos municípios de ajuste. Nenhum alvo do fold de avaliação é usado para criar suas previsões.
 
 | Configuração | AP média dos folds | Δ AP versus global | Δ AP versus UF | Brier OOF |
 |---|---:|---:|---:|---:|
@@ -64,7 +64,7 @@ A divisão fixa preserva todos os alunos de um município no mesmo conjunto: 968
 
 Mediana, indicador de ausência, padronização e one-hot são ajustados apenas nos municípios de ajuste de cada fold. A escala considera municípios com peso igual; a função de perda considera contagens de alunos. O baseline por UF também é estimado só no fold de ajuste. Nenhum identificador ou contagem do alvo entra no vetor de preditores.
 
-A referência e os enriquecimentos empregaram regressão logística L2, C=1, solver lbfgs, max_iter=3000, tol=1e-8 e semente 42. Não houve busca adicional de hiperparâmetros nesta etapa. Os três controles do experimento combinado reproduziram o experimento anterior. Todos os ajustes convergiram sem avisos.
+As comparações iniciais de blocos empregaram regressão logística L2, C=1, solver lbfgs, max_iter=3000, tol=1e-8 e semente 42. Os três controles do experimento combinado reproduziram o experimento anterior. Em seguida, uma grade curta variou C, mantendo os demais parâmetros e os folds fixos, conforme a seção de regularização. Todos os ajustes dessas rodadas convergiram sem avisos.
 
 Os indicadores externos são anteriores à avaliação de 2024 por referência e publicação documentada. Downloads atuais não garantem identidade com os bytes publicados em 2023; não se apresenta esta análise como backtest com snapshot histórico certificado.
 
@@ -72,9 +72,34 @@ Os indicadores externos são anteriores à avaliação de 2024 por referência e
 
 INSE, distorção, rendimento, VAAT e renda estadual da PNAD foram testados separadamente. INSE oscilou e não melhorou a média. VAAT e PNAD não demonstraram ganho relevante na configuração testada. Rendimento e distorção melhoraram a referência nos três folds. A combinação atingiu AP média de 0,52640 e ficou abaixo do rendimento isolado em dois folds.
 
-O candidato com rendimento melhorou a AP frente à referência em 21 das 25 UFs e piorou em quatro. Não há melhora uniforme. Distorção apresentou Brier e log loss ligeiramente melhores que rendimento, embora rendimento tenha maior AP média. A prioridade segue a métrica principal declarada, sem afirmar superioridade universal.
+No experimento de blocos com C=1, o candidato com rendimento melhorou a AP frente à referência em 21 das 25 UFs e piorou em quatro. Não há melhora uniforme. Distorção apresentou Brier e log loss ligeiramente melhores que rendimento, embora rendimento tenha maior AP média. A prioridade segue a métrica principal declarada, sem afirmar superioridade universal.
 
 Os intervalos anteriores usam bootstrap municipal estratificado por UF com previsões OOF fixas. Não incluem refazer ajustes e escolhas de atributos; não corrigem comparações múltiplas. Não se deve tratar as rodadas sucessivas de desenvolvimento nos mesmos folds como confirmações independentes.
+
+## Comparação curta de regularização
+
+Foi realizada uma busca manual e pré-definida em C = 0,01; 0,1; 1 e 10, separadamente para a logística de referência e o candidato com rendimento escolar. São 24 ajustes: dois blocos, quatro valores de C e três folds municipais do treino, com 3.267 municípios e 968.939 alunos. A métrica principal é a média simples de AP nos folds; não houve consulta à validação externa ou ao teste para escolher C.
+
+Em todos os ajustes, mantiveram-se regularização L2, solver lbfgs, max_iter=3000, tol=1e-8, semente 42 e pesos de frequência iguais às contagens de alunos. Menor C implica regularização mais forte. Como os pesos não foram normalizados, a magnitude de C não deve ser comparada diretamente a experimentos com outra escala de pesos.
+
+A função de treinamento passou a combinar os padrões com os parâmetros fornecidos, dando precedência aos valores informados e eliminando argumentos duplicados. Imputação, escala e encoding continuam ajustados somente nos municípios de ajuste de cada fold. O cálculo de AP também usa as contagens de alunos; não é uma média sobre as duas linhas comprimidas sem ponderação.
+
+| C | AP média referência | Delta vs C=1 | AP média com rendimento | Delta vs C=1 |
+|---|---:|---:|---:|---:|
+| 0,01 | 0,5200306 | 0,0001273 | 0,5276477 | 0,0003013 |
+| 0,1 | 0,5197889 | -0,0001144 | 0,5273749 | 0,0000286 |
+| 1 | 0,5199033 | 0,0000000 | 0,5273463 | 0,0000000 |
+| 10 | 0,5198896 | -0,0000137 | 0,5273829 | 0,0000365 |
+
+C=0,01 teve a maior AP média nos dois blocos. O ganho sobre C=1 foi de apenas **0,0001273** na referência e **0,0003013** com rendimento, com melhora em dois dos três folds de cada bloco. No candidato com rendimento, o desvio da AP entre folds foi 0,01519 em C=0,01 e 0,01449 em C=1. Essa variação não é um intervalo de confiança, mas ajuda a dimensionar o pequeno ganho observado.
+
+Na AP OOF agrupada, a referência passou de 0,5155167 para 0,5154084; o candidato com rendimento passou de 0,5256989 para 0,5256922. Portanto, a maior média de AP entre folds não correspondeu a uma melhora da AP OOF agrupada. As duas medidas agregam os resultados de formas diferentes e não devem ser confundidas.
+
+O Brier médio dos folds do candidato com rendimento caiu de 0,2270647 para 0,2268998. O gap entre AP média de ajuste e de holdout caiu de 0,0140237 para 0,0136326. São diferenças pequenas: o gap é apenas um diagnóstico descritivo, não uma curva de aprendizagem nem prova de ausência de overfitting.
+
+Os controles C=1 reproduziram as APs da comparação anterior. Os 24 ajustes convergiram sem avisos, e oito testes automatizados passaram, incluindo sobrescrita de parâmetros e os contratos existentes. Os hashes dos modelos finais, do protocolo e dos resultados históricos de teste permaneceram iguais.
+
+A escolha de C=0,01 é exploratória, feita nos mesmos folds já usados no desenvolvimento. **A configuração C=1 e o artefato final da v1 foram preservados.** O pequeno ganho não sustenta uma afirmação de superioridade populacional e não gerou nova avaliação de teste. Resultados completos, métricas por UF, protocolo e previsões OOF estão em reports/regularizacao/.
 
 ## Resultado histórico da v1
 
@@ -98,8 +123,10 @@ Nenhum limiar operacional ou capacidade real de atendimento foi escolhido. Recom
 
 Na raiz do repositório, execute python -m src.evaluation.baselines --output work/baselines_novos, em ambiente com as dependências de requirements.txt. O módulo lê data/processed/dados_treino_oof.json, contendo agregados municipais, contagens e previsões OOF, e recalcula os dois baselines. Não carrega modelos, não acessa microdados individuais e não consulta validação ou teste. comparacao_baselines.json registra métricas por fold, resumo, prevalência e hash da entrada. metricas_baselines_por_uf.json registra os resultados por estado. O dataset distribuído não contém identificadores individuais ou escolares.
 
-Os experimentos originais, a interpretação SHAP, os perfis exploratórios e a avaliação histórica permanecem documentados na entrega v1 e nos relatórios de validação cruzada e combinação. Esta atualização complementa essas evidências e não transforma os experimentos em um novo resultado final de teste.
+Para repetir a busca curta, execute python -m src.modeling.regularization --output work/regularizacao_nova, com um diretório de saída novo. O comando usa os folds de treino e verifica a integridade dos artefatos congelados. A configuração efetiva, as métricas e os hashes estão em reports/regularizacao/protocolo.json e resultados.json.
+
+Os experimentos originais, a interpretação SHAP, os perfis exploratórios e a avaliação histórica permanecem documentados na entrega v1 e nos relatórios de validação cruzada, combinação e regularização. Esta atualização complementa essas evidências e não transforma os experimentos em um novo resultado final de teste.
 
 ## Conclusão
 
-A classificação individual usa atributos municipais e, por isso, produz uma estimativa de risco contextual. A separação por município e o ajuste das transformações dentro dos folds evitam vazamento entre os grupos de avaliação. O desempenho mostra ganho frente à prevalência e um ganho menor frente ao baseline por UF. Os indicadores de rendimento escolar constituem um candidato à evolução, cuja confirmação requer uma nova amostra independente.
+A classificação individual usa atributos municipais e, por isso, produz uma estimativa de risco contextual. A separação por município e o ajuste das transformações dentro dos folds reduzem o risco de vazamento entre os grupos de avaliação. O desempenho mostra ganho frente à prevalência e um ganho menor frente ao baseline por UF. Os indicadores de rendimento escolar constituem um candidato à evolução; a busca curta de regularização mostrou ganhos marginais e não motivou substituir a v1. A confirmação da evolução requer uma nova amostra independente.

@@ -16,7 +16,7 @@ regular=FONTDIR/'arial.ttf';bold=FONTDIR/'arialbd.ttf'
 if not regular.exists():regular=fallback/'Vera.ttf';bold=fallback/'VeraBd.ttf'
 pdfmetrics.registerFont(TTFont('ReportBody',str(regular)));pdfmetrics.registerFont(TTFont('ReportBold',str(bold)))
 pdfmetrics.registerFontFamily('ReportBody',normal='ReportBody',bold='ReportBold',italic='ReportBody',boldItalic='ReportBold')
-styles=getSampleStyleSheet();styles.add(ParagraphStyle(name='Body',fontName='ReportBody',fontSize=10,leading=14.4,spaceAfter=8,textColor=colors.HexColor('#253443')))
+styles=getSampleStyleSheet();styles.add(ParagraphStyle(name='Body',fontName='ReportBody',fontSize=10,leading=14,spaceAfter=7,allowWidows=0,textColor=colors.HexColor('#253443')))
 styles.add(ParagraphStyle(name='ReportTitle',fontName='ReportBold',fontSize=22,leading=27,spaceAfter=16,textColor=colors.HexColor('#173c57')))
 styles.add(ParagraphStyle(name='Section',fontName='ReportBold',fontSize=13.2,leading=17,spaceBefore=13,spaceAfter=8,keepWithNext=True,textColor=colors.HexColor('#173c57')))
 styles.add(ParagraphStyle(name='Cell',parent=styles['Body'],fontSize=8.2,leading=11,spaceAfter=0))
@@ -29,6 +29,7 @@ def inline(t):
 def para(t,style='Body'):return Paragraph(inline(t),styles[style])
 def table(rows):
  n=len(rows[0]);widths=([content*.29]+[content*.71/(n-1)]*(n-1)) if n>2 else [content*.25,content*.75]
+ if n==5 and rows[0][0]=='C':widths=[content*.08,content*.23,content*.2,content*.29,content*.2]
  data=[[para(x,'Cell') for x in row] for row in rows]
  t=Table(data,colWidths=widths,repeatRows=1,hAlign='LEFT')
  t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#e8f0f5')),('TEXTCOLOR',(0,0),(-1,0),colors.HexColor('#173c57')),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),7),('RIGHTPADDING',(0,0),(-1,-1),7),('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7),('LINEBELOW',(0,0),(-1,0),.7,colors.HexColor('#9fb3c1')),('LINEBELOW',(0,1),(-1,-1),.35,colors.HexColor('#d7e0e6'))]))
@@ -37,6 +38,9 @@ def table(rows):
 def main():
  source=ROOT/'reports/consolidacao-fase3/relatorio_atualizado.md';target=ROOT/'reports/relatorio_final.pdf'
  text=source.read_text(encoding='utf8');story=[];rows=[]
+ match=re.search(r'Atualização de (\d{2}/\d{2}/\d{4})',text)
+ if not match:raise ValueError('Data de atualização ausente no relatório fonte')
+ report_date=match.group(1)
  for line in text.splitlines()+['']:
   if line.startswith('|'):
    if not re.fullmatch(r'[|\-: ]+',line):rows.append([x.strip() for x in line.strip('|').split('|')])
@@ -54,13 +58,13 @@ def main():
    img=Image(str(p));scale=min(content/img.imageWidth,245/img.imageHeight);img.drawWidth=img.imageWidth*scale;img.drawHeight=img.imageHeight*scale
    story.append(KeepTogether([img,Spacer(1,6),para(caption,'Caption'),Spacer(1,14)]))
  story.append(PageBreak());story.append(para('Fontes e documentos de apoio','ReportTitle'))
- sources=[('Enunciados das Fases 2 e 3','Documentos fornecidos no curso; Fase 3, p. 2-5, define classificação individual, integração com Gold, enriquecimento e prevenção de vazamento.'),('Dados de origem','Backup auditado da Fase 2; manifestos e dicionários estão em data/source e data/gold_fase2.'),('IBGE','População e densidade de 2022; PIB e composição econômica de 2021. Referências e hashes nos manifestos de fontes.'),('INEP','Taxas municipais de distorção e rendimento de 2022 e INSE de 2021. Rede municipal, localização total, código IBGE para o vínculo.'),('FUNDEB e PNAD','VAAT de 2023, publicação de 28/08/2023, e renda domiciliar por UF de 2022. Experimentos não indicaram ganho relevante na configuração testada.'),('Reprodução','README.md, requirements.txt, src/modeling/enrichment.py e src/evaluation/baselines.py. Resultados completos e protocolos estão nas subpastas de reports.')]
+ sources=[('Enunciados das Fases 2 e 3','Documentos fornecidos no curso; Fase 3, p. 2-5, define classificação individual, integração com Gold, enriquecimento e prevenção de vazamento.'),('Dados de origem','Backup auditado da Fase 2; manifestos e dicionários estão em data/source e data/gold_fase2.'),('IBGE','População e densidade de 2022; PIB e composição econômica de 2021. Referências e hashes nos manifestos de fontes.'),('INEP','Taxas municipais de distorção e rendimento de 2022 e INSE de 2021. Rede municipal, localização total, código IBGE para o vínculo.'),('FUNDEB e PNAD','VAAT de 2023, publicação de 28/08/2023, e renda domiciliar por UF de 2022. Experimentos não indicaram ganho relevante na configuração testada.'),('Reprodução','README.md e requirements.txt. Blocos: src/modeling/enrichment.py. Baselines: src/evaluation/baselines.py. Regularização: src/modeling/regularization.py. Resultados completos e protocolos estão nas subpastas de reports.')]
  for title,desc in sources:story.append(para(title,'Section'));story.append(para(desc))
  story.append(para('Endereços oficiais','Section'))
  urls=['https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais','https://www.gov.br/fnde/pt-br/acesso-a-informacao/acoes-e-programas/financiamento/fundeb/2023','https://www.ibge.gov.br/biblioteca/visualizacao/periodicos/3100/rdpc_2022.pdf']
  for u in urls:story.append(Paragraph('<link href="'+u+'" color="#176596">'+html.escape(u)+'</link>',styles['Caption']));story.append(Spacer(1,8))
  def footer(c,doc):
-  c.saveState();c.setStrokeColor(colors.HexColor('#cbd7df'));c.line(47,40,W-47,40);c.setFont('ReportBody',8);c.setFillColor(colors.HexColor('#526574'));c.drawString(47,27,'Tech Challenge - Fase 3 | Relatório consolidado | 28/10/2026');c.drawRightString(W-47,27,str(doc.page));c.restoreState()
+  c.saveState();c.setStrokeColor(colors.HexColor('#cbd7df'));c.line(47,40,W-47,40);c.setFont('ReportBody',8);c.setFillColor(colors.HexColor('#526574'));c.drawString(47,27,'Tech Challenge - Fase 3 | Relatório consolidado | '+report_date);c.drawRightString(W-47,27,str(doc.page));c.restoreState()
  doc=SimpleDocTemplate(str(target),pagesize=A4,rightMargin=47,leftMargin=47,topMargin=43,bottomMargin=56,title='Alfabetização no Brasil - Relatório consolidado da Fase 3',author='menilsonmatos')
  doc.build(story,onFirstPage=footer,onLaterPages=footer)
  print(target)
