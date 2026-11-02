@@ -1,0 +1,60 @@
+{
+  "data": "2026-11-01",
+  "C": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "blocos": {
+    "referencia": [],
+    "rendimento": [
+      "reprovacao_AI_pct_2022",
+      "abandono_AI_pct_2022",
+      "reprovacao_2ano_pct_2022",
+      "abandono_2ano_pct_2022"
+    ]
+  },
+  "features_referencia": [
+    "log1p_populacao_2022",
+    "log1p_densidade_hab_km2_2022",
+    "log1p_pib_por_habitante_reais_2021",
+    "participacao_agropecuaria_2021",
+    "participacao_industria_2021",
+    "participacao_servicos_2021"
+  ],
+  "categoricas": [
+    "sigla_uf"
+  ],
+  "modelo": {
+    "familia": "LogisticRegression",
+    "regularizacao": "L2 padrão",
+    "solver": "lbfgs",
+    "max_iter": 3000,
+    "tol": 1e-08,
+    "random_state": 42
+  },
+  "metrica_primaria": "AP média simples nos mesmos 3 folds de municípios do treino",
+  "selecao": "Maior AP média em cada bloco; empate exato favorece menor C",
+  "pesos": "Contagens de alunos por classe; sem normalizar e sem pesos amostrais INEP",
+  "preprocessamento": "Ajustado somente no fold de ajuste; igual peso por município",
+  "interpretacao_C": "Menor C significa regularização mais forte. A escala depende dos pesos de frequência mantidos constantes.",
+  "escopo": "Somente treino. Sem nova previsão na validação externa ou no teste. Sem refit final ou substituição da v1.",
+  "limite": "Desenvolvimento nos mesmos folds já explorados. O melhor score selecionado não é confirmação independente.",
+  "hashes_entradas": {
+    "base": "3c6969064b47ee354c8a40489fb1b995052b2d1b13d839dfc9e377ce90be1e20",
+    "contexto": "4804127c30b018c279ca581c54f1fdeec1e0c8659ec7f275671d26c61e099353",
+    "folds": "4daa22f3e9cec5d3a0afd39548250de6e48e44d730c2e4d249642d5179e1d2b3"
+  },
+  "arquivos_congelados_antes": {
+    "models\\logistica_referencia.joblib": "e35fdf1cc3d78b103df0aa68c4df3f2112a6b241344f7c295a219a9137153d56",
+    "models\\boosting_comparador.joblib": "5cdf32c426afcb9eb26cefa28bcff60351a7e282798a2219229d7bca08d6c97d",
+    "reports\\avaliacao-final\\protocolo_teste_fixado.json": "6551cfaea1022f7c015f55c668d8cab9aed9af39ef46c6d9bb0f7f61a2f122ed",
+    "reports\\avaliacao-final\\resultados_teste.json": "b773f88b8f1946e239fe406c4f9925b64beca7b123f704571d0535fdc07926a7"
+  },
+  "versoes": {
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1"
+  }
+}

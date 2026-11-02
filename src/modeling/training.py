@@ -12,24 +12,29 @@ def compress_as_binary(frame):
     w = np.r_[frame.nao_alfabetizados.to_numpy(), frame.alfabetizados.to_numpy()].astype(float)
     return x, y, w
 
-def fit_model(frame, family='logistica', enriched=False, params=None):
+def fit_model(frame, family='logistica', enriched=False, params=None, numeric_features=None):
     if not frame.conjunto.eq('treino').all():
         raise ValueError('O ajuste aceita somente municípios do treino')
-    params = params or {}
-    pre = make_preprocessor(enriched)
+    params = dict(params or {})
+    pre = make_preprocessor(enriched, numeric_features=numeric_features)
     pre.fit(frame)
     x, y, w = compress_as_binary(frame)
     if family == 'logistica':
-        model = LogisticRegression(C=1.0, solver='lbfgs', max_iter=2000,
-                                   tol=1e-7, random_state=42, **params)
+        defaults = dict(C=1.0, solver='lbfgs', max_iter=2000,
+                        tol=1e-7, random_state=42)
+        model_class = LogisticRegression
     elif family == 'random_forest':
-        model = RandomForestClassifier(n_estimators=150, max_features='sqrt',
-            bootstrap=False, n_jobs=4, random_state=42, **params)
+        defaults = dict(n_estimators=150, max_features='sqrt',
+                        bootstrap=False, n_jobs=4, random_state=42)
+        model_class = RandomForestClassifier
     elif family == 'boosting':
-        model = GradientBoostingClassifier(learning_rate=.05, min_weight_fraction_leaf=.001,
-            subsample=1.0, random_state=42, **params)
+        defaults = dict(learning_rate=.05, min_weight_fraction_leaf=.001,
+                        subsample=1.0, random_state=42)
+        model_class = GradientBoostingClassifier
     else:
         raise ValueError('Família desconhecida')
+    defaults.update(params)
+    model = model_class(**defaults)
     model.fit(pre.transform(x), y, sample_weight=w)
     if hasattr(model, 'max_iter') and np.max(model.n_iter_) >= model.max_iter:
         raise RuntimeError('O modelo não convergiu')

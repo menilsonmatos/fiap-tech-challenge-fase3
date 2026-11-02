@@ -15,9 +15,15 @@ EDUCATION = [
 FORBIDDEN = {'id_municipio', 'id_aluno', 'id_escola', 'proficiencia',
              'taxa_alfabetizacao', 'atingiu_meta', 'gap_meta_pp', 'ranking_vulnerabilidade'}
 
-def make_preprocessor(enriched=False):
-    columns = NUMERIC + (EDUCATION if enriched else [])
-    assert not set(columns) & FORBIDDEN
+def make_preprocessor(enriched=False, numeric_features=None):
+    columns = (list(numeric_features) if numeric_features is not None
+               else NUMERIC + (EDUCATION if enriched else []))
+    if len(columns) != len(set(columns)):
+        raise ValueError('Preditores numéricos duplicados')
+    prohibited = FORBIDDEN | {'alfabetizados', 'nao_alfabetizados', 'alfabetizado',
+                             'nao_alfabetizado', 'conjunto', 'fold', 'cv_fold'}
+    if set(columns) & prohibited:
+        raise ValueError('Alvo, identificador ou divisão não pode ser preditor')
     return ColumnTransformer([
         ('num', Pipeline([('impute', SimpleImputer(strategy='median', add_indicator=True)),
                           ('scale', StandardScaler())]), columns),
