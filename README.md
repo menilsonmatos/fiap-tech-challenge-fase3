@@ -100,3 +100,15 @@ python -m src.visualization.report_pdf
 ```
 
 O gerador apenas formata o relatório e incorpora figuras históricas existentes; não treina modelos nem recalcula o teste.
+
+## Comparação curta de regularização
+
+A função de treinamento aceita sobrescrever parâmetros sem duplicidade. Os padrões permanecem preservados e os parâmetros fornecidos têm precedência.
+
+```text
+python -m src.modeling.regularization --output work/regularizacao_nova
+```
+
+O comando compara C em 0,01; 0,1; 1 e 10, na logística de referência e no candidato com rendimento, nos mesmos três folds municipais do treino. Ajuste do pré-processamento e métricas ponderadas por alunos respeitam cada fold. O diretório de saída deve ser novo. Não são calculadas novas previsões na validação externa ou no teste, e os modelos finais não são sobrescritos.
+
+Resultados em `reports/regularizacao/relatorio.md`. A maior AP média foi obtida com C=0,01: 0,52003 na referência e 0,52765 com rendimento, contra 0,51990 e 0,52735 em C=1. Os ganhos são pequenos e não foram consistentes nos três folds. São escolhas exploratórias; a versão final congelada permanece com C=1. A AP OOF agrupada do candidato com rendimento ficou praticamente igual, ligeiramente abaixo do controle.
